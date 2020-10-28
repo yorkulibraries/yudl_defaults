@@ -1,12 +1,12 @@
 {
-  "name": "islandora/islandora_defaults",
+  "name": "yorkulibraries/yudl8_defaults",
   "description": "Islandora Defaults",
   "type": "drupal-module",
   "minimum-stability": "dev",
   "prefer-stable": true,
   "keywords": ["Drupal", "Islandora"],
   "license": "GPL-2.0+",
-  "homepage": "https://github.com/Islandora/islandora_defaults",
+  "homepage": "https://github.com/yorkulibraries/yudl8_defaults",
   "support": {
     "issues": "https://github.com/Islandora/documentation/issues"
   },
