@@ -2,19 +2,14 @@ langcode: en
 status: true
 dependencies:
   module:
-    - field_permissions
     - node
-third_party_settings:
-  field_permissions:
-    permission_type: public
-id: node.field_extent
-field_name: field_extent
+    - taxonomy
+id: node.field_tags
+field_name: field_tags
 entity_type: node
-type: string
+type: entity_reference
 settings:
-  max_length: 255
-  is_ascii: false
-  case_sensitive: false
+  target_type: taxonomy_term
 module: core
 locked: false
 cardinality: -1

@@ -1,4 +1,3 @@
-uuid: fb77e0f8-e918-4bb7-b07b-242b26391855
 langcode: en
 status: true
 dependencies:
@@ -8,8 +7,8 @@ dependencies:
 third_party_settings:
   field_permissions:
     permission_type: public
-id: node.field_coordinates_text
-field_name: field_coordinates_text
+id: node.field_lccn
+field_name: field_lccn
 entity_type: node
 type: string
 settings:
@@ -18,9 +17,8 @@ settings:
   case_sensitive: false
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false
 custom_storage: false
-
