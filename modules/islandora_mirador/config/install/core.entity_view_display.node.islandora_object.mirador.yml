@@ -5,13 +5,9 @@ dependencies:
     - core.entity_view_mode.node.mirador
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
-    - field.field.node.islandora_object.field_classification
     - field.field.node.islandora_object.field_coordinates
-    - field.field.node.islandora_object.field_coordinates_text
     - field.field.node.islandora_object.field_description
-    - field.field.node.islandora_object.field_dewey_classification
     - field.field.node.islandora_object.field_display_hints
-    - field.field.node.islandora_object.field_edition
     - field.field.node.islandora_object.field_edtf_date
     - field.field.node.islandora_object.field_edtf_date_created
     - field.field.node.islandora_object.field_edtf_date_issued
@@ -21,13 +17,11 @@ dependencies:
     - field.field.node.islandora_object.field_identifier
     - field.field.node.islandora_object.field_isbn
     - field.field.node.islandora_object.field_language
-    - field.field.node.islandora_object.field_lcc_classification
     - field.field.node.islandora_object.field_linked_agent
     - field.field.node.islandora_object.field_local_identifier
     - field.field.node.islandora_object.field_member_of
     - field.field.node.islandora_object.field_model
     - field.field.node.islandora_object.field_note
-    - field.field.node.islandora_object.field_oclc_number
     - field.field.node.islandora_object.field_physical_form
     - field.field.node.islandora_object.field_pid
     - field.field.node.islandora_object.field_place_published
@@ -60,28 +54,12 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  field_classification:
-    weight: 27
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_coordinates:
     weight: 21
     label: above
     settings: {  }
     third_party_settings: {  }
     type: geolocation_latlng
-    region: content
-  field_coordinates_text:
-    weight: 22
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_description:
     type: basic_string
@@ -90,22 +68,6 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-  field_dewey_classification:
-    weight: 25
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_edition:
-    weight: 9
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_edtf_date:
     type: edtf_default
     weight: 8
@@ -192,14 +154,6 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-  field_lcc_classification:
-    weight: 26
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
   field_linked_agent:
     weight: 5
     label: above
@@ -230,14 +184,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  field_oclc_number:
-    weight: 30
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_physical_form:
     type: entity_reference_label
