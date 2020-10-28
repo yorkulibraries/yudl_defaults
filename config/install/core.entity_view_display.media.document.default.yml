@@ -11,7 +11,7 @@ dependencies:
     - field.field.media.document.field_original_name
     - media.type.document
   module:
-    - file 
+    - file
 id: media.document.default
 targetEntityType: media
 bundle: document
@@ -89,5 +89,6 @@ content:
 hidden:
   created: true
   langcode: true
+  search_api_excerpt: true
   thumbnail: true
   uid: true
