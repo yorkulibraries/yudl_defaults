@@ -2,27 +2,37 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.islandora_models.field_external_uri
-    - taxonomy.vocabulary.islandora_models
+    - field.field.taxonomy_term.rights.field_authority_link
+    - field.field.taxonomy_term.rights.field_image_url_
+    - taxonomy.vocabulary.rights
   module:
+    - controlled_access_terms
     - link
     - path
     - text
-id: taxonomy_term.islandora_models.default
+id: taxonomy_term.rights.default
 targetEntityType: taxonomy_term
-bundle: islandora_models
+bundle: rights
 mode: default
 content:
   description:
-    type: text_textarea
-    weight: 1
+    type: text_textfield
+    weight: 0
     region: content
     settings:
+      size: 60
       placeholder: ''
-      rows: 5
     third_party_settings: {  }
-  field_external_uri:
-    weight: 2
+  field_authority_link:
+    weight: 101
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: authority_link_default
+    region: content
+  field_image_url_:
+    weight: 102
     settings:
       placeholder_url: ''
       placeholder_title: ''
@@ -31,14 +41,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 3
+    weight: 2
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   name:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
@@ -46,7 +56,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -58,8 +68,8 @@ content:
     region: content
     third_party_settings: {  }
   translation:
-    weight: 4
-    region: content
+    weight: 10
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden: {  }

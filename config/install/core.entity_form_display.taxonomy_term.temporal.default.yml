@@ -2,15 +2,15 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.taxonomy_term.islandora_models.field_external_uri
-    - taxonomy.vocabulary.islandora_models
+    - field.field.taxonomy_term.temporal.field_authority_link
+    - taxonomy.vocabulary.temporal
   module:
-    - link
+    - controlled_access_terms
     - path
     - text
-id: taxonomy_term.islandora_models.default
+id: taxonomy_term.temporal.default
 targetEntityType: taxonomy_term
-bundle: islandora_models
+bundle: temporal
 mode: default
 content:
   description:
@@ -21,13 +21,13 @@ content:
       placeholder: ''
       rows: 5
     third_party_settings: {  }
-  field_external_uri:
+  field_authority_link:
     weight: 2
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
+    type: authority_link_default
     region: content
   langcode:
     type: language_select
@@ -46,7 +46,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -58,8 +58,8 @@ content:
     region: content
     third_party_settings: {  }
   translation:
-    weight: 4
-    region: content
+    weight: 10
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden: {  }
