@@ -20,7 +20,6 @@ dependencies:
     - field.storage.node.field_physical_form
     - field.storage.node.field_subject
     - field.storage.node.field_subjects_name
-    - field.storage.node.field_table_of_contents
     - field.storage.node.field_tags
     - field.storage.node.field_temporal_subject
     - field.storage.taxonomy_term.field_geo_alt_name
@@ -235,14 +234,6 @@ field_settings:
       module:
         - taxonomy
         - taxonomy
-  field_table_of_contents:
-    label: 'Table of Contents'
-    datasource_id: 'entity:node'
-    property_path: field_table_of_contents
-    type: text
-    dependencies:
-      config:
-        - field.storage.node.field_table_of_contents
   field_tags:
     label: Tags
     datasource_id: 'entity:node'
