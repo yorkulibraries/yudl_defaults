@@ -20,7 +20,6 @@ function islandora_defaults_rdf_namespaces() {
     'marcgac' => 'http://id.loc.gov/search/?q=&q=cs%3Ahttp%3A%2F%2Fid.loc.gov%2Fvocabulary%2Fcountries',
     'frequency' => 'http://id.loc.gov/vocabulary/frequencies/collection_publicationsFrequencies',
     'resource' => 'http://id.loc.gov/vocabulary/resourceTypes.html',
-    'premis' => 'http://id.loc.gov/vocabulary/preservation/eventType/collection_PREMIS',
     'rdau' => 'http://www.rdaregistry.info/Elements/u/#',
   ];
 }
