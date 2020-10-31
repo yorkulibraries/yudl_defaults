@@ -1,10 +1,10 @@
 site_id: '3'
-url_http: 'http://omega.library.yorku.ca'
-url_https: ''
+url_http: 'http://matomo.library.yorku.ca/'
+url_https: 'https://matomo.library.yorku.ca/'
 domain_mode: 0
 visibility:
   request_path_mode: 0
-  request_path_pages: "/admin\n/admin/*\n/batch\n/node/add*\n/node/*/*\n/user/*/*"
+  request_path_pages: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*/*"
   user_role_mode: 0
   user_role_roles: {  }
   user_account_mode: 1
@@ -20,11 +20,38 @@ privacy:
   donottrack: true
   disablecookies: false
 custom:
-  variable: {  }
+  variable:
+    1:
+      name: ''
+      value: ''
+      scope: visit
+      slot: 1
+    2:
+      name: ''
+      value: ''
+      scope: visit
+      slot: 2
+    3:
+      name: ''
+      value: ''
+      scope: visit
+      slot: 3
+    4:
+      name: ''
+      value: ''
+      scope: visit
+      slot: 4
+    5:
+      name: ''
+      value: ''
+      scope: visit
+      slot: 5
 codesnippet:
   before: ''
   after: ''
 translation_set: false
-cache: false
+cache: true
 page_title_hierarchy: false
 page_title_hierarchy_exclude_home: true
+_core:
+  default_config_hash: F28QoCKog1gH9eYh-9hrJQqrNcoI2yQiiuniFoVKBDI
