@@ -37,7 +37,6 @@ dependencies:
     - field.field.node.islandora_object.field_physical_location
     - field.field.node.islandora_object.field_pid
     - field.field.node.islandora_object.field_place_published
-    - field.field.node.islandora_object.field_place_published_country
     - field.field.node.islandora_object.field_province
     - field.field.node.islandora_object.field_region
     - field.field.node.islandora_object.field_resource_type
@@ -281,7 +280,6 @@ hidden:
   field_part_of: true
   field_physical_location: true
   field_pid: true
-  field_place_published_country: true
   field_province: true
   field_region: true
   field_rights_holder: true

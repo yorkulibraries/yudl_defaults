@@ -36,7 +36,6 @@ dependencies:
     - field.field.node.islandora_object.field_physical_location
     - field.field.node.islandora_object.field_pid
     - field.field.node.islandora_object.field_place_published
-    - field.field.node.islandora_object.field_place_published_country
     - field.field.node.islandora_object.field_province
     - field.field.node.islandora_object.field_region
     - field.field.node.islandora_object.field_resource_type
@@ -180,7 +179,6 @@ third_party_settings:
       children:
         - field_linked_agent
         - field_place_published
-        - field_place_published_country
       parent_name: ''
       weight: 1
       format_type: details
@@ -535,16 +533,6 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
-  field_place_published_country:
-    type: entity_reference_autocomplete
-    weight: 8
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_province:
     weight: 11
     settings:
