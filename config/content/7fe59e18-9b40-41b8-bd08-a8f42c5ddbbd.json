@@ -1,24 +1,13 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/taxonomy\/term\/43?_format=hal_json"
+            "href": "http:\/\/default\/taxonomy\/term\/513?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/default\/rest\/type\/taxonomy_term\/rights"
         },
         "http:\/\/default\/rest\/relation\/taxonomy_term\/rights\/parent": [
             null
-        ],
-        "http:\/\/default\/rest\/relation\/taxonomy_term\/rights\/content_translation_uid": [
-            {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
-                "lang": "en"
-            }
-        ],
-        "http:\/\/default\/rest\/relation\/taxonomy_term\/rights\/field_image": [
-            {
-                "href": "http:\/\/default\/sites\/default\/files\/2020-10\/lc-label-clan2-1.png"
-            }
         ]
     },
     "uuid": [
@@ -71,41 +60,6 @@
     "_embedded": {
         "http:\/\/default\/rest\/relation\/taxonomy_term\/rights\/parent": [
             null
-        ],
-        "http:\/\/default\/rest\/relation\/taxonomy_term\/rights\/content_translation_uid": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/default\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "1b1222ef-f0bf-4b3e-81f4-fcab51993474"
-                    }
-                ],
-                "lang": "en"
-            }
-        ],
-        "http:\/\/default\/rest\/relation\/taxonomy_term\/rights\/field_image": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/sites\/default\/files\/2020-10\/lc-label-clan2-1.png"
-                    },
-                    "type": {
-                        "href": "http:\/\/default\/rest\/type\/file\/file"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "f20eb74b-e877-4b29-afa8-d4faa47b929b"
-                    }
-                ]
-            }
         ]
     },
     "changed": [

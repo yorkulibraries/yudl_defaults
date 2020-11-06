@@ -1,19 +1,13 @@
 {
     "_links": {
         "self": {
-            "href": "http:\/\/default\/taxonomy\/term\/623?_format=hal_json"
+            "href": "http:\/\/default\/taxonomy\/term\/825?_format=hal_json"
         },
         "type": {
             "href": "http:\/\/default\/rest\/type\/taxonomy_term\/language"
         },
         "http:\/\/default\/rest\/relation\/taxonomy_term\/language\/parent": [
             null
-        ],
-        "http:\/\/default\/rest\/relation\/taxonomy_term\/language\/content_translation_uid": [
-            {
-                "href": "http:\/\/default\/user\/1?_format=hal_json",
-                "lang": "en"
-            }
         ]
     },
     "uuid": [
@@ -58,24 +52,6 @@
     "_embedded": {
         "http:\/\/default\/rest\/relation\/taxonomy_term\/language\/parent": [
             null
-        ],
-        "http:\/\/default\/rest\/relation\/taxonomy_term\/language\/content_translation_uid": [
-            {
-                "_links": {
-                    "self": {
-                        "href": "http:\/\/default\/user\/1?_format=hal_json"
-                    },
-                    "type": {
-                        "href": "http:\/\/default\/rest\/type\/user\/user"
-                    }
-                },
-                "uuid": [
-                    {
-                        "value": "1b1222ef-f0bf-4b3e-81f4-fcab51993474"
-                    }
-                ],
-                "lang": "en"
-            }
         ]
     },
     "changed": [
