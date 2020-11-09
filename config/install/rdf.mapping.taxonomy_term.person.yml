@@ -17,9 +17,6 @@ fieldMappings:
   description:
     properties:
       - 'schema:description'
-  field_person_alternate_names:
-    properties:
-      - 'schema:alternateName'
   field_authority_link:
     properties:
       - 'schema:sameAs'
