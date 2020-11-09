@@ -244,7 +244,23 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-  islandora_fits_checksum:
+  field_rights_holder:
+    type: entity_reference_label
+    weight: 25
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_rights:
+    type: entity_reference_label
+    weight: 25
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+ islandora_fits_checksum:
     weight: 100
     settings: {  }
     third_party_settings: {  }
@@ -283,8 +299,6 @@ hidden:
   field_pid: true
   field_province: true
   field_region: true
-  field_rights_holder: true
-  field_rights: true
   field_weight: true
   langcode: true
   openseadragon_media_evas_entity_view_2: true

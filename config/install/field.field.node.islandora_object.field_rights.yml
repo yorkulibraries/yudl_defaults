@@ -9,7 +9,7 @@ id: node.islandora_object.field_rights
 field_name: field_rights
 entity_type: node
 bundle: islandora_object
-label: 'Rights URI'
+label: 'Rights Statement'
 description: ''
 required: false
 translatable: false
@@ -23,6 +23,6 @@ settings:
     sort:
       field: name
       direction: asc
-    auto_create: false
+    auto_create: true
     auto_create_bundle: ''
 field_type: entity_reference
