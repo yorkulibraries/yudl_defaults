@@ -260,7 +260,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
- islandora_fits_checksum:
+  islandora_fits_checksum:
     weight: 100
     settings: {  }
     third_party_settings: {  }
