@@ -19,7 +19,7 @@ default_value_callback: ''
 settings:
   authority_sources:
     geonames: GeoNames
-    wikidata: Wikidata
+    wiki: Wikidata
     other: Other
   title: 1
   link_type: 16
