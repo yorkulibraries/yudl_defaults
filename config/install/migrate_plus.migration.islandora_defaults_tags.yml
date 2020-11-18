@@ -18,19 +18,23 @@ source:
   keys:
     - external_uri
     - authority
+    - authority_title
     - field_authority_link
     - field_image_url_
 process:
   name: name
   vid: vid
   description: description
+  field_authority_link:
+    plugin: sub_process
+    source: field_authority_link
+    process:
+      uri: field_authority_link
+      title: authority_title
+      source: authority
   field_external_uri:
     plugin: urlencode
     source: external_uri
-  authority: authority
-  field_authority_link:
-    plugin: urlencode
-    source: field_authority_link
   field_image_url_:
     plugin: urlencode
     source: field_image_url_
