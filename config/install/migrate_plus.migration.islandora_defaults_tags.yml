@@ -13,10 +13,13 @@ migration_group: islandora
 label: 'Tags migration for islandora_defaults feature'
 source:
   plugin: csv
-  path: modules/contrib/yudl8_defaults/migrate/tags.csv
+  path: modules/contrib/islandora_defaults/migrate/tags.csv
   header_row_count: 1
   keys:
     - external_uri
+    - authority
+    - field_authority_link
+    - field_image_url_
 process:
   name: name
   vid: vid
@@ -24,6 +27,13 @@ process:
   field_external_uri:
     plugin: urlencode
     source: external_uri
+  authority: authority
+  field_authority_link:
+    plugin: urlencode
+    source: field_authority_link
+  field_image_url_:
+    plugin: urlencode
+    source: field_image_url_
 destination:
   plugin: 'entity:taxonomy_term'
 migration_dependencies:
