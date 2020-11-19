@@ -18,7 +18,6 @@ source:
   keys:
     - external_uri
     - authority
-    - authority_title
     - field_authority_link
     - field_image_url_
 process:
@@ -28,6 +27,7 @@ process:
   field_external_uri:
     plugin: urlencode
     source: external_uri
+  authority: authority
   field_authority_link:
     plugin: urlencode
     source: field_authority_link
