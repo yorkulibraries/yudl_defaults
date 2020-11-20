@@ -24,11 +24,12 @@ process:
   name: name
   vid: vid
   description: description
-  field_external_uri:
+  field_external_uri/source: authority
+  field_external_uri/uri:
     plugin: urlencode
     source: external_uri
   field_authority_link/source: authority
-  field_authority_link:
+  field_authority_link/uri:
     plugin: urlencode
     source: field_authority_link
   field_image_url_:
