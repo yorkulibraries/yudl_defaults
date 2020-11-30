@@ -10,7 +10,7 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: islandora_defaults_02_languages
 migration_group: york
-label: 'Languages migration for islandora_defaults feature'
+label: 'Languages'
 source:
   plugin: csv
   path: modules/contrib/yudl8_defaults/migrate/languages.csv

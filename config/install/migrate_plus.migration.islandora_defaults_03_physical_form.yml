@@ -10,7 +10,7 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: islandora_defaults_03_physical_form
 migration_group: york
-label: 'Physical form migration for islandora_defaults feature'
+label: 'Physical form'
 source:
   plugin: csv
   path: modules/contrib/yudl8_defaults/migrate/physical_form.csv

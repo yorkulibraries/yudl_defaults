@@ -10,7 +10,7 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: islandora_defaults_01_rights
 migration_group: york
-label: 'Rights terms migration for islandora_defaults feature'
+label: 'Rights terms'
 source:
   plugin: csv
   path: modules/contrib/yudl8_defaults/migrate/rights.csv

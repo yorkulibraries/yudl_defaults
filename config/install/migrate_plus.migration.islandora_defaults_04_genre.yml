@@ -10,7 +10,7 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: islandora_defaults_04_genre
 migration_group: york
-label: 'Genre migration for islandora_defaults feature'
+label: 'Genre/Form'
 source:
   plugin: csv
   path: modules/contrib/yudl8_defaults/migrate/genre.csv
