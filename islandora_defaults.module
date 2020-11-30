@@ -17,8 +17,8 @@ function islandora_defaults_rdf_namespaces() {
     'viaf	' => 'https://viaf.org/viaf',
     'lcnaf' => 'http://id.loc.gov/authorities/names.html',
     'lcsh' => 'http://id.loc.gov/authorities/subjects.html',
-    'marcgac' => 'http://id.loc.gov/search/?q=&q=cs%3Ahttp%3A%2F%2Fid.loc.gov%2Fvocabulary%2Fcountries',
-    'frequency' => 'http://id.loc.gov/vocabulary/frequencies/collection_publicationsFrequencies',
+    'marcgac' => 'https://id.loc.gov/vocabulary/countries.html',
+    'frequency' => 'https://id.loc.gov/vocabulary/frequencies.html',
     'resource' => 'http://id.loc.gov/vocabulary/resourceTypes.html',
     'rdau' => 'http://www.rdaregistry.info/Elements/u/#',
   ];
