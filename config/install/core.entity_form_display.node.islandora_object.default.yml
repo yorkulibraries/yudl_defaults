@@ -26,7 +26,6 @@ dependencies:
     - field.field.node.islandora_object.field_language
     - field.field.node.islandora_object.field_lccn
     - field.field.node.islandora_object.field_linked_agent
-    - field.field.node.islandora_object.field_local_identifier
     - field.field.node.islandora_object.field_member_of
     - field.field.node.islandora_object.field_model
     - field.field.node.islandora_object.field_note
@@ -213,7 +212,6 @@ third_party_settings:
     group_identifiers:
       children:
         - field_identifier
-        - field_local_identifier
         - field_doi
         - field_lccn
         - field_issn
@@ -448,14 +446,6 @@ content:
       match_limit: 10
     third_party_settings: {  }
     type: typed_relation_default
-    region: content
-  field_local_identifier:
-    weight: 13
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   field_member_of:
     type: entity_reference_autocomplete

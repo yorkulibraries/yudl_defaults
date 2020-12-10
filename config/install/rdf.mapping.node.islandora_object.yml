@@ -88,9 +88,6 @@ fieldMappings:
   field_lccn:
     properties:
       - 'identifiers:lccn'
-  field_local_identifier:
-    properties:
-      - 'dcterms:identifier'
   field_member_of:
     properties:
       - 'pcdm:memberOf'

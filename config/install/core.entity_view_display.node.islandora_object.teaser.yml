@@ -27,7 +27,6 @@ dependencies:
     - field.field.node.islandora_object.field_language
     - field.field.node.islandora_object.field_lccn
     - field.field.node.islandora_object.field_linked_agent
-    - field.field.node.islandora_object.field_local_identifier
     - field.field.node.islandora_object.field_member_of
     - field.field.node.islandora_object.field_model
     - field.field.node.islandora_object.field_note
@@ -105,7 +104,6 @@ hidden:
   field_language: true
   field_lccn: true
   field_linked_agent: true
-  field_local_identifier: true
   field_member_of: true
   field_model: true
   field_note: true
