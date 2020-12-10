@@ -55,6 +55,11 @@ fieldMappings:
       - 'dcterms:issued'
     datatype_callback:
       callable: 'Drupal\controlled_access_terms\EDTFConverter::dateIso8601Value'
+  field_date_modified_:
+    properties:
+      - 'dcterms:modified'
+    datatype_callback:
+      callable: 'Drupal\controlled_access_terms\EDTFConverter::dateIso8601Value'
   field_description:
     properties:
       - 'dcterms:description'
@@ -64,6 +69,9 @@ fieldMappings:
   field_extent:
     properties:
       - 'dcterms:extent'
+  field_edition:
+    properties:
+      - 'rdau:P60329'
   field_genre:
     properties:
       - 'dcterms:type'
@@ -126,6 +134,10 @@ fieldMappings:
   field_rights:
     properties:
       - 'dcterms:rights'
+    mapping_type: rel
+  field_relation:
+    properties:
+      - 'dcterms:relation'
   field_rights_holder:
     properties:
       - 'dcterms:rightsHolder'
@@ -134,12 +146,18 @@ fieldMappings:
     properties:
       - 'dcterms:subject'
     mapping_type: rel
+  field_keyword_subject_topic_:
+    properties:
+      - 'dcterms:subject'
+    mapping_type: rel
   field_subjects_name:
     properties:
       - 'dcterms:subject'
+    mapping_type: rel
   field_temporal_subject:
     properties:
       - 'dcterms:temporal'
+    mapping_type: rel
   field_weight:
     properties:
       - 'co:index'

@@ -11,9 +11,11 @@ dependencies:
     - field.field.node.islandora_object.field_coordinates
     - field.field.node.islandora_object.field_country
     - field.field.node.islandora_object.field_county
+    - field.field.node.islandora_object.field_date_modified_
     - field.field.node.islandora_object.field_description
     - field.field.node.islandora_object.field_display_hints
     - field.field.node.islandora_object.field_doi
+    - field.field.node.islandora_object.field_edition
     - field.field.node.islandora_object.field_edtf_date
     - field.field.node.islandora_object.field_edtf_date_created
     - field.field.node.islandora_object.field_edtf_date_issued
@@ -24,6 +26,7 @@ dependencies:
     - field.field.node.islandora_object.field_identifier
     - field.field.node.islandora_object.field_isbn
     - field.field.node.islandora_object.field_issn
+    - field.field.node.islandora_object.field_keyword_subject_topic_
     - field.field.node.islandora_object.field_language
     - field.field.node.islandora_object.field_lccn
     - field.field.node.islandora_object.field_linked_agent
@@ -38,9 +41,10 @@ dependencies:
     - field.field.node.islandora_object.field_place_published
     - field.field.node.islandora_object.field_province
     - field.field.node.islandora_object.field_region
+    - field.field.node.islandora_object.field_relation
     - field.field.node.islandora_object.field_resource_type
-    - field.field.node.islandora_object.field_rights_holder
     - field.field.node.islandora_object.field_rights
+    - field.field.node.islandora_object.field_rights_holder
     - field.field.node.islandora_object.field_subject
     - field.field.node.islandora_object.field_subjects_name
     - field.field.node.islandora_object.field_temporal_subject
@@ -51,6 +55,8 @@ dependencies:
       - islandora_defaults
   module:
     - user
+_core:
+  default_config_hash: dX7040F92VCjgT5pxNPbgE1msPISRWAE-hpvJOHq6tc
 id: node.islandora_object.teaser
 targetEntityType: node
 bundle: islandora_object
@@ -61,16 +67,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_gemini_uri:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
-  islandora_fits_checksum:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   links:
     weight: 1
     region: content
@@ -88,19 +84,23 @@ hidden:
   field_coordinates: true
   field_country: true
   field_county: true
+  field_date_modified_: true
   field_description: true
   field_display_hints: true
   field_doi: true
+  field_edition: true
   field_edtf_date: true
   field_edtf_date_created: true
   field_edtf_date_issued: true
   field_extent: true
+  field_gemini_uri: true
   field_genre: true
   field_geographic_subject: true
   field_hdl: true
   field_identifier: true
   field_isbn: true
   field_issn: true
+  field_keyword_subject_topic_: true
   field_language: true
   field_lccn: true
   field_linked_agent: true
@@ -113,14 +113,17 @@ hidden:
   field_physical_location: true
   field_pid: true
   field_place_published: true
+  field_province: true
   field_region: true
+  field_relation: true
   field_resource_type: true
-  field_rights_holder: true
   field_rights: true
+  field_rights_holder: true
   field_subject: true
   field_subjects_name: true
   field_temporal_subject: true
   field_weight: true
+  islandora_fits_checksum: true
   langcode: true
   members_eva_entity_view_1: true
   openseadragon_media_evas_entity_view_1: true
