@@ -15,7 +15,7 @@ source:
   plugin: csv
   path: modules/contrib/yudl8_defaults/migrate/physical_form.csv
   header_row_count: 1
-  keys:
+  ids:
     - vid
     - name
     - authority

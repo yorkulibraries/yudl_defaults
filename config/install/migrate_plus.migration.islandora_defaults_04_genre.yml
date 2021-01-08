@@ -15,7 +15,7 @@ source:
   plugin: csv
   path: modules/contrib/yudl8_defaults/migrate/genre.csv
   header_row_count: 1
-  keys:
+  ids:
     - name
     - authority
     - field_authority_link

@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
     - field.field.node.islandora_object.field_city
     - field.field.node.islandora_object.field_city_section
@@ -246,12 +245,6 @@ content:
   created:
     type: datetime_timestamp
     weight: 16
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_access_terms:
-    type: options_buttons
-    weight: 29
     region: content
     settings: {  }
     third_party_settings: {  }
