@@ -8,7 +8,7 @@
   "license": "GPL-2.0+",
   "homepage": "https://github.com/yorkulibraries/yudl8_defaults",
   "support": {
-    "issues": "https://github.com/Islandora/documentation/issues"
+    "issues": "https://github.com/yorkulibraries/yudl8_defaults/issues"
   },
   "require": {
     "islandora/islandora": "dev-8.x-1.x",
