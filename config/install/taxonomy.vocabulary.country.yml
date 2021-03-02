@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Country'
+vid: country
+description: 'Country or countries to which the records pertain.'
+hierarchy: 0
+weight: 0

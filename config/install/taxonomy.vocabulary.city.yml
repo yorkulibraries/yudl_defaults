@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'City'
+vid: city
+description: 'City or cities to which the records pertain.'
+hierarchy: 0
+weight: 0

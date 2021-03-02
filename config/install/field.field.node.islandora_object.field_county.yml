@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.storage.node.field_county
     - node.type.islandora_object
-    - taxonomy.vocabulary.geo_location
+    - taxonomy.vocabulary.county
 id: node.islandora_object.field_county
 field_name: field_county
 entity_type: node
@@ -19,7 +19,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      geo_location: geo_location
+      county: county
     sort:
       field: name
       direction: asc

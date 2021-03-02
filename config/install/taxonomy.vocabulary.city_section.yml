@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'City Section'
+vid: city_section
+description: 'City section(s) to which the records pertain.'
+hierarchy: 0
+weight: 0

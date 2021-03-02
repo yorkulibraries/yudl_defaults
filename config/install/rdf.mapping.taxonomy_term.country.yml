@@ -9,7 +9,8 @@ id: taxonomy_term.country
 targetEntityType: taxonomy_term
 bundle: country
 types:
-  - 'schema:Country'
+  - 'dc:Location'
+  - 'schema:Place'
 fieldMappings:
   name:
     properties:
@@ -20,4 +21,14 @@ fieldMappings:
   field_authority_link:
     properties:
       - 'schema:sameAs'
-
+  field_geo_geolocation:
+    properties:
+      - 'wgs84_pos:lat_long'
+  field_geo_broader:
+    properties:
+      - 'schema:containedInPlace'
+  changed:
+    properties:
+      - 'schema:dateModified'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'

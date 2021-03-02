@@ -2,24 +2,23 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_place_published_country
-    - node.type.islandora_object
-    - taxonomy.vocabulary.country
-id: node.islandora_object.field_place_published_country
-field_name: field_place_published_country
-entity_type: node
-bundle: islandora_object
-label: 'Place Published (Country)'
+    - field.storage.taxonomy_term.field_geo_broader
+    - taxonomy.vocabulary.city
+id: taxonomy_term.city.field_geo_broader
+field_name: field_geo_broader
+entity_type: taxonomy_term
+bundle: city
+label: Broader
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      country: country
+      city: city
     sort:
       field: name
       direction: asc

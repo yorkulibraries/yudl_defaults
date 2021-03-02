@@ -10,7 +10,7 @@ field_plugin_method: null
 cck_plugin_method: null
 migration_tags: islandora_defaults_05_continent
 migration_group: york
-label: 'Geographic Location'
+label: 'Continent'
 source:
   plugin: csv
   path: modules/contrib/yudl8_defaults/migrate/continent.csv
