@@ -31,15 +31,4 @@ reactions:
     id: islandora_map_uri_predicate
     drupal_uri_predicate: 'iana:describedby'
     saved: false
-  index:
-    id: index
-    actions:
-      index_media_in_fedora: index_media_in_fedora
-      index_media_in_triplestore: index_media_in_triplestore
-    saved: false
-  delete:
-    id: delete
-    actions:
-      delete_media_from_triplestore: delete_media_from_triplestore
-    saved: false
 weight: -8
