@@ -32,7 +32,7 @@ content:
     third_party_settings: {  }
     region: content
   field_media_audio_file:
-    type: islandora_audio
+    type: islandora_file_audio
     weight: 1
     label: visually_hidden
     settings:
