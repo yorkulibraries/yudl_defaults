@@ -31,4 +31,9 @@ reactions:
     id: islandora_map_uri_predicate
     drupal_uri_predicate: 'iana:describedby'
     saved: false
+  index:
+    id: index
+    actions:
+      index_media_in_fedora: index_media_in_fedora
+    saved: false
 weight: -8
