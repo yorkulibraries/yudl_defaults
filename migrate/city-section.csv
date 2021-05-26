@@ -34,7 +34,7 @@ city_section,Fort Garry,geonames,http://sws.geonames.org/5955828,49.8414,-97.150
 city_section,Fort Rouge,geonames,http://sws.geonames.org/5955943,49.8667,-97.15064
 city_section,Fort Whyte,geonames,http://sws.geonames.org/5956015,49.8111,-97.19955
 city_section,Fort York,geonames,http://sws.geonames.org/7870912,43.63667,-79.40004
-city_section,,geonames,http://sws.geonames.org/5959212,43.35583,-80.31056
+city_section,Galt,geonames,http://sws.geonames.org/5959212,43.35583,-80.31056
 city_section,Glendon College,wikidata,https://www.wikidata.org/wiki/Q2493808,43.7275,-79.3785
 city_section,Hampstead,geonames,http://sws.geonames.org/2647553,51.55744,-0.18213
 city_section,Harbord Village,geonames,http://sws.geonames.org/7870800,43.66185,-79.40583
@@ -55,7 +55,7 @@ city_section,Leslieville,geonames,http://sws.geonames.org/7870854,43.66883,-79.3
 city_section,Liberty Village,geonames,http://sws.geonames.org/7870915,43.6375,-79.42356
 city_section,Limberlost Lodge,geonames,http://sws.geonames.org/6054090,45.39861,-79.00111
 city_section,Little Italy,geonames,http://sws.geonames.org/7870916,43.65694,-79.41566
-city_section,,geonames,http://sws.geonames.org/7871302,43.5914,-79.53252
+city_section,Long Branch,geonames,http://sws.geonames.org/7871302,43.5914,-79.53252
 city_section,Lower Fort Garry,geonames,http://sws.geonames.org/6061209,50.1122,-96.93252
 city_section,Maple Leaf Gardens,wikidata,https://www.wikidata.org/wiki/Q1814534,43.66222222,-79.38027778
 city_section,Metro Hall,wikidata,https://www.wikidata.org/wiki/Q1777464,43.6461,-79.3883
@@ -107,7 +107,7 @@ city_section,Transcona,geonames,http://sws.geonames.org/6168420,49.8956,-97.0059
 city_section,Trefann Court,geonames,http://sws.geonames.org/7870807,43.65589,-79.36425
 city_section,J.B. Tudhope Memorial Park,wikidata,https://www.wikidata.org/wiki/Q90047840,44.606738,-79.388212
 city_section,Toronto Union Station,geonames,http://sws.geonames.org/6615458,43.64517,-79.38068
-city_section,,wikidata,https://www.wikidata.org/wiki/Q3551335,43.652334,-79.387251
+city_section,University Avenue,wikidata,https://www.wikidata.org/wiki/Q3551335,43.652334,-79.387251
 city_section,University College London,wikidata,https://www.wikidata.org/wiki/Q193196,51.5245592,-0.1340401
 city_section,University of Toronto,geonames,http://sws.geonames.org/7671013,43.66219,-79.3942
 city_section,Upper Fort Garry,wikidata,https://www.wikidata.org/wiki/Q29000488,49.88751,-97.135062
@@ -143,7 +143,7 @@ city_section,St John's Wood,geonames,http://sws.geonames.org/2638768,51.52991,-0
 city_section,Trieste,geonames,http://sws.geonames.org/11396179,41.92685,12.51308
 city_section,Moss Park,geonames,http://sws.geonames.org/7870782,43.65498,-79.37153
 city_section,Massey Hall,wikidata,https://www.wikidata.org/wiki/Q1122776,43.65416667,-79.37902778
-city_section,,geonames,http://sws.geonames.org/2657697,51.50901,-0.2762
+city_section,Acton,geonames,http://sws.geonames.org/2657697,51.50901,-0.2762
 city_section,Consumers' Gas Building,wikidata,https://www.wikidata.org/wiki/Q5164734,43.6505,-79.3761
 city_section,Bloomsbury,geonames,http://sws.geonames.org/12048275,51.52199,-0.13144
 city_section,Chelsea,geonames,http://sws.geonames.org/2653265,51.48755,-0.16936
