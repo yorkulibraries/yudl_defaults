@@ -20,6 +20,5 @@ function islandora_defaults_rdf_namespaces() {
     'marcgac' => 'https://id.loc.gov/vocabulary/countries.html',
     'frequency' => 'https://id.loc.gov/vocabulary/frequencies.html',
     'resource' => 'http://id.loc.gov/vocabulary/resourceTypes.html',
-    'rdau' => 'http://www.rdaregistry.info/Elements/u/#',
   ];
 }
