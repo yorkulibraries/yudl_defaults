@@ -34,7 +34,7 @@ process:
   field_alternate_name:
     plugin: explode
     source: field_alternate_name
-    delimiter: |
+    delimiter: '|'
   field_authority_link/source: authority
   field_authority_link/uri:
     plugin: urlencode
