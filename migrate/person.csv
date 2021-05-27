@@ -1,92 +1,92 @@
 vid,name,authority,field_authority_link,field_alternate_name,description,field_cat_date_begin,field_cat_date_end,target_id,rel_type
-person,Allan Bailey,viaf,https://www.wikidata.org/wiki/Q106113164,Bailey|A Bailey,,,,1108,schema:worksFor
-person,Les Baxter,wikidata,https://www.wikidata.org/wiki/Q106111907,Baxter|Les B|Les B.,,,,1108,schema:worksFor
-person,Tiny Bennett,wikidata,https://www.wikidata.org/wiki/Q106114299,"Bennett|T Bennett|T. Bennett|John ""Tiny"" Bennett",,,1978-06,1108,schema:worksFor
-person,Norm Betts,wikidata,https://www.wikidata.org/wiki/Q105960315,Betts|Norm Betts|Norman Betts|N Betts|N. Betts,,ca. 1944,,1108,schema:worksFor
+person,Allan Bailey,viaf,https://www.wikidata.org/wiki/Q106113164,Bailey|A Bailey,,,,1017,schema:worksFor
+person,Les Baxter,wikidata,https://www.wikidata.org/wiki/Q106111907,Baxter|Les B|Les B.,,,,1017,schema:worksFor
+person,Tiny Bennett,wikidata,https://www.wikidata.org/wiki/Q106114299,"Bennett|T Bennett|T. Bennett|John ""Tiny"" Bennett",,,1978-06,1017,schema:worksFor
+person,Norm Betts,wikidata,https://www.wikidata.org/wiki/Q105960315,Betts|Norm Betts|Norman Betts|N Betts|N. Betts,,ca. 1944,,1017,schema:worksFor
 person,Duncan Cameron,wikidata,https://www.wikidata.org/wiki/Q5314288,,,1928,1985,,
-person,Art Cole,wikidata,https://www.wikidata.org/wiki/Q106114855,Cole,,,,1108,schema:worksFor
-person,George Cook,,,Cook,George Cook was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Howard Cook,,,Cook,Howard Cook was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Jim Cooke,,,Cooke|J Cooke|J. Cooke,Jim Cooke was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,David Cooper,wikidata,https://www.wikidata.org/wiki/Q105960416,Cooper|Coop|Dave Cooper,,,,1108,schema:worksFor
-person,Russ Cooper,wikidata,https://www.wikidata.org/wiki/Q106262041,Cooper|Russell K. Cooper|Russell Cooper,,1926,1999,1108,schema:worksFor
-person,Bill Dampier,wikidata,https://www.wikidata.org/wiki/Q106265808,"Dampier|Dampier, Bill|Dampier, [Bill] | [Bill] Dampier",,,,1108,schema:worksFor
-person,Darrell,,,[Darrell],Darrell was a photographer whose work appeared in the Toronto Telegram.,,,1108,schema:worksFor
-person,Colin Davies,,,Davies|C Davies|C. Davies,Colin Davies was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,David Davies,,,Davies|D Davies||D. Davies,David Davies a photographer whose work was published by the Toronto Telegram.,,,1108,schema:worksFor
-person,Ted Dinsmore,wikidata,https://www.wikidata.org/wiki/Q106267242,Dinsmore|[Dinsmore],,1923,2001,1108,schema:worksFor
-person,Bill Dodds,,,Dodds|Wm Dodds|Wm. Dodds|William Dodds,William (Bill) Dodds was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Norm Drew,,,Drew|Duri,Norm Drew was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Tony Drew,,,Drew|Duri,Tony Drew was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Pete Dunlop,wikidata,https://www.wikidata.org/wiki/Q106292621,Peter Dunlop|Dunlop|P Dunlop|P. Dunlop,,,,1108,schema:worksFor
-person,Martin Dunn,wikidata,https://www.wikidata.org/wiki/Q106635071,Dunn|M Dunn|[Martin] Dunn|[Martin Dunn]|M. Dunn,,,,1108,schema:worksFor
-person,Graham Evoy,wikidata,https://www.wikidata.org/wiki/Q106575124,Evoy,,,,1108,schema:worksFor
-person,John Franke,wikidata,https://www.wikidata.org/wiki/Q106576338,"[John] Franke|Franke, [John]",,,,1108,schema:worksFor
-person,Don Grant,wikidata,https://www.wikidata.org/wiki/Q106576392,"Grant|D Grant|D. Grant|Grant, Don|Grant, [Don]",,1929-06-04,2014-12-24,1108,schema:worksFor
-person,Frank Grant,wikidata,https://www.wikidata.org/wiki/Q106634379,"Grant|F Grant|F. Grant|Grant, Frank|Grant|Grant, [Frank]",,,,1108,schema:worksFor
-person,Paul Green,,,"Green|Green, Paul",Paul Green was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Terry Hancey,wikidata,https://www.wikidata.org/wiki/Q106634457,Hancey|[Hancey],,,,1108,schema:worksFor
-person,Harold Whyte,wikidata,https://www.wikidata.org/wiki/Q106634512,"Whyte|H Whyte|H. Whyte|Whyte, [Harold]|[Harold] Whyte",,1929-12-17,2014-08-31,1108,schema:worksFor
-person,Leo Harrison,wikidata,https://www.wikidata.org/wiki/Q106634749,"Harrison|Harrison, Leo|[Leo] Harrison|Harrison, [Leo]",,,,1108,schema:worksFor
-person,Brian Hartley,,,Hartley,Brian Hartley was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
+person,Art Cole,wikidata,https://www.wikidata.org/wiki/Q106114855,Cole,,,,1017,schema:worksFor
+person,George Cook,,,Cook,George Cook was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Howard Cook,,,Cook,Howard Cook was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Jim Cooke,,,Cooke|J Cooke|J. Cooke,Jim Cooke was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,David Cooper,wikidata,https://www.wikidata.org/wiki/Q105960416,Cooper|Coop|Dave Cooper,,,,1017,schema:worksFor
+person,Russ Cooper,wikidata,https://www.wikidata.org/wiki/Q106262041,Cooper|Russell K. Cooper|Russell Cooper,,1926,1999,1017,schema:worksFor
+person,Bill Dampier,wikidata,https://www.wikidata.org/wiki/Q106265808,"Dampier|Dampier, Bill|Dampier, [Bill] | [Bill] Dampier",,,,1017,schema:worksFor
+person,Darrell,,,[Darrell],Darrell was a photographer whose work appeared in the Toronto Telegram.,,,1017,schema:worksFor
+person,Colin Davies,,,Davies|C Davies|C. Davies,Colin Davies was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,David Davies,,,Davies|D Davies||D. Davies,David Davies a photographer whose work was published by the Toronto Telegram.,,,1017,schema:worksFor
+person,Ted Dinsmore,wikidata,https://www.wikidata.org/wiki/Q106267242,Dinsmore|[Dinsmore],,1923,2001,1017,schema:worksFor
+person,Bill Dodds,,,Dodds|Wm Dodds|Wm. Dodds|William Dodds,William (Bill) Dodds was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Norm Drew,,,Drew|Duri,Norm Drew was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Tony Drew,,,Drew|Duri,Tony Drew was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Pete Dunlop,wikidata,https://www.wikidata.org/wiki/Q106292621,Peter Dunlop|Dunlop|P Dunlop|P. Dunlop,,,,1017,schema:worksFor
+person,Martin Dunn,wikidata,https://www.wikidata.org/wiki/Q106635071,Dunn|M Dunn|[Martin] Dunn|[Martin Dunn]|M. Dunn,,,,1017,schema:worksFor
+person,Graham Evoy,wikidata,https://www.wikidata.org/wiki/Q106575124,Evoy,,,,1017,schema:worksFor
+person,John Franke,wikidata,https://www.wikidata.org/wiki/Q106576338,"[John] Franke|Franke, [John]",,,,1017,schema:worksFor
+person,Don Grant,wikidata,https://www.wikidata.org/wiki/Q106576392,"Grant|D Grant|D. Grant|Grant, Don|Grant, [Don]",,1929-06-04,2014-12-24,1017,schema:worksFor
+person,Frank Grant,wikidata,https://www.wikidata.org/wiki/Q106634379,"Grant|F Grant|F. Grant|Grant, Frank|Grant|Grant, [Frank]",,,,1017,schema:worksFor
+person,Paul Green,,,"Green|Green, Paul",Paul Green was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Terry Hancey,wikidata,https://www.wikidata.org/wiki/Q106634457,Hancey|[Hancey],,,,1017,schema:worksFor
+person,Harold Whyte,wikidata,https://www.wikidata.org/wiki/Q106634512,"Whyte|H Whyte|H. Whyte|Whyte, [Harold]|[Harold] Whyte",,1929-12-17,2014-08-31,1017,schema:worksFor
+person,Leo Harrison,wikidata,https://www.wikidata.org/wiki/Q106634749,"Harrison|Harrison, Leo|[Leo] Harrison|Harrison, [Leo]",,,,1017,schema:worksFor
+person,Brian Hartley,,,Hartley,Brian Hartley was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
 person,Herb Hall,,,"Herb Hall, Collingwood",Herb Hall a photographer whose work was published by the Toronto Telegram.,,,,
-person,Jac Holland,wikidata,https://www.wikidata.org/wiki/Q106636481,"Holland|Holland, Jac|[Jac] Holland|Holland [Jac]|Jac Mazereeuw",,,,1108,schema:worksFor
-person,Hugh Winsor,wikidata,https://www.wikidata.org/wiki/Q5933088,Winsor|[Hugh] Winsor,,,,1108,schema:worksFor
-person,Don Hunt,wikidata,https://www.wikidata.org/wiki/Q106827428,Hunt|[Hunt]|D. Hunt,,1929,2014,1108,schema:worksFor
-person,Paul Hunt,,,Hunt|[Hunt]|P. Hunt,Paul Hunt a photographer whose work was published by the Toronto Telegram.,,,1108,schema:worksFor
-person,Hussey,,,Hussey|Hussen,Hussey a photographer whose work was published by the Toronto Telegram.,,,1108,schema:worksFor
-person,Jack Judges,,,"Judges|Judges, Jack|Judges, [Jack]|[Jack] Judges",Jack Judges was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Jim Kennedy,,,"Kennedy|Kennedy, Jim|[Jim] Kennedy",Jim Kennedy was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Ken Kennedy,,,Kennedy,Ken Kennedy a photographer whose work was published by the Toronto Telegram.,,,1108,schema:worksFor
-person,Fred Klus,viaf,http://viaf.org/viaf/124159397451719301926,"Klus|Fred K.|F Klus|[Fred] Klus|Klus, Fred|F. Klus",,,,1108,schema:worksFor
-person,Jock Carroll,lcnaf,http://id.loc.gov/authorities/names/n81019891,Carroll|Jock|J Carroll|J. Carroll,,1919-03-05,1995-08-05,1108,schema:worksFor
-person,John Marshall,,,John Marshal|Marshall|Jack Marshall,Jack (John) Marshall was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Julian Hayashi,wikidata,https://www.wikidata.org/wiki/Q106628325,Hayashi|J Hayashi|J. Hayashi,,,,1108,schema:worksFor
+person,Jac Holland,wikidata,https://www.wikidata.org/wiki/Q106636481,"Holland|Holland, Jac|[Jac] Holland|Holland [Jac]|Jac Mazereeuw",,,,1017,schema:worksFor
+person,Hugh Winsor,wikidata,https://www.wikidata.org/wiki/Q5933088,Winsor|[Hugh] Winsor,,,,1017,schema:worksFor
+person,Don Hunt,wikidata,https://www.wikidata.org/wiki/Q106827428,Hunt|[Hunt]|D. Hunt,,1929,2014,1017,schema:worksFor
+person,Paul Hunt,,,Hunt|[Hunt]|P. Hunt,Paul Hunt a photographer whose work was published by the Toronto Telegram.,,,1017,schema:worksFor
+person,Hussey,,,Hussey|Hussen,Hussey a photographer whose work was published by the Toronto Telegram.,,,1017,schema:worksFor
+person,Jack Judges,,,"Judges|Judges, Jack|Judges, [Jack]|[Jack] Judges",Jack Judges was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Jim Kennedy,,,"Kennedy|Kennedy, Jim|[Jim] Kennedy",Jim Kennedy was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Ken Kennedy,,,Kennedy,Ken Kennedy a photographer whose work was published by the Toronto Telegram.,,,1017,schema:worksFor
+person,Fred Klus,viaf,http://viaf.org/viaf/124159397451719301926,"Klus|Fred K.|F Klus|[Fred] Klus|Klus, Fred|F. Klus",,,,1017,schema:worksFor
+person,Jock Carroll,lcnaf,http://id.loc.gov/authorities/names/n81019891,Carroll|Jock|J Carroll|J. Carroll,,1919-03-05,1995-08-05,1017,schema:worksFor
+person,John Marshall,,,John Marshal|Marshall|Jack Marshall,Jack (John) Marshall was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Julian Hayashi,wikidata,https://www.wikidata.org/wiki/Q106628325,Hayashi|J Hayashi|J. Hayashi,,,,1017,schema:worksFor
 person,Julien LeBourdais,wikidata,https://www.wikidata.org/wiki/Q55218626,LeBourdais|LeB,,1944,,,
-person,Leon de March,,,"de March|[Leon] de March|de March, Leon",Leon de March was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Dick Loek,viaf,http://viaf.org/viaf/16025608,"Loek|D. Loek|D Loek|Loek, Dick|Loek, [Dick]|[Dick] Loek|Roek",,,,1108,schema:worksFor
-person,Gary MacKenzie,,,"Mackenzie|G Mackenzie|MacKenzie|Mac Kenzie, Gary|MacKenzie, Gary|G. Mackenzie",Gary MacKenzie was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,George MacKenzie,,,"Mackenzie|G MacKenzie|MacKenzie|Mac Kenzie, George|MacKenzie, George|G. Mackenzie",George MacKenzie was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,John MacLean,wikidata,https://www.wikidata.org/wiki/Q106704357,MacLean|Mac Lean [MacLean]|[MacLean],,,,1108,schema:worksFor
-person,Madison Sale,wikidata,https://www.wikidata.org/wiki/Q106662444,Mad Sale|Sale|M Sale|Mad. Sale|M. Sale,,1910-12-29,2007-03-01,1108,schema:worksFor
-person,Frank McFadden,,,"McFadden|[McFadden]|[Frank] McFadden|McFadden, Frank|F McFadden|F. McFadden",Frank McFadden was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,John Raymond McFadden,wikidata,https://www.wikidata.org/wiki/Q106824664,"McFadden|[McFadden]|McFadden, Ray|Ray McFadden|[Ray] McFadden|R.J. McFadden|J.R. McFadden",,1917,2011,1108,schema:worksFor
-person,Charles McGregor,viaf,http://viaf.org/viaf/195849988,"McGregor|Mc Gregor|[McGregor]|McGregor, Charles|Chick McGregor",,,,1108,schema:worksFor
-person,Claude Miles,,,"Miles|C Miles|Miles, Claude|C. Miles",Claude Miles was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Frederick Nossal,wikidata,https://www.wikidata.org/wiki/Q106018750,Fred Nossal|Nossal|[Fred] Nossal,,1927,1979,1108,schema:worksFor
-person,Michael Popovich,wikidata,https://www.wikidata.org/wiki/Q106488976,"Popovich, Michael|Popovich|Mike Popovich|M Popovich|M. Popovich|[Mike] Popovich|[Popovich]",,,,1108,schema:worksFor
-person,Nelson Quarrington,,,Quarrington|[Quarrington]|[Nelson] Quarrington|Nels Q.|Nels. Quarrington,Nelson Quarrington was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Ken Robertson,wikidata,https://www.wikidata.org/wiki/Q106824365,"Robertson|Robertson, Ken|[Ken] Robertson",,1923,2010-12-22,1108,schema:worksFor
-person,Kelley O'Shaw,,,O'Shaw|O'shaw,Kelley O'Shaw a photographer whose work was published by the Toronto Telegram.,,,1108,schema:worksFor
-person,Peter Geddes,wikidata,https://www.wikidata.org/wiki/Q106627285,"Geddes|Pete Geddes|P Geddes|Geddes, Pete|[Pete Geddes]|P. Geddes",,,,1108,schema:worksFor
-person,Peter Goddard,,,Goddard,Peter Goddard was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Peter Van Harten,wikidata,https://www.wikidata.org/wiki/Q106703658,Peter van Harten|[Peter] Van Harten|Peter VanHarten|Van Harten,,,,1108,schema:worksFor
-person,Leonard Plumb,,,Plumb|Len Plumb,Leonard (Len) Plumb was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Dave Proulx,wikidata,https://www.wikidata.org/wiki/Q106824955,Proulx|D Proulx|[Dave] Proulx|David Proulx|[Proulx]|D. Proulx,,,,1108,schema:worksFor
-person,Ethel Proulx,,,Proulx|E Proulx|[Ethel]Proulx|[Proulx],Ethel Proulx was employed at the Toronto Telegram.,,,1108,schema:worksFor
-person,Reginald Locke,,,Locke|Reg. Locke|[Reg Locke],Reg. Locke was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Reginald Towers,,,"Reg. Towers|Towers, Reg|[Reg.] Towers|Towers, [Reg]|Towers, Reg.",Reg. Towers was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Bruce Reed,,,"Reed|Reed, Bruce|[Bruce] Reed|Reed, [Bruce]",Bruce Reed was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Ed Regan,,,Regan,Edward (Ed) Regan a photographer whose work was published by the Toronto Telegram.,,,1108,schema:worksFor
-person,Jim Revitt,,,Revitt|J. Revitt,Jim Revitt was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Richard Cole,,,"Cole, Richard|Cole, [Richard]|[Richard] Cole|R. Cole|Dick Cole|Cole, Dick|Cole",Richard (Dick) Cole was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Jack Ramsay,,,Ramsay|J Ramsay|[Ramsay],Jack Ramsay was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
+person,Leon de March,,,"de March|[Leon] de March|de March, Leon",Leon de March was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Dick Loek,viaf,http://viaf.org/viaf/16025608,"Loek|D. Loek|D Loek|Loek, Dick|Loek, [Dick]|[Dick] Loek|Roek",,,,1017,schema:worksFor
+person,Gary MacKenzie,,,"Mackenzie|G Mackenzie|MacKenzie|Mac Kenzie, Gary|MacKenzie, Gary|G. Mackenzie",Gary MacKenzie was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,George MacKenzie,,,"Mackenzie|G MacKenzie|MacKenzie|Mac Kenzie, George|MacKenzie, George|G. Mackenzie",George MacKenzie was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,John MacLean,wikidata,https://www.wikidata.org/wiki/Q106704357,MacLean|Mac Lean [MacLean]|[MacLean],,,,1017,schema:worksFor
+person,Madison Sale,wikidata,https://www.wikidata.org/wiki/Q106662444,Mad Sale|Sale|M Sale|Mad. Sale|M. Sale,,1910-12-29,2007-03-01,1017,schema:worksFor
+person,Frank McFadden,,,"McFadden|[McFadden]|[Frank] McFadden|McFadden, Frank|F McFadden|F. McFadden",Frank McFadden was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,John Raymond McFadden,wikidata,https://www.wikidata.org/wiki/Q106824664,"McFadden|[McFadden]|McFadden, Ray|Ray McFadden|[Ray] McFadden|R.J. McFadden|J.R. McFadden",,1917,2011,1017,schema:worksFor
+person,Charles McGregor,viaf,http://viaf.org/viaf/195849988,"McGregor|Mc Gregor|[McGregor]|McGregor, Charles|Chick McGregor",,,,1017,schema:worksFor
+person,Claude Miles,,,"Miles|C Miles|Miles, Claude|C. Miles",Claude Miles was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Frederick Nossal,wikidata,https://www.wikidata.org/wiki/Q106018750,Fred Nossal|Nossal|[Fred] Nossal,,1927,1979,1017,schema:worksFor
+person,Michael Popovich,wikidata,https://www.wikidata.org/wiki/Q106488976,"Popovich, Michael|Popovich|Mike Popovich|M Popovich|M. Popovich|[Mike] Popovich|[Popovich]",,,,1017,schema:worksFor
+person,Nelson Quarrington,,,Quarrington|[Quarrington]|[Nelson] Quarrington|Nels Q.|Nels. Quarrington,Nelson Quarrington was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Ken Robertson,wikidata,https://www.wikidata.org/wiki/Q106824365,"Robertson|Robertson, Ken|[Ken] Robertson",,1923,2010-12-22,1017,schema:worksFor
+person,Kelley O'Shaw,,,O'Shaw|O'shaw,Kelley O'Shaw a photographer whose work was published by the Toronto Telegram.,,,1017,schema:worksFor
+person,Peter Geddes,wikidata,https://www.wikidata.org/wiki/Q106627285,"Geddes|Pete Geddes|P Geddes|Geddes, Pete|[Pete Geddes]|P. Geddes",,,,1017,schema:worksFor
+person,Peter Goddard,,,Goddard,Peter Goddard was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Peter Van Harten,wikidata,https://www.wikidata.org/wiki/Q106703658,Peter van Harten|[Peter] Van Harten|Peter VanHarten|Van Harten,,,,1017,schema:worksFor
+person,Leonard Plumb,,,Plumb|Len Plumb,Leonard (Len) Plumb was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Dave Proulx,wikidata,https://www.wikidata.org/wiki/Q106824955,Proulx|D Proulx|[Dave] Proulx|David Proulx|[Proulx]|D. Proulx,,,,1017,schema:worksFor
+person,Ethel Proulx,,,Proulx|E Proulx|[Ethel]Proulx|[Proulx],Ethel Proulx was employed at the Toronto Telegram.,,,1017,schema:worksFor
+person,Reginald Locke,,,Locke|Reg. Locke|[Reg Locke],Reg. Locke was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Reginald Towers,,,"Reg. Towers|Towers, Reg|[Reg.] Towers|Towers, [Reg]|Towers, Reg.",Reg. Towers was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Bruce Reed,,,"Reed|Reed, Bruce|[Bruce] Reed|Reed, [Bruce]",Bruce Reed was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Ed Regan,,,Regan,Edward (Ed) Regan a photographer whose work was published by the Toronto Telegram.,,,1017,schema:worksFor
+person,Jim Revitt,,,Revitt|J. Revitt,Jim Revitt was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Richard Cole,,,"Cole, Richard|Cole, [Richard]|[Richard] Cole|R. Cole|Dick Cole|Cole, Dick|Cole",Richard (Dick) Cole was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Jack Ramsay,,,Ramsay|J Ramsay|[Ramsay],Jack Ramsay was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
 person,Alfred E. Roberts,,,,Alfred E. Roberts a photographer whose work was published by the Toronto Telegram.,,,,
-person,Bill Rose,,,Rose|Wm Rose|William Rose,William (Bill) Rose was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Ed Roworth,,,"Roworth|Rowarth|Ed Rowarth|Eddy Roworth|Roworth, Eddy",Ed Roworth was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Ron Kish,,,,Ron Kish was employed as a photographer and journalist at the Toronto Telegram.,,,1108,schema:worksFor
-person,Ron Laytner,wikidata,https://www.wikidata.org/wiki/Q106703952,Laytner,,1934,2019,1108,schema:worksFor
-person,William Russell,,,"Russell|Bill Russell|Wm Russell|Russell, [Bill]",William (Bill) Russell was employed as a photographer at the Toronto Telegram.,1930-03-29,2011-12-12,1108,schema:worksFor
-person,Rabbi Reuben Slonim,viaf,http://viaf.org/viaf/27097221,R. Slonin|Slonin,,1914,2000-01-20,1108,schema:worksFor
-person,Scott,,,,Individual with the surname Scott was employed at the Toronto Telegram.,,,1108,schema:worksFor
-person,Sean Browne,wikidata,https://www.wikidata.org/wiki/Q106421785,Browne,,,,1108,schema:worksFor
-person,Val Sears,viaf,http://viaf.org/viaf/900605,[Sears]|[Val Sears],,1927-12-05,2016-01-21,1108,schema:worksFor
-person,Robert Shannon,,,"Shannon|Rob Shannon|Shannon, Rob|Bob Shannon|Shannon, Bob",Robert Shannon was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,John Sharp,,,Sharp|J Sharp|J. Sharp,John Sharp was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Stanley Gauthier,,,"Gauthier, Stan|Gauthier|Stan Gauthier|S. Gauthier",Stanley Gauthier a photographer whose work was published by the Toronto Telegram.,,,1108,schema:worksFor
-person,Albert Van,wikidata,https://www.wikidata.org/wiki/Q106825702,"Van|Albert Vandewiele|Albert Robert Vandewiele|Van, Albert",,1881,1964-01-03,1108,schema:worksFor
-person,Peter Ward,,,"Ward|[Pete] Ward|[Peter] Ward|Pete Ward|Ward, [Peter]|Ward, [Pete]",Peter Ward was employed as a photographer at the Toronto Telegram.,,,1108,schema:worksFor
-person,Wasyl Kowalishen,wikidata,https://www.wikidata.org/wiki/Q106826770,Kowalishen|Wass|Wasyl,,1928,1991-11-08,1108,schema:worksFor
-person,Brian Willer,wikidata,https://www.wikidata.org/wiki/Q106826744,"Willer|B Willer|Willer, Brian",,,,1108,schema:worksFor
-person,Chris Woods,,,Woods|C Woods,Chris Woods was a photographer whose work was published by the Toronto Telegram.,,,1108,schema:worksFor
-person,Toronto Telegram staff,wikidata,https://www.wikidata.org/wiki/Q17152683,[Telegram staff]|[telegram staff]|[Telegram Staff]|[Telegram Staff Studio]|Telegram staff|Toronto Telegram|[Evening Telegram staff]|[Toronto Telegram staff]|[Telegraph staff],Generic term used to indicate when an unidentified member of the Toronto Telegram staff photographed an image that appeared in the newspaper.,,,1108,schema:worksFor
+person,Bill Rose,,,Rose|Wm Rose|William Rose,William (Bill) Rose was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Ed Roworth,,,"Roworth|Rowarth|Ed Rowarth|Eddy Roworth|Roworth, Eddy",Ed Roworth was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Ron Kish,,,,Ron Kish was employed as a photographer and journalist at the Toronto Telegram.,,,1017,schema:worksFor
+person,Ron Laytner,wikidata,https://www.wikidata.org/wiki/Q106703952,Laytner,,1934,2019,1017,schema:worksFor
+person,William Russell,,,"Russell|Bill Russell|Wm Russell|Russell, [Bill]",William (Bill) Russell was employed as a photographer at the Toronto Telegram.,1930-03-29,2011-12-12,1017,schema:worksFor
+person,Rabbi Reuben Slonim,viaf,http://viaf.org/viaf/27097221,R. Slonin|Slonin,,1914,2000-01-20,1017,schema:worksFor
+person,Scott,,,,Individual with the surname Scott was employed at the Toronto Telegram.,,,1017,schema:worksFor
+person,Sean Browne,wikidata,https://www.wikidata.org/wiki/Q106421785,Browne,,,,1017,schema:worksFor
+person,Val Sears,viaf,http://viaf.org/viaf/900605,[Sears]|[Val Sears],,1927-12-05,2016-01-21,1017,schema:worksFor
+person,Robert Shannon,,,"Shannon|Rob Shannon|Shannon, Rob|Bob Shannon|Shannon, Bob",Robert Shannon was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,John Sharp,,,Sharp|J Sharp|J. Sharp,John Sharp was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Stanley Gauthier,,,"Gauthier, Stan|Gauthier|Stan Gauthier|S. Gauthier",Stanley Gauthier a photographer whose work was published by the Toronto Telegram.,,,1017,schema:worksFor
+person,Albert Van,wikidata,https://www.wikidata.org/wiki/Q106825702,"Van|Albert Vandewiele|Albert Robert Vandewiele|Van, Albert",,1881,1964-01-03,1017,schema:worksFor
+person,Peter Ward,,,"Ward|[Pete] Ward|[Peter] Ward|Pete Ward|Ward, [Peter]|Ward, [Pete]",Peter Ward was employed as a photographer at the Toronto Telegram.,,,1017,schema:worksFor
+person,Wasyl Kowalishen,wikidata,https://www.wikidata.org/wiki/Q106826770,Kowalishen|Wass|Wasyl,,1928,1991-11-08,1017,schema:worksFor
+person,Brian Willer,wikidata,https://www.wikidata.org/wiki/Q106826744,"Willer|B Willer|Willer, Brian",,,,1017,schema:worksFor
+person,Chris Woods,,,Woods|C Woods,Chris Woods was a photographer whose work was published by the Toronto Telegram.,,,1017,schema:worksFor
+person,Toronto Telegram staff,wikidata,https://www.wikidata.org/wiki/Q17152683,[Telegram staff]|[telegram staff]|[Telegram Staff]|[Telegram Staff Studio]|Telegram staff|Toronto Telegram|[Evening Telegram staff]|[Toronto Telegram staff]|[Telegraph staff],Generic term used to indicate when an unidentified member of the Toronto Telegram staff photographed an image that appeared in the newspaper.,,,1017,schema:worksFor
