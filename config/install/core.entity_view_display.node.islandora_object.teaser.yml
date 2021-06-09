@@ -54,8 +54,6 @@ dependencies:
       - islandora_defaults
   module:
     - user
-_core:
-  default_config_hash: dX7040F92VCjgT5pxNPbgE1msPISRWAE-hpvJOHq6tc
 id: node.islandora_object.teaser
 targetEntityType: node
 bundle: islandora_object

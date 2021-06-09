@@ -57,8 +57,6 @@ dependencies:
     - geolocation
     - text
     - user
-_core:
-  default_config_hash: qc4yAAkZ2RCubxzsB3w3WaWu90UpdPPSQgePbbTbMvs
 id: node.islandora_object.open_seadragon
 targetEntityType: node
 bundle: islandora_object

@@ -235,8 +235,6 @@ third_party_settings:
         open: true
         required_fields: false
       label: Identifiers
-_core:
-  default_config_hash: BsPufCKToZrfSKFMjEwnd8AKnjL0X0EIl0CfG3Ddssg
 id: node.islandora_object.default
 targetEntityType: node
 bundle: islandora_object

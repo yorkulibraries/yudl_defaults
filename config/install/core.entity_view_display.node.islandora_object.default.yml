@@ -55,8 +55,6 @@ dependencies:
     - controlled_access_terms
     - geolocation
     - user
-_core:
-  default_config_hash: KhA3A9ZAmwdPjOL1Vp6Ct-vEU2tbBNg8ZRaeRxMAn1w
 id: node.islandora_object.default
 targetEntityType: node
 bundle: islandora_object
