@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: york_university
-label: 'York University'
-weight: 5
-is_admin: null
-permissions: {  }
