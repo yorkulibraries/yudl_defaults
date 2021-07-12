@@ -4,6 +4,9 @@ dependencies:
   config:
     - field.storage.taxonomy_term.field_geo_broader
     - taxonomy.vocabulary.region
+    - taxonomy.vocabulary.continent
+    - taxonomy.vocabulary.country
+    - taxonomy.vocabulary.province
 id: taxonomy_term.region.field_geo_broader
 field_name: field_geo_broader
 entity_type: taxonomy_term
