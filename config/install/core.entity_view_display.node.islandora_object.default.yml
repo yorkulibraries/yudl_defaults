@@ -13,7 +13,6 @@ dependencies:
     - field.field.node.islandora_object.field_description
     - field.field.node.islandora_object.field_display_hints
     - field.field.node.islandora_object.field_doi
-    - field.field.node.islandora_object.field_edition
     - field.field.node.islandora_object.field_edtf_date
     - field.field.node.islandora_object.field_edtf_date_created
     - field.field.node.islandora_object.field_edtf_date_issued
@@ -140,14 +139,6 @@ content:
     third_party_settings: {  }
   field_doi:
     weight: 35
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_edition:
-    weight: 41
     label: above
     settings:
       link_to_entity: false

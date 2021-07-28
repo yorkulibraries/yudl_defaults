@@ -13,7 +13,6 @@ dependencies:
     - field.field.node.islandora_object.field_description
     - field.field.node.islandora_object.field_display_hints
     - field.field.node.islandora_object.field_doi
-    - field.field.node.islandora_object.field_edition
     - field.field.node.islandora_object.field_edtf_date
     - field.field.node.islandora_object.field_edtf_date_created
     - field.field.node.islandora_object.field_edtf_date_issued
@@ -201,7 +200,6 @@ third_party_settings:
         - field_language
         - field_physical_form
         - field_physical_location
-        - field_edition
         - field_relation
         - field_part_of
       parent_name: ''
@@ -341,14 +339,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_edition:
-    weight: 11
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_edtf_date:
     type: edtf_default
     weight: 9

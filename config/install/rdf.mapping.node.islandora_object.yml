@@ -69,9 +69,6 @@ fieldMappings:
   field_extent:
     properties:
       - 'dcterms:extent'
-  field_edition:
-    properties:
-      - 'rdau:P60329'
   field_genre:
     properties:
       - 'dcterms:type'
