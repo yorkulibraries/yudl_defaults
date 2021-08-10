@@ -21,6 +21,11 @@ targetEntityType: media
 bundle: video
 mode: source
 content:
+  field_gemini_uri:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_media_video_file:
     type: islandora_file_video
     weight: 0
