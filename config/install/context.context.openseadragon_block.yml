@@ -3,6 +3,7 @@ status: true
 dependencies:
   module:
     - islandora
+    - openseadragon
 name: openseadragon_block
 label: 'Paged Content - Openseadragon'
 group: Display
@@ -12,7 +13,7 @@ disabled: false
 conditions:
   node_has_term:
     id: node_has_term
-    negate: 0
+    negate: false
     uuid: e5689bd5-7eec-4378-b329-2f35d5bb35b0
     uri: 'https://schema.org/Book'
     context_mapping:
@@ -25,7 +26,7 @@ reactions:
         id: openseadragon_block
         label: 'Openseadragon block'
         provider: openseadragon
-        label_display: 0
+        label_display: '0'
         region: content
         weight: '-1'
         iiif_manifest_url: 'http://localhost:8000/node/[node:nid]/manifest'
@@ -39,16 +40,18 @@ reactions:
         id: openseadragon_block
         label: 'Openseadragon block'
         provider: openseadragon
-        label_display: visible
+        label_display: '0'
         region: content
         weight: '0'
-        iiif_manifest_url: 'http://localhost:8000/node/[node:nid]/book-manifest'
+        iiif_manifest_url: 'https://gamma.library.yorku.ca/node/[node:nid]/book-manifest'
         context_mapping: {  }
         theme: bartik
         css_class: ''
         unique: 0
         context_id: openseadragon_block
         uuid: 16401a13-1031-4ffe-96b2-5909df309f6a
+        custom_id: openseadragon_block
+        third_party_settings: {  }
     id: blocks
     saved: false
     uuid: 50b9b25e-0836-4531-8a78-9698d71d81de

@@ -54,7 +54,6 @@ dependencies:
   module:
     - controlled_access_terms
     - geolocation
-    - text
     - user
 id: node.islandora_object.binary
 targetEntityType: node
@@ -62,7 +61,7 @@ bundle: islandora_object
 mode: binary
 content:
   display_media_entity_view_2:
-    weight: 2
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -73,29 +72,69 @@ content:
     third_party_settings: {  }
   field_alternative_title:
     type: string
-    weight: 0
+    weight: 2
     region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+  field_city:
+    type: entity_reference_label
+    weight: 30
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_city_section:
+    type: entity_reference_label
+    weight: 31
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_continent:
+    type: entity_reference_label
+    weight: 25
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_coordinates:
     type: geolocation_latlng
-    weight: 18
+    weight: 32
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
+  field_country:
+    type: entity_reference_label
+    weight: 26
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_county:
+    type: entity_reference_label
+    weight: 29
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_description:
     type: basic_string
-    weight: 13
+    weight: 1
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_edtf_date:
     type: edtf_default
-    weight: 8
+    weight: 6
     region: content
     label: above
     settings:
@@ -106,7 +145,7 @@ content:
     third_party_settings: {  }
   field_edtf_date_created:
     type: edtf_default
-    weight: 6
+    weight: 8
     region: content
     label: above
     settings:
@@ -128,42 +167,18 @@ content:
     third_party_settings: {  }
   field_extent:
     type: string
-    weight: 15
+    weight: 12
     region: content
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
   field_gemini_uri:
-    weight: 24
+    weight: 35
     region: content
     settings: {  }
     third_party_settings: {  }
   field_genre:
-    type: entity_reference_label
-    weight: 12
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_geographic_subject:
-    type: entity_reference_label
-    weight: 17
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_identifier:
-    type: string
-    weight: 4
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_language:
     type: entity_reference_label
     weight: 10
     region: content
@@ -171,9 +186,41 @@ content:
     settings:
       link: true
     third_party_settings: {  }
+  field_geographic_subject:
+    type: entity_reference_label
+    weight: 21
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_identifier:
+    type: string
+    weight: 14
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_keyword_subject_topic_:
+    type: entity_reference_label
+    weight: 19
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_language:
+    type: entity_reference_label
+    weight: 13
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_linked_agent:
     type: typed_relation_default
-    weight: 5
+    weight: 4
     region: content
     label: above
     settings:
@@ -189,28 +236,20 @@ content:
     region: content
   field_note:
     type: basic_string
-    weight: 23
+    weight: 16
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-  field_physical_form:
+  field_part_of:
     type: entity_reference_label
-    weight: 14
+    weight: 34
     region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
-  field_place_published:
-    type: string
-    weight: 9
-    region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-  field_resource_type:
+  field_physical_form:
     type: entity_reference_label
     weight: 11
     region: content
@@ -218,9 +257,57 @@ content:
     settings:
       link: true
     third_party_settings: {  }
+  field_physical_location:
+    type: string
+    weight: 17
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_place_published:
+    type: string
+    weight: 5
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_province:
+    type: entity_reference_label
+    weight: 27
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_region:
+    type: entity_reference_label
+    weight: 28
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_relation:
+    type: string
+    weight: 33
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_resource_type:
+    type: entity_reference_label
+    weight: 9
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
   field_rights:
     type: entity_reference_label
-    weight: 20
+    weight: 23
     region: content
     label: above
     settings:
@@ -228,7 +315,7 @@ content:
     third_party_settings: {  }
   field_rights_holder:
     type: entity_reference_label
-    weight: 21
+    weight: 24
     region: content
     label: above
     settings:
@@ -236,7 +323,7 @@ content:
     third_party_settings: {  }
   field_subject:
     type: entity_reference_label
-    weight: 16
+    weight: 18
     region: content
     label: above
     settings:
@@ -244,7 +331,7 @@ content:
     third_party_settings: {  }
   field_subjects_name:
     type: entity_reference_label
-    weight: 22
+    weight: 20
     region: content
     label: above
     settings:
@@ -252,19 +339,19 @@ content:
     third_party_settings: {  }
   field_temporal_subject:
     type: entity_reference_label
-    weight: 19
+    weight: 22
     region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
   islandora_fits_checksum:
-    weight: 25
+    weight: 36
     region: content
     settings: {  }
     third_party_settings: {  }
   links:
-    weight: 1
+    weight: 15
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -272,27 +359,16 @@ hidden:
   display_media_entity_view_1: true
   display_media_service_file: true
   display_media_thumbnail: true
-  field_city: true
-  field_city_section: true
-  field_continent: true
-  field_country: true
-  field_county: true
   field_date_modified_: true
   field_display_hints: true
   field_doi: true
   field_hdl: true
   field_isbn: true
   field_issn: true
-  field_keyword_subject_topic_: true
   field_lccn: true
   field_model: true
   field_oclc: true
-  field_part_of: true
-  field_physical_location: true
   field_pid: true
-  field_province: true
-  field_region: true
-  field_relation: true
   field_weight: true
   langcode: true
   openseadragon_media_evas_entity_view_1: true
