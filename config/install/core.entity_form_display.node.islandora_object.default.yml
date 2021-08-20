@@ -12,25 +12,19 @@ dependencies:
     - field.field.node.islandora_object.field_date_modified_
     - field.field.node.islandora_object.field_description
     - field.field.node.islandora_object.field_display_hints
-    - field.field.node.islandora_object.field_doi
     - field.field.node.islandora_object.field_edtf_date
     - field.field.node.islandora_object.field_edtf_date_created
     - field.field.node.islandora_object.field_edtf_date_issued
     - field.field.node.islandora_object.field_extent
     - field.field.node.islandora_object.field_genre
     - field.field.node.islandora_object.field_geographic_subject
-    - field.field.node.islandora_object.field_hdl
-    - field.field.node.islandora_object.field_identifier
-    - field.field.node.islandora_object.field_isbn
-    - field.field.node.islandora_object.field_issn
+    - field.field.node.islandora_object.field_identifiers
     - field.field.node.islandora_object.field_keyword_subject_topic_
     - field.field.node.islandora_object.field_language
-    - field.field.node.islandora_object.field_lccn
     - field.field.node.islandora_object.field_linked_agent
     - field.field.node.islandora_object.field_member_of
     - field.field.node.islandora_object.field_model
     - field.field.node.islandora_object.field_note
-    - field.field.node.islandora_object.field_oclc
     - field.field.node.islandora_object.field_part_of
     - field.field.node.islandora_object.field_physical_form
     - field.field.node.islandora_object.field_physical_location
@@ -62,7 +56,6 @@ third_party_settings:
         - field_model
         - field_member_of
         - langcode
-        - field_access_terms
         - field_display_hints
         - field_pid
         - field_weight
@@ -215,6 +208,7 @@ third_party_settings:
       label: 'Technical Metadata'
     group_identifiers:
       children:
+        - field_identifiers
         - field_identifier
         - field_doi
         - field_lccn
@@ -331,14 +325,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_doi:
-    type: string_textfield
-    weight: 13
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_edtf_date:
     type: edtf_default
     weight: 9
@@ -385,7 +371,7 @@ content:
       match_limit: 10
     third_party_settings: {  }
   field_geographic_subject:
-    weight: 14
+    weight: 15
     settings:
       match_operator: CONTAINS
       size: 60
@@ -394,38 +380,16 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_hdl:
-    type: string_textfield
-    weight: 19
-    region: content
+  field_identifiers:
+    weight: 14
     settings:
+      match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_identifier:
-    type: string_textfield
-    weight: 12
+    type: typed_relation_default
     region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_isbn:
-    type: string_textfield
-    weight: 17
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_issn:
-    type: string_textfield
-    weight: 16
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_keyword_subject_topic_:
     weight: 12
     settings:
@@ -445,14 +409,6 @@ content:
       size: 60
       placeholder: ''
       match_limit: 10
-    third_party_settings: {  }
-  field_lccn:
-    type: string_textfield
-    weight: 15
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
     third_party_settings: {  }
   field_linked_agent:
     weight: 6
@@ -488,14 +444,6 @@ content:
     third_party_settings: {  }
     type: string_textarea
     region: content
-  field_oclc:
-    type: string_textfield
-    weight: 18
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_part_of:
     weight: 13
     settings:
@@ -575,7 +523,7 @@ content:
     type: options_select
     region: content
   field_rights:
-    weight: 41
+    weight: 44
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -585,7 +533,7 @@ content:
     type: entity_reference_autocomplete
     region: content
   field_rights_holder:
-    weight: 42
+    weight: 45
     settings:
       match_operator: CONTAINS
       match_limit: 10

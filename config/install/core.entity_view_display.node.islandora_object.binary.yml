@@ -13,25 +13,19 @@ dependencies:
     - field.field.node.islandora_object.field_date_modified_
     - field.field.node.islandora_object.field_description
     - field.field.node.islandora_object.field_display_hints
-    - field.field.node.islandora_object.field_doi
     - field.field.node.islandora_object.field_edtf_date
     - field.field.node.islandora_object.field_edtf_date_created
     - field.field.node.islandora_object.field_edtf_date_issued
     - field.field.node.islandora_object.field_extent
     - field.field.node.islandora_object.field_genre
     - field.field.node.islandora_object.field_geographic_subject
-    - field.field.node.islandora_object.field_hdl
-    - field.field.node.islandora_object.field_identifier
-    - field.field.node.islandora_object.field_isbn
-    - field.field.node.islandora_object.field_issn
+    - field.field.node.islandora_object.field_identifiers
     - field.field.node.islandora_object.field_keyword_subject_topic_
     - field.field.node.islandora_object.field_language
-    - field.field.node.islandora_object.field_lccn
     - field.field.node.islandora_object.field_linked_agent
     - field.field.node.islandora_object.field_member_of
     - field.field.node.islandora_object.field_model
     - field.field.node.islandora_object.field_note
-    - field.field.node.islandora_object.field_oclc
     - field.field.node.islandora_object.field_part_of
     - field.field.node.islandora_object.field_physical_form
     - field.field.node.islandora_object.field_physical_location
@@ -194,13 +188,13 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-  field_identifier:
-    type: string
+  field_identifiers:
+    type: typed_relation_default
     weight: 14
     region: content
     label: above
     settings:
-      link_to_entity: false
+      link: true
     third_party_settings: {  }
   field_keyword_subject_topic_:
     type: entity_reference_label
@@ -361,13 +355,7 @@ hidden:
   display_media_thumbnail: true
   field_date_modified_: true
   field_display_hints: true
-  field_doi: true
-  field_hdl: true
-  field_isbn: true
-  field_issn: true
-  field_lccn: true
   field_model: true
-  field_oclc: true
   field_pid: true
   field_weight: true
   langcode: true

@@ -63,9 +63,6 @@ fieldMappings:
   field_description:
     properties:
       - 'dcterms:description'
-  field_doi:
-    properties:
-      - 'identifiers:doi'
   field_extent:
     properties:
       - 'dcterms:extent'
@@ -75,24 +72,9 @@ fieldMappings:
   field_geographic_subject:
     properties:
       - 'dcterms:spatial'
-  field_hdl:
-    properties:
-      - 'dcterms:hdl'
-  field_identifier:
-    properties:
-      - 'dcterms:identifier'
-  field_isbn:
-    properties:
-      - 'identifiers:isbn'
-  field_issn:
-    properties:
-      - 'identifiers:issn'
   field_language:
     properties:
       - 'dcterms:language'
-  field_lccn:
-    properties:
-      - 'identifiers:lccn'
   field_member_of:
     properties:
       - 'pcdm:memberOf'
@@ -100,9 +82,6 @@ fieldMappings:
   field_note:
     properties:
       - 'skos:note'
-  field_oclc:
-    properties:
-      - 'dbpedia:oclc'
   field_part_of:
     properties:
       - 'dcterms:isPartOf'
