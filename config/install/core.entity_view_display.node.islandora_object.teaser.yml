@@ -19,7 +19,6 @@ dependencies:
     - field.field.node.islandora_object.field_extent
     - field.field.node.islandora_object.field_genre
     - field.field.node.islandora_object.field_geographic_subject
-    - field.field.node.islandora_object.field_identifiers
     - field.field.node.islandora_object.field_keyword_subject_topic_
     - field.field.node.islandora_object.field_language
     - field.field.node.islandora_object.field_linked_agent
@@ -40,6 +39,7 @@ dependencies:
     - field.field.node.islandora_object.field_subject
     - field.field.node.islandora_object.field_subjects_name
     - field.field.node.islandora_object.field_temporal_subject
+    - field.field.node.islandora_object.field_typed_identifier
     - field.field.node.islandora_object.field_weight
     - node.type.islandora_object
   enforced:
@@ -83,7 +83,6 @@ hidden:
   field_gemini_uri: true
   field_genre: true
   field_geographic_subject: true
-  field_identifiers: true
   field_keyword_subject_topic_: true
   field_language: true
   field_linked_agent: true
@@ -104,6 +103,7 @@ hidden:
   field_subject: true
   field_subjects_name: true
   field_temporal_subject: true
+  field_typed_identifier: true
   field_weight: true
   islandora_fits_checksum: true
   langcode: true

@@ -18,7 +18,6 @@ dependencies:
     - field.field.node.islandora_object.field_extent
     - field.field.node.islandora_object.field_genre
     - field.field.node.islandora_object.field_geographic_subject
-    - field.field.node.islandora_object.field_identifiers
     - field.field.node.islandora_object.field_keyword_subject_topic_
     - field.field.node.islandora_object.field_language
     - field.field.node.islandora_object.field_linked_agent
@@ -39,6 +38,7 @@ dependencies:
     - field.field.node.islandora_object.field_subject
     - field.field.node.islandora_object.field_subjects_name
     - field.field.node.islandora_object.field_temporal_subject
+    - field.field.node.islandora_object.field_typed_identifier
     - field.field.node.islandora_object.field_weight
     - node.type.islandora_object
   enforced:
@@ -48,6 +48,7 @@ dependencies:
     - controlled_access_terms
     - field_group
     - geolocation
+    - paragraphs
     - path
 third_party_settings:
   field_group:
@@ -83,6 +84,9 @@ third_party_settings:
         id: ''
         classes: ''
         required_fields: false
+        effect: none
+        direction: vertical
+        width_breakpoint: 640
       label: Title
     group_rights:
       children:
@@ -184,6 +188,9 @@ third_party_settings:
         description: ''
         open: true
         required_fields: false
+        effect: none
+        direction: vertical
+        width_breakpoint: 640
       label: 'Creators and Contributors'
     group_technical_metadata:
       children:
@@ -208,24 +215,18 @@ third_party_settings:
       label: 'Technical Metadata'
     group_identifiers:
       children:
-        - field_identifiers
-        - field_identifier
-        - field_doi
-        - field_lccn
-        - field_issn
-        - field_isbn
-        - field_oclc
-        - field_hdl
+        - field_typed_identifier
       parent_name: ''
-      weight: 6
+      weight: 5
       format_type: details
       region: content
       format_settings:
-        id: ''
-        classes: ''
         description: ''
         open: true
-        required_fields: false
+        required_fields: true
+        id: ''
+        classes: ''
+        show_empty_fields: false
       label: Identifiers
 id: node.islandora_object.default
 targetEntityType: node
@@ -371,7 +372,7 @@ content:
       match_limit: 10
     third_party_settings: {  }
   field_geographic_subject:
-    weight: 15
+    weight: 14
     settings:
       match_operator: CONTAINS
       size: 60
@@ -379,16 +380,6 @@ content:
       match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
-  field_identifiers:
-    weight: 14
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: typed_relation_default
     region: content
   field_keyword_subject_topic_:
     weight: 12
@@ -571,6 +562,18 @@ content:
       match_limit: 10
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  field_typed_identifier:
+    type: entity_reference_paragraphs
+    weight: 6
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
     region: content
   field_weight:
     weight: 32

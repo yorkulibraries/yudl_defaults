@@ -16,7 +16,6 @@ dependencies:
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_edtf_date_issued
     - field.storage.taxonomy_term.field_geo_alt_name
-    - field.storage.node.field_identifiers
     - field.storage.node.field_linked_agent
     - field.storage.node.field_member_of
     - field.storage.node.field_note
@@ -156,14 +155,6 @@ field_settings:
     dependencies:
       config:
         - field.storage.taxonomy_term.field_geo_alt_name
-  field_identifiers:
-    label: Identifiers
-    datasource_id: 'entity:node'
-    property_path: 'field_identifiers:entity:name'
-    type: string
-    dependencies:
-      config:
-        - field.storage.node.field_identifiers
   field_linked_agent:
     label: 'Linked Agent'
     datasource_id: 'entity:node'

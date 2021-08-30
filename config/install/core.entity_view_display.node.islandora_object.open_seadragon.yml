@@ -19,7 +19,6 @@ dependencies:
     - field.field.node.islandora_object.field_extent
     - field.field.node.islandora_object.field_genre
     - field.field.node.islandora_object.field_geographic_subject
-    - field.field.node.islandora_object.field_identifiers
     - field.field.node.islandora_object.field_keyword_subject_topic_
     - field.field.node.islandora_object.field_language
     - field.field.node.islandora_object.field_linked_agent
@@ -40,6 +39,7 @@ dependencies:
     - field.field.node.islandora_object.field_subject
     - field.field.node.islandora_object.field_subjects_name
     - field.field.node.islandora_object.field_temporal_subject
+    - field.field.node.islandora_object.field_typed_identifier
     - field.field.node.islandora_object.field_weight
     - node.type.islandora_object
   enforced:
@@ -47,6 +47,7 @@ dependencies:
       - islandora_defaults
   module:
     - controlled_access_terms
+    - entity_reference_revisions
     - geolocation
     - user
 id: node.islandora_object.open_seadragon
@@ -69,7 +70,7 @@ content:
     third_party_settings: {  }
   field_city:
     type: entity_reference_label
-    weight: 30
+    weight: 29
     region: content
     label: above
     settings:
@@ -77,7 +78,7 @@ content:
     third_party_settings: {  }
   field_city_section:
     type: entity_reference_label
-    weight: 31
+    weight: 30
     region: content
     label: above
     settings:
@@ -85,7 +86,7 @@ content:
     third_party_settings: {  }
   field_continent:
     type: entity_reference_label
-    weight: 25
+    weight: 24
     region: content
     label: above
     settings:
@@ -93,14 +94,14 @@ content:
     third_party_settings: {  }
   field_coordinates:
     type: geolocation_latlng
-    weight: 32
+    weight: 31
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_country:
     type: entity_reference_label
-    weight: 26
+    weight: 25
     region: content
     label: above
     settings:
@@ -108,7 +109,7 @@ content:
     third_party_settings: {  }
   field_county:
     type: entity_reference_label
-    weight: 29
+    weight: 28
     region: content
     label: above
     settings:
@@ -177,15 +178,7 @@ content:
     third_party_settings: {  }
   field_geographic_subject:
     type: entity_reference_label
-    weight: 21
-    region: content
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-  field_identifiers:
-    type: typed_relation_default
-    weight: 14
+    weight: 20
     region: content
     label: above
     settings:
@@ -193,7 +186,7 @@ content:
     third_party_settings: {  }
   field_keyword_subject_topic_:
     type: entity_reference_label
-    weight: 19
+    weight: 18
     region: content
     label: above
     settings:
@@ -225,14 +218,14 @@ content:
     region: content
   field_note:
     type: basic_string
-    weight: 16
+    weight: 15
     region: content
     label: above
     settings: {  }
     third_party_settings: {  }
   field_part_of:
     type: entity_reference_label
-    weight: 34
+    weight: 33
     region: content
     label: above
     settings:
@@ -248,7 +241,7 @@ content:
     third_party_settings: {  }
   field_physical_location:
     type: string
-    weight: 17
+    weight: 16
     region: content
     label: above
     settings:
@@ -264,7 +257,7 @@ content:
     third_party_settings: {  }
   field_province:
     type: entity_reference_label
-    weight: 27
+    weight: 26
     region: content
     label: above
     settings:
@@ -272,7 +265,7 @@ content:
     third_party_settings: {  }
   field_region:
     type: entity_reference_label
-    weight: 28
+    weight: 27
     region: content
     label: above
     settings:
@@ -280,7 +273,7 @@ content:
     third_party_settings: {  }
   field_relation:
     type: string
-    weight: 33
+    weight: 32
     region: content
     label: above
     settings:
@@ -296,7 +289,7 @@ content:
     third_party_settings: {  }
   field_rights:
     type: entity_reference_label
-    weight: 23
+    weight: 22
     region: content
     label: above
     settings:
@@ -304,7 +297,7 @@ content:
     third_party_settings: {  }
   field_rights_holder:
     type: entity_reference_label
-    weight: 24
+    weight: 23
     region: content
     label: above
     settings:
@@ -312,7 +305,7 @@ content:
     third_party_settings: {  }
   field_subject:
     type: entity_reference_label
-    weight: 18
+    weight: 17
     region: content
     label: above
     settings:
@@ -320,7 +313,7 @@ content:
     third_party_settings: {  }
   field_subjects_name:
     type: entity_reference_label
-    weight: 20
+    weight: 19
     region: content
     label: above
     settings:
@@ -328,11 +321,20 @@ content:
     third_party_settings: {  }
   field_temporal_subject:
     type: entity_reference_label
-    weight: 22
+    weight: 21
     region: content
     label: above
     settings:
       link: true
+    third_party_settings: {  }
+  field_typed_identifier:
+    type: entity_reference_revisions_entity_view
+    weight: 34
+    region: content
+    label: above
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
   islandora_fits_checksum:
     weight: 36
@@ -340,7 +342,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   links:
-    weight: 15
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
