@@ -30,12 +30,29 @@ reactions:
         views_label: ''
         items_per_page: none
         region: content_suffix
-        weight: '0'
+        weight: 10
         context_mapping: {  }
         theme: bartik
         css_class: ''
         unique: 0
         context_id: collection
+      8e05a61a-1273-4a72-b3d5-97b0b38a7e39:
+        id: 'views_block:members-block_1'
+        label: ''
+        provider: views
+        label_display: '0'
+        views_label: ''
+        items_per_page: '24'
+        region: content
+        weight: 10
+        context_mapping: {  }
+        custom_id: views_block_members_block_1
+        theme: bootstrap_barrio_subtheme
+        css_class: ''
+        unique: 0
+        context_id: collection
+        third_party_settings: {  }
+        uuid: 8e05a61a-1273-4a72-b3d5-97b0b38a7e39
     id: blocks
     saved: false
     include_default_blocks: 1
