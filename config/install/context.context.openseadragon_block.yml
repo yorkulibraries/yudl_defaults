@@ -26,7 +26,7 @@ reactions:
         id: openseadragon_block
         label: 'Openseadragon block'
         provider: openseadragon
-        label_display: '0'
+        label_display: 0
         region: content
         weight: '-1'
         iiif_manifest_url: 'http://localhost:8000/node/[node:nid]/manifest'
@@ -42,7 +42,7 @@ reactions:
         provider: openseadragon
         label_display: '0'
         region: content
-        weight: '0'
+        weight: 0
         iiif_manifest_url: 'https://gamma.library.yorku.ca/node/[node:nid]/book-manifest'
         context_mapping: {  }
         theme: bartik
@@ -52,6 +52,22 @@ reactions:
         uuid: 16401a13-1031-4ffe-96b2-5909df309f6a
         custom_id: openseadragon_block
         third_party_settings: {  }
+      41431a23-9293-47e4-8d4b-a1457fea46e3:
+        id: openseadragon_block
+        label: 'Openseadragon block'
+        provider: openseadragon
+        label_display: '0'
+        region: content
+        weight: 0
+        iiif_manifest_url: 'https://gamma.library.yorku.ca/node/[node:nid]/book-manifest'
+        context_mapping: {  }
+        custom_id: openseadragon_block
+        theme: bootstrap_barrio_subtheme
+        css_class: ''
+        unique: 0
+        context_id: openseadragon_block
+        third_party_settings: {  }
+        uuid: 41431a23-9293-47e4-8d4b-a1457fea46e3
     id: blocks
     saved: false
     uuid: 50b9b25e-0836-4531-8a78-9698d71d81de
