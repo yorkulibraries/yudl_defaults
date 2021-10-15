@@ -22,6 +22,21 @@ dependencies:
     - field.storage.node.field_physical_form
     - field.storage.node.field_subject
     - field.storage.node.field_subjects_name
+    - field.storage.node.field_city
+    - field.storage.node.field_city_section
+    - field.storage.node.field_alternative_title
+    - field.storage.node.field_continent
+    - field.storage.node.field_country
+    - field.storage.node.field_county
+    - field.storage.node.field_extent
+    - field.storage.node.field_genre
+    - field.storage.node.field_geographic_subject
+    - field.storage.node.field_language
+    - field.storage.node.field_physical_location
+    - field.storage.node.field_place_published
+    - field.storage.node.field_province
+    - field.storage.node.field_region
+    - field.storage.node.field_resource_type
     - field.storage.node.field_tags
     - field.storage.node.field_temporal_subject
     - search_api.server.default_solr_server
@@ -189,6 +204,140 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_physical_form
+      module:
+        - taxonomy
+  field_city:
+    label: 'City'
+    datasource_id: 'entity:node'
+    property_path: 'field_city:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_city
+      module:
+        - taxonomy
+  field_city_section:
+    label: 'City Section'
+    datasource_id: 'entity:node'
+    property_path: 'field_city_section:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_city_section
+      module:
+        - taxonomy
+  field_alternative_title:
+    label: 'Alternative Title'
+    datasource_id: 'entity:node'
+    property_path: 'field_alternative_title:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_alternative_title
+  field_continent:
+    label: 'Continent'
+    datasource_id: 'entity:node'
+    property_path: 'field_continent:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_continent
+      module:
+        - taxonomy
+  field_country:
+    label: 'Country'
+    datasource_id: 'entity:node'
+    property_path: 'field_country:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_country
+      module:
+        - taxonomy
+  field_county:
+    label: 'County'
+    datasource_id: 'entity:node'
+    property_path: 'field_county:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_county
+      module:
+        - taxonomy
+  field_extent:
+    label: 'Extent'
+    datasource_id: 'entity:node'
+    property_path: 'field_extent:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_extent
+  field_genre:
+    label: 'Genre'
+    datasource_id: 'entity:node'
+    property_path: 'field_genre:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_genre
+      module:
+        - taxonomy
+  field_geographic_subject:
+    label: 'Subject (geographic)'
+    datasource_id: 'entity:node'
+    property_path: 'field_geographic_subject:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_geographic_subject
+      module:
+        - taxonomy
+  field_language:
+    label: 'Language'
+    datasource_id: 'entity:node'
+    property_path: 'field_language:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_language
+      module:
+        - taxonomy
+  field_physical_location:
+    label: 'Physical Location'
+    datasource_id: 'entity:node'
+    property_path: 'field_physical_location:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_physical_location
+  field_province:
+    label: 'Province'
+    datasource_id: 'entity:node'
+    property_path: 'field_province:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_province
+      module:
+        - taxonomy
+  field_region:
+    label: 'Region'
+    datasource_id: 'entity:node'
+    property_path: 'field_region:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_region
+      module:
+        - taxonomy
+  field_resource_type:
+    label: 'Resource Type'
+    datasource_id: 'entity:node'
+    property_path: 'field_resource_type:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_resource_type
       module:
         - taxonomy
   field_subject:
