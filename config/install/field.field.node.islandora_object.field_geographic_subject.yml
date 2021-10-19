@@ -4,7 +4,14 @@ dependencies:
   config:
     - field.storage.node.field_geographic_subject
     - node.type.islandora_object
+    - taxonomy.vocabulary.city
+    - taxonomy.vocabulary.city_section
+    - taxonomy.vocabulary.continent
+    - taxonomy.vocabulary.country
+    - taxonomy.vocabulary.county
     - taxonomy.vocabulary.geo_location
+    - taxonomy.vocabulary.province
+    - taxonomy.vocabulary.region
 id: node.islandora_object.field_geographic_subject
 field_name: field_geographic_subject
 entity_type: node
@@ -19,10 +26,17 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
+      city: city
+      city_section: city_section
+      continent: continent
+      country: country
+      county: county
       geo_location: geo_location
+      province: province
+      region: region
     sort:
       field: name
       direction: asc
     auto_create: true
-    auto_create_bundle: ''
+    auto_create_bundle: continent
 field_type: entity_reference
