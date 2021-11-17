@@ -9,7 +9,7 @@ dependencies:
 id: node.field_description
 field_name: field_description
 entity_type: node
-type: string_long
+type: text_long
 settings:
   case_sensitive: false
 module: core

@@ -313,7 +313,7 @@ content:
     type: edtf_default
     region: content
   field_description:
-    type: string_textarea
+    type: text_textarea
     weight: 20
     region: content
     settings:

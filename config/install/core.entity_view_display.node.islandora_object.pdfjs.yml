@@ -109,7 +109,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_description:
-    type: basic_string
+    type: text_default
     weight: 1
     region: content
     label: above
