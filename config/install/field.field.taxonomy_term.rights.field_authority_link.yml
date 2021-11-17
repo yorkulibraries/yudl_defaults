@@ -12,7 +12,7 @@ entity_type: taxonomy_term
 bundle: rights
 label: 'Authority Sources'
 description: ''
-required: true
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''
