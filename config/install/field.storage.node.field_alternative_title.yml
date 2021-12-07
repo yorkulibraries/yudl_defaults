@@ -6,7 +6,7 @@ dependencies:
 id: node.field_alternative_title
 field_name: field_alternative_title
 entity_type: node
-type: string
+type: text_long
 settings:
   max_length: 255
   is_ascii: false
