@@ -1,15 +1,16 @@
 langcode: en
 status: true
 dependencies:
+  enforced:
+    module:
+      - islandora
   module:
     - node
 id: node.field_alternative_title
 field_name: field_alternative_title
 entity_type: node
-type: text_long
+type: string_long
 settings:
-  max_length: 255
-  is_ascii: false
   case_sensitive: false
 module: core
 locked: false
