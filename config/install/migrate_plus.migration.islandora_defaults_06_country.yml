@@ -13,7 +13,7 @@ migration_group: york
 label: 'Country'
 source:
   plugin: csv
-  path: modules/contrib/yudl8_defaults/migrate/country.csv
+  path: modules/contrib/yudl_defaults/migrate/country.csv
   header_row_count: 1
   ids:
     - vid

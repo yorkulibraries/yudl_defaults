@@ -13,7 +13,7 @@ migration_group: york
 label: 'Continent'
 source:
   plugin: csv
-  path: modules/contrib/yudl8_defaults/migrate/continent.csv
+  path: modules/contrib/yudl_defaults/migrate/continent.csv
   header_row_count: 1
   ids:
     - vid

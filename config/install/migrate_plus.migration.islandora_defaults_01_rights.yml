@@ -13,7 +13,7 @@ migration_group: york
 label: 'Rights terms'
 source:
   plugin: csv
-  path: modules/contrib/yudl8_defaults/migrate/rights.csv
+  path: modules/contrib/yudl_defaults/migrate/rights.csv
   header_row_count: 1
   ids:
     - name

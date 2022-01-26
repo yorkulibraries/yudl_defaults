@@ -13,7 +13,7 @@ migration_group: york
 label: 'Tags migration for islandora_defaults feature'
 source:
   plugin: csv
-  path: modules/contrib/yudl8_defaults/migrate/tags.csv
+  path: modules/contrib/yudl_defaults/migrate/tags.csv
   header_row_count: 1
   ids:
     - external_uri

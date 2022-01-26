@@ -13,7 +13,7 @@ migration_group: york
 label: 'Identifier Types'
 source:
   plugin: csv
-  path: modules/contrib/yudl8_defaults/migrate/identifier_types.csv
+  path: modules/contrib/yudl_defaults/migrate/identifier_types.csv
   header_row_count: 1
   ids:
     - vid
