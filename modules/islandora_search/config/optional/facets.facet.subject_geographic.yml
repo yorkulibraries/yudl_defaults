@@ -6,9 +6,9 @@ dependencies:
     - views.view.solr_search_content
   module:
     - search_api
-id: subject_geo
+id: subject_geographic
 name: 'Subject (geographic)'
-url_alias: subject_geo
+url_alias: subject_geographic
 weight: -1
 min_count: 1
 show_only_one_result: false

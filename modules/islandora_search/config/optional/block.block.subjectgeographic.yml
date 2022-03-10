@@ -8,9 +8,9 @@ dependencies:
     - system
   theme:
     - bartik
-id: subjectgeo
+id: subjectgeographic
 theme: bartik
-region: sidebar_second
+region: sidebar_first
 weight: 0
 provider: null
 plugin: 'facet_block:subject_geographic'
@@ -19,7 +19,7 @@ settings:
   label: 'Subject (geographic)'
   provider: facets
   label_display: visible
-  block_id: subjectgeo
+  block_id: subjectgeographic
 visibility:
   request_path:
     id: request_path

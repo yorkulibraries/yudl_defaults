@@ -10,7 +10,7 @@ dependencies:
     - bartik
 id: subjectname
 theme: bartik
-region: sidebar_second
+region: sidebar_first
 weight: 0
 provider: null
 plugin: 'facet_block:subject_name'
