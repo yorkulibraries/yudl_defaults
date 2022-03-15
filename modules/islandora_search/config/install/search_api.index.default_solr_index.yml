@@ -37,7 +37,6 @@ dependencies:
     - user
     - taxonomy
     - search_api
-    - controlled_access_terms
 third_party_settings:
   search_api_solr:
     finalize: false
@@ -60,8 +59,6 @@ third_party_settings:
         fragsize: 0
     advanced:
       index_prefix: ''
-_core:
-  default_config_hash: qxv-Yjk_7rA0KxPg9fz7WHjKtBwz2bz6m5q9nJY3JF8
 id: default_solr_index
 name: 'Default Solr content index'
 description: 'Default content index created by the Solr Search Defaults module'
@@ -75,6 +72,7 @@ field_settings:
       type: union
       fields:
         - 'entity:node/field_geographic_subject'
+        - 'entity:node/field_keyword_subject_topic_'
         - 'entity:node/field_subject'
         - 'entity:node/field_subjects_name'
         - 'entity:node/field_temporal_subject'
@@ -111,10 +109,6 @@ field_settings:
     dependencies:
       module:
         - taxonomy
-  edtf_year:
-    label: 'EDTF Creation Date Year'
-    property_path: edtf_year
-    type: integer
   field_cat_date_begin:
     label: 'Founding Date'
     datasource_id: 'entity:taxonomy_term'
@@ -483,17 +477,6 @@ processor_settings:
     weights:
       preprocess_index: -6
       preprocess_query: -4
-  edtf_year_only:
-    fields:
-      islandora_object|field_date_modified_: islandora_object|field_date_modified_
-      islandora_object|field_edtf_date: islandora_object|field_edtf_date
-      islandora_object|field_edtf_date_created: islandora_object|field_edtf_date_created
-      islandora_object|field_edtf_date_issued: islandora_object|field_edtf_date_issued
-    ignore_undated: 1
-    ignore_open_start: 0
-    open_start_year: '0'
-    ignore_open_end: 0
-    open_end_year: ''
   entity_status:
     weights:
       preprocess_index: -10

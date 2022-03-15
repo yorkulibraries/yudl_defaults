@@ -166,6 +166,7 @@ display:
           exposed: false
           expose:
             label: ''
+            field_identifier: search_api_relevance
           plugin_id: search_api
       title: 'Search Content'
       header:
