@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.open_seadragon
+    - core.entity_view_mode.node.pdfjs
     - field.field.node.islandora_object.field_alternative_title
     - field.field.node.islandora_object.field_city
     - field.field.node.islandora_object.field_city_section
@@ -51,10 +51,10 @@ dependencies:
   enforced:
     module:
       - islandora_defaults
-id: node.islandora_object.open_seadragon
+id: node.islandora_object.pdfjs
 targetEntityType: node
 bundle: islandora_object
-mode: open_seadragon
+mode: pdfjs
 content:
   display_media_entity_view_3:
     settings: {  }
@@ -373,11 +373,11 @@ content:
     third_party_settings: {  }
     weight: 10
     region: content
-  openseadragon_media_evas_entity_view_1:
-    settings: {  }
-    third_party_settings: {  }
+  pdfjs_media_evas_entity_view_1:
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   display_media_entity_view_1: true
   display_media_entity_view_2: true
@@ -388,9 +388,10 @@ hidden:
   field_model: true
   field_pid: true
   field_weight: true
+  langcode: true
+  openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
-  pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
   search_api_excerpt: true
