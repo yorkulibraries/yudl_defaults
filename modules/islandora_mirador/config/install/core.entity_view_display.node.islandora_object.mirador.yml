@@ -152,14 +152,6 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
-  field_isbn:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 29
-    region: content
   field_language:
     type: entity_reference_label
     label: above
