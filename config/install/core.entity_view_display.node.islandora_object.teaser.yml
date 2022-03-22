@@ -42,26 +42,76 @@ dependencies:
     - field.field.node.islandora_object.field_typed_identifier
     - field.field.node.islandora_object.field_weight
     - node.type.islandora_object
+  module:
+    - controlled_access_terms
+    - entity_reference_revisions
+    - text
+    - user
   enforced:
     module:
       - islandora_defaults
-  module:
-    - user
 id: node.islandora_object.teaser
 targetEntityType: node
 bundle: islandora_object
 mode: teaser
 content:
   display_media_thumbnail:
+    settings: {  }
+    third_party_settings: {  }
     weight: 0
     region: content
+  field_description:
+    type: text_default
+    label: above
     settings: {  }
     third_party_settings: {  }
-  links:
+    weight: 3
+    region: content
+  field_edtf_date:
+    type: edtf_default
+    label: above
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      year_format: 'y'
+      month_format: mm
+      day_format: dd
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_member_of:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_physical_location:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_resource_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 1
     region: content
-    settings: {  }
+  field_typed_identifier:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
     third_party_settings: {  }
+    weight: 6
+    region: content
 hidden:
   display_media_entity_view_1: true
   display_media_entity_view_2: true
@@ -74,9 +124,7 @@ hidden:
   field_country: true
   field_county: true
   field_date_modified_: true
-  field_description: true
   field_display_hints: true
-  field_edtf_date: true
   field_edtf_date_created: true
   field_edtf_date_issued: true
   field_extent: true
@@ -86,28 +134,28 @@ hidden:
   field_keyword_subject_topic_: true
   field_language: true
   field_linked_agent: true
-  field_member_of: true
   field_model: true
   field_note: true
   field_part_of: true
   field_physical_form: true
-  field_physical_location: true
   field_pid: true
   field_place_published: true
   field_province: true
   field_region: true
   field_relation: true
-  field_resource_type: true
   field_rights: true
   field_rights_holder: true
   field_subject: true
   field_subjects_name: true
   field_temporal_subject: true
-  field_typed_identifier: true
   field_weight: true
   islandora_fits_checksum: true
   langcode: true
+  links: true
   members_eva_entity_view_1: true
+  mirador_evas_entity_view_1: true
+  mirador_evas_entity_view_2: true
+  mirador_evas_entity_view_3: true
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
@@ -115,3 +163,4 @@ hidden:
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
   search_api_excerpt: true
+
