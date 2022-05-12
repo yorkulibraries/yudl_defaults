@@ -41,11 +41,12 @@ dependencies:
     - field.field.node.islandora_object.field_temporal_subject
     - field.field.node.islandora_object.field_typed_identifier
     - field.field.node.islandora_object.field_weight
+    - filter.format.plain_text
     - node.type.islandora_object
   module:
     - controlled_access_terms
-    - entity_reference_revisions
     - geolocation
+    - paragraphs
     - taxonomy
     - text
     - user
@@ -64,12 +65,71 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
-  field_coordinates:
-    type: geolocation_latlng
+  field_city:
+    type: entity_reference_label
     label: above
-    settings: {  }
+    settings:
+      link: true
     third_party_settings: {  }
-    weight: 18
+    weight: 29
+    region: content
+  field_city_section:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 30
+    region: content
+  field_continent:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 24
+    region: content
+  field_coordinates:
+    type: geolocation_map
+    label: above
+    settings:
+      set_marker: true
+      show_label: false
+      common_map: true
+      show_delta_label: false
+      use_overridden_map_settings: false
+      title: ''
+      info_text:
+        value: ''
+        format: plain_text
+      centre:
+        fit_bounds:
+          enable: true
+          weight: -101
+          settings:
+            reset_zoom: true
+          map_center_id: fit_bounds
+      map_provider_id: leaflet
+      map_provider_settings: {  }
+      data_provider_settings: {  }
+    third_party_settings: {  }
+    weight: 31
+    region: content
+  field_country:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 25
+    region: content
+  field_county:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 28
     region: content
   field_description:
     type: text_trimmed
@@ -126,7 +186,7 @@ content:
   field_gemini_uri:
     settings: {  }
     third_party_settings: {  }
-    weight: 24
+    weight: 32
     region: content
   field_genre:
     type: entity_reference_label
@@ -181,7 +241,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 21
+    weight: 20
     region: content
   field_physical_form:
     type: entity_reference_label
@@ -191,6 +251,14 @@ content:
     third_party_settings: {  }
     weight: 13
     region: content
+  field_physical_location:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 21
+    region: content
   field_place_published:
     type: string
     label: above
@@ -198,6 +266,22 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 8
+    region: content
+  field_province:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 26
+    region: content
+  field_region:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 27
     region: content
   field_resource_type:
     type: entity_reference_label
@@ -214,6 +298,14 @@ content:
     third_party_settings: {  }
     weight: 15
     region: content
+  field_rights_holder:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 23
+    region: content
   field_subject:
     type: entity_reference_label
     label: above
@@ -228,7 +320,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 20
+    weight: 19
     region: content
   field_temporal_subject:
     type: entity_reference_label
@@ -236,30 +328,19 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 19
+    weight: 18
     region: content
   field_typed_identifier:
-    type: entity_reference_revisions_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
+    type: paragraph_summary
+    label: above
+    settings: {  }
     third_party_settings: {  }
     weight: 22
     region: content
   islandora_fits_checksum:
     settings: {  }
     third_party_settings: {  }
-    weight: 25
-    region: content
-  langcode:
-    type: language
-    label: above
-    settings:
-      link_to_entity: false
-      native_language: false
-    third_party_settings: {  }
-    weight: 23
+    weight: 33
     region: content
   links:
     settings: {  }
@@ -276,23 +357,15 @@ hidden:
   display_media_entity_view_2: true
   display_media_service_file: true
   display_media_thumbnail: true
-  field_city: true
-  field_city_section: true
-  field_continent: true
-  field_country: true
-  field_county: true
   field_date_modified_: true
   field_display_hints: true
   field_keyword_subject_topic_: true
   field_model: true
   field_part_of: true
-  field_physical_location: true
   field_pid: true
-  field_province: true
-  field_region: true
   field_relation: true
-  field_rights_holder: true
   field_weight: true
+  langcode: true
   mirador_evas_entity_view_1: true
   mirador_evas_entity_view_3: true
   openseadragon_media_evas_entity_view_1: true

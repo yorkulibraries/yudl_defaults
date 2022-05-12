@@ -41,11 +41,12 @@ dependencies:
     - field.field.node.islandora_object.field_temporal_subject
     - field.field.node.islandora_object.field_typed_identifier
     - field.field.node.islandora_object.field_weight
+    - filter.format.plain_text
     - node.type.islandora_object
   module:
     - controlled_access_terms
-    - entity_reference_revisions
     - geolocation
+    - paragraphs
     - text
     - user
   enforced:
@@ -79,7 +80,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 29
+    weight: 35
     region: content
   field_city_section:
     type: entity_reference_label
@@ -87,7 +88,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 30
+    weight: 36
     region: content
   field_continent:
     type: entity_reference_label
@@ -95,14 +96,33 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 24
+    weight: 30
     region: content
   field_coordinates:
-    type: geolocation_latlng
+    type: geolocation_map
     label: above
-    settings: {  }
+    settings:
+      set_marker: true
+      show_label: false
+      common_map: true
+      show_delta_label: false
+      use_overridden_map_settings: false
+      title: ''
+      info_text:
+        value: ''
+        format: plain_text
+      centre:
+        fit_bounds:
+          enable: true
+          weight: -101
+          settings:
+            reset_zoom: true
+          map_center_id: fit_bounds
+      map_provider_id: leaflet
+      map_provider_settings: {  }
+      data_provider_settings: {  }
     third_party_settings: {  }
-    weight: 31
+    weight: 37
     region: content
   field_country:
     type: entity_reference_label
@@ -110,7 +130,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 25
+    weight: 31
     region: content
   field_county:
     type: entity_reference_label
@@ -118,7 +138,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 28
+    weight: 34
     region: content
   field_description:
     type: text_default
@@ -169,12 +189,12 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 12
+    weight: 15
     region: content
   field_gemini_uri:
     settings: {  }
     third_party_settings: {  }
-    weight: 35
+    weight: 38
     region: content
   field_genre:
     type: entity_reference_label
@@ -182,7 +202,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 13
     region: content
   field_geographic_subject:
     type: entity_reference_label
@@ -190,7 +210,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 20
+    weight: 23
     region: content
   field_keyword_subject_topic_:
     type: entity_reference_label
@@ -198,7 +218,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 18
+    weight: 21
     region: content
   field_language:
     type: entity_reference_label
@@ -206,7 +226,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 13
+    weight: 16
     region: content
   field_linked_agent:
     type: typed_relation_default
@@ -229,7 +249,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 15
+    weight: 18
     region: content
   field_part_of:
     type: entity_reference_label
@@ -237,7 +257,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 33
+    weight: 28
     region: content
   field_physical_form:
     type: entity_reference_label
@@ -245,7 +265,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 11
+    weight: 14
     region: content
   field_physical_location:
     type: string
@@ -253,7 +273,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 16
+    weight: 19
     region: content
   field_place_published:
     type: string
@@ -269,7 +289,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 26
+    weight: 32
     region: content
   field_region:
     type: entity_reference_label
@@ -277,7 +297,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 27
+    weight: 33
     region: content
   field_relation:
     type: string
@@ -285,7 +305,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 32
+    weight: 27
     region: content
   field_resource_type:
     type: entity_reference_label
@@ -301,7 +321,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 22
+    weight: 25
     region: content
   field_rights_holder:
     type: entity_reference_label
@@ -309,7 +329,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 23
+    weight: 26
     region: content
   field_subject:
     type: entity_reference_label
@@ -317,7 +337,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 17
+    weight: 20
     region: content
   field_subjects_name:
     type: entity_reference_label
@@ -325,7 +345,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 19
+    weight: 22
     region: content
   field_temporal_subject:
     type: entity_reference_label
@@ -333,36 +353,34 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 21
+    weight: 24
     region: content
   field_typed_identifier:
-    type: entity_reference_revisions_entity_view
-    label: hidden
-    settings:
-      view_mode: default
-      link: ''
+    type: paragraph_summary
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    weight: 34
+    weight: 29
     region: content
   islandora_fits_checksum:
     settings: {  }
     third_party_settings: {  }
-    weight: 36
+    weight: 39
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 14
+    weight: 17
     region: content
   mirador_evas_entity_view_1:
     settings: {  }
     third_party_settings: {  }
-    weight: 10
+    weight: 12
     region: content
   mirador_evas_entity_view_2:
     settings: {  }
     third_party_settings: {  }
-    weight: 10
+    weight: 11
     region: content
   mirador_evas_entity_view_3:
     settings: {  }
