@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Access
+vid: access
+description: 'Terms used to limit, restrict, or coordinate access'
+weight: 0
