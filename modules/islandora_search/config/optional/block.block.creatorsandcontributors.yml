@@ -1,0 +1,34 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.creators_and_contributors
+  module:
+    - facets
+    - islandora
+    - system
+  theme:
+    - bartik
+id: creatorsandcontributors
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'facet_block:creators_and_contributors'
+settings:
+  id: 'facet_block:creators_and_contributors'
+  label: 'Creators and Contributors'
+  provider: facets
+  label_display: '0'
+  block_id: creatorsandcontributors
+visibility:
+  request_path:
+    id: request_path
+    pages: /solr-search/content
+    negate: false
+    context_mapping: {  }
+  media_source_mimetype:
+    id: media_source_mimetype
+    mimetype: ''
+    negate: false
+    context_mapping: {  }
