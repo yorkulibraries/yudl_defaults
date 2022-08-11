@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.york_university
+  enforced:
+    config:
+      - user.role.york_university
+id: york_university-f71ec2b07
+label: 'York University'
+weight: 5
+internal: true
+audience: outsider
+group_type: york_university
+permissions_ui: false
+permissions: {  }

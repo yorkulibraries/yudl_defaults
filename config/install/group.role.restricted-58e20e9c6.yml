@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.restricted
+  enforced:
+    config:
+      - user.role.fedoraadmin
+id: restricted-58e20e9c6
+label: fedoraAdmin
+weight: 3
+internal: true
+audience: outsider
+group_type: restricted
+permissions_ui: false
+permissions: {  }

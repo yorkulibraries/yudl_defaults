@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.restricted
+  enforced:
+    config:
+      - user.role.administrator
+id: restricted-a416e6833
+label: Administrator
+weight: 2
+internal: true
+audience: outsider
+group_type: restricted
+permissions_ui: false
+permissions: {  }

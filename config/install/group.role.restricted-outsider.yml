@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.restricted
+id: restricted-outsider
+label: Outsider
+weight: -101
+internal: true
+audience: outsider
+group_type: restricted
+permissions_ui: true
+permissions: {  }

@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.york_university
+  module:
+    - user
+id: york_university-group_membership
+label: 'York University: Group membership'
+description: 'Adds users to groups as members.'
+group_type: york_university
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false
