@@ -2,11 +2,15 @@ langcode: en
 status: true
 dependencies:
   module:
-    - node
+    - field_permissions
+    - media
     - taxonomy
-id: node.field_access_control
-field_name: field_access_control
-entity_type: node
+third_party_settings:
+  field_permissions:
+    permission_type: private
+id: media.field_access_terms
+field_name: field_access_terms
+entity_type: media
 type: entity_reference
 settings:
   target_type: taxonomy_term

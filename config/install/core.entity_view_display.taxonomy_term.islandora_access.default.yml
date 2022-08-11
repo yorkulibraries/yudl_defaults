@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - taxonomy.vocabulary.access
+    - taxonomy.vocabulary.islandora_access
   module:
     - link
     - text
 id: taxonomy_term.islandora_display.default
 targetEntityType: taxonomy_term
-bundle: access
+bundle: islandora_access
 mode: default
 content:
   description:

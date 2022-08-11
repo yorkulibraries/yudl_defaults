@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.islandora_object.field_access_control
+    - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
     - field.field.node.islandora_object.field_city
     - field.field.node.islandora_object.field_city_section
@@ -930,7 +930,7 @@ hidden:
   display_media_entity_view_1: true
   display_media_entity_view_2: true
   display_media_thumbnail: true
-  field_access_control: true
+  field_access_terms: true
   field_date_modified_: true
   field_display_hints: true
   field_model: true

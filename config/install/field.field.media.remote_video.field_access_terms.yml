@@ -2,24 +2,24 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_access_control
-    - node.type.islandora_object
-    - taxonomy.vocabulary.access
-id: node.islandora_object.field_access_control
-field_name: field_access_control
-entity_type: node
-bundle: islandora_object
-label: 'Access Control'
+    - field.storage.media.field_access_terms
+    - media.type.remote_video
+    - taxonomy.vocabulary.islandora_access
+id: media.remote_video.field_access_terms
+field_name: field_access_terms
+entity_type: media
+bundle: remote_video
+label: 'Access terms'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      access: access
+      islandora_access: islandora_access
     sort:
       field: name
       direction: asc
