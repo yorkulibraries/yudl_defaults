@@ -1,8 +1,0 @@
-vid,name,description,field_identifier_predicate
-identifier_types,Local identifier,,dcterms:identifier
-identifier_types,DOI,,identifiers:doi
-identifier_types,HDL,,dcterms:hdl
-identifier_types,ISBN,,identifiers:isbn
-identifier_types,ISSN,,identifiers:issn
-identifier_types,LCCN,,identifiers:lccn
-identifier_types,OCLC Number,,dbpedia:oclc

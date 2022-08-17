@@ -1,23 +1,24 @@
+uuid: 43df0ae7-b660-42db-8bbd-9a9199a16504
 langcode: en
 status: true
 dependencies:
   module:
-    - entity_reference_revisions
     - field_permissions
     - node
-    - paragraphs
 third_party_settings:
   field_permissions:
     permission_type: public
-id: node.field_typed_identifier
-field_name: field_typed_identifier
+id: node.field_lccn
+field_name: field_lccn
 entity_type: node
-type: entity_reference_revisions
+type: string
 settings:
-  target_type: paragraph
-module: entity_reference_revisions
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

@@ -154,3 +154,24 @@ fieldMappings:
     properties:
       - 'schema:author'
     mapping_type: rel
+  field_local_identifier:
+    properties:
+      - 'dcterms:identifier'
+  field_doi:
+    properties:
+      - 'identifiers:doi'
+  field_hdl:
+    properties:
+      - 'dcterms:hdl'
+  field_isbn:
+    properties:
+      - 'identifiers:isbn'
+  field_issn:
+    properties:
+      - 'identifiers:issn'
+  field_lccn:
+    properties:
+      - 'identifiers:lccn'
+  field_oclc:
+    properties:
+      - 'dbpedia:oclc'

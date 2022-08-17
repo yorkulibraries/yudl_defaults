@@ -1,18 +1,21 @@
+uuid: 9041e340-bdd4-4b94-bad8-f16bcb6df986
 langcode: en
 status: true
 dependencies:
   module:
     - field_permissions
-    - paragraphs
+    - node
 third_party_settings:
   field_permissions:
     permission_type: public
-id: paragraph.field_identifier_value
-field_name: field_identifier_value
-entity_type: paragraph
-type: string_long
+id: node.field_oclc
+field_name: field_oclc
+entity_type: node
+type: string
 settings:
+  max_length: 255
   case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1
