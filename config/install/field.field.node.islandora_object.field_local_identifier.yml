@@ -9,7 +9,7 @@ id: node.islandora_object.field_local_identifier
 field_name: field_local_identifier
 entity_type: node
 bundle: islandora_object
-label: local_identifier
+label: Local Identifier
 description: ''
 required: false
 translatable: false
