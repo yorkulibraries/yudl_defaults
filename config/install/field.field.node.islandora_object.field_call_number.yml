@@ -2,13 +2,13 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_issn
+    - field.storage.node.field_call_number
     - node.type.islandora_object
-id: node.islandora_object.field_issn
-field_name: field_issn
+id: node.islandora_object.field_call_number
+field_name: field_call_number
 entity_type: node
 bundle: islandora_object
-label: issn
+label: Call Number
 description: ''
 required: false
 translatable: false

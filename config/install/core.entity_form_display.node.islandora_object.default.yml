@@ -28,6 +28,7 @@ dependencies:
     - field.field.node.islandora_object.field_lccn
     - field.field.node.islandora_object.field_linked_agent
     - field.field.node.islandora_object.field_local_identifier
+    - field.field.node.islandora_object.field_call_number
     - field.field.node.islandora_object.field_member_of
     - field.field.node.islandora_object.field_model
     - field.field.node.islandora_object.field_note
@@ -223,6 +224,7 @@ third_party_settings:
     group_identifiers:
       children:
         - field_local_identifier
+        - field_call_number
         - field_pid
         - field_doi
         - field_hdl
@@ -480,6 +482,14 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_call_number:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: { }
   field_member_of:
     type: entity_reference_autocomplete
     weight: 14

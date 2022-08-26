@@ -157,6 +157,9 @@ fieldMappings:
   field_local_identifier:
     properties:
       - 'dcterms:identifier'
+  field_call_number:
+    properties:
+      - 'dcterms:identifier'
   field_doi:
     properties:
       - 'identifiers:doi'
