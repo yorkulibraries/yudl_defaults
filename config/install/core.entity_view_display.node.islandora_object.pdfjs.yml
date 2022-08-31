@@ -64,6 +64,7 @@ third_party_settings:
   field_group:
     group_download_options:
       children:
+        - links
         - display_media_entity_view_2
       label: 'Download Options'
       parent_name: ''
@@ -84,6 +85,9 @@ third_party_settings:
     group_pdfjs_object_detail:
       children:
         - group_item_description
+        - group_geographic
+        - group_notes
+        - group_rights
       label: 'PDFjs object detail'
       parent_name: ''
       region: content
@@ -109,24 +113,14 @@ third_party_settings:
         - field_physical_form
         - field_extent
         - field_language
-        - field_note
         - field_physical_location
         - field_subject
         - field_keyword_subject_topic_
         - field_subjects_name
         - field_geographic_subject
         - field_temporal_subject
-        - field_rights
-        - field_rights_holder
         - field_part_of
-        - langcode
         - field_relation
-        - field_continent
-        - field_province
-        - field_country
-        - field_region
-        - field_county
-        - field_city
         - field_pid
         - field_oclc
         - field_doi
@@ -137,11 +131,60 @@ third_party_settings:
         - field_issn
         - field_isbn
         - field_city_section
-        - field_coordinates
       label: 'Item Description'
       parent_name: group_pdfjs_object_detail
       region: content
       weight: 14
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+    group_rights:
+      children:
+        - field_rights
+        - field_rights_holder
+      label: Rights
+      parent_name: group_openseadragon_object_d
+      region: content
+      weight: 23
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+    group_notes:
+      children:
+        - field_note
+      label: Notes
+      parent_name: group_openseadragon_object_d
+      region: content
+      weight: 22
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: open
+        description: ''
+    group_geographic:
+      children:
+        - field_continent
+        - field_country
+        - field_province
+        - field_county
+        - field_region
+        - field_city
+        - field_city_section
+        - field_coordinates
+      label: Geographic
+      parent_name: group_openseadragon_object_d
+      region: content
+      weight: 21
       format_type: tab
       format_settings:
         classes: ''
@@ -394,7 +437,7 @@ content:
     region: content
   field_note:
     type: basic_string
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     weight: 17
@@ -481,7 +524,7 @@ content:
     region: content
   field_rights:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
@@ -489,7 +532,7 @@ content:
     region: content
   field_rights_holder:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
