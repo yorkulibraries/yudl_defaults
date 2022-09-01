@@ -1,5 +1,5 @@
-langcode: fr
-status: true
+langcode: en
+status: false
 dependencies:
   config:
     - search_api.index.default_solr_index
@@ -45,11 +45,6 @@ suggester_settings:
         temporal_subjects: ''
   server:
     fields: {  }
-  search_api_solr_spellcheck: {  }
-  search_api_solr_suggester:
-    search_api_solr/site_hash: 1
-    search_api/index: default_solr_index
-    drupal/langcode: any
   search_api_solr_terms:
     fields: {  }
 suggester_weights:

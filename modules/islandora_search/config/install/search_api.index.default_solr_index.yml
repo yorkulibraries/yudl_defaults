@@ -2,16 +2,21 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.taxonomy_term.field_cat_date_begin
+    - field.storage.taxonomy_term.field_cat_date_end
     - field.storage.node.field_city
     - field.storage.node.field_city_section
     - field.storage.node.field_continent
+    - field.storage.taxonomy_term.field_corp_alt_name
     - field.storage.node.field_country
     - field.storage.node.field_county
+    - field.storage.node.field_description
     - field.storage.node.field_edtf_date
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_edtf_date_issued
-    - field.storage.node.field_description
     - field.storage.node.field_genre
+    - field.storage.taxonomy_term.field_geo_alt_name
+    - field.storage.node.field_geographic_subject
     - field.storage.node.field_language
     - field.storage.node.field_linked_agent
     - field.storage.node.field_member_of
@@ -21,14 +26,9 @@ dependencies:
     - field.storage.node.field_region
     - field.storage.node.field_resource_type
     - field.storage.node.field_subject
-    - field.storage.node.field_geographic_subject
     - field.storage.node.field_subjects_name
     - field.storage.node.field_tags
     - field.storage.node.field_temporal_subject
-    - field.storage.taxonomy_term.field_geo_alt_name
-    - field.storage.taxonomy_term.field_corp_alt_name
-    - field.storage.taxonomy_term.field_cat_date_end
-    - field.storage.taxonomy_term.field_cat_date_begin
     - search_api.server.default_solr_server
     - core.entity_view_mode.node.search_index
   module:
@@ -37,11 +37,13 @@ dependencies:
     - user
     - taxonomy
     - search_api
+    - media
 third_party_settings:
   search_api_solr:
     finalize: false
     commit_before_finalize: false
     commit_after_finalize: false
+    debug_finalize: false
     highlighter:
       maxAnalyzedChars: 51200
       fragmenter: regex
@@ -57,8 +59,27 @@ third_party_settings:
         requireFieldMatch: false
         snippets: 3
         fragsize: 0
+    mlt:
+      mintf: 1
+      mindf: 1
+      maxdf: 0
+      maxdfpct: 0
+      minwl: 0
+      maxwl: 0
+      maxqt: 100
+      maxntp: 2000
+      boost: false
+      interestingTerms: none
+    term_modifiers:
+      slop: 3
+      fuzzy: 1
     advanced:
       index_prefix: ''
+      collection: ''
+      timezone: ''
+    multilingual:
+      limit_to_content_language: false
+      include_language_independent: true
 id: default_solr_index
 name: 'Default Solr content index'
 description: 'Default content index created by the Solr Search Defaults module'
@@ -384,7 +405,7 @@ field_settings:
     type: text
     configuration:
       roles:
-        anonymous: anonymous
+        - anonymous
       view_mode:
         'entity:node':
           article: search_index
@@ -448,6 +469,15 @@ field_settings:
       module:
         - node
 datasource_settings:
+  'entity:media':
+    bundles:
+      default: false
+      selected:
+        - document
+        - extracted_text
+    languages:
+      default: true
+      selected: {  }
   'entity:node':
     bundles:
       default: true
@@ -473,6 +503,7 @@ processor_settings:
   aggregated_field:
     weights:
       add_properties: 20
+  auto_aggregated_fulltext_field: {  }
   content_access:
     weights:
       preprocess_index: -6
@@ -522,6 +553,43 @@ processor_settings:
   solr_date_range:
     weights:
       preprocess_index: 0
+  type_boost:
+    weights:
+      preprocess_index: 0
+    boosts:
+      'entity:media':
+        datasource_boost: !!float 0
+        bundle_boosts:
+          document: !!float 0
+          extracted_text: !!float 2
+      'entity:node':
+        datasource_boost: !!float 0
+        bundle_boosts:
+          article: !!float 0
+          islandora_object: !!float 0
+          page: !!float 0
+      'entity:taxonomy_term':
+        datasource_boost: !!float 0
+        bundle_boosts:
+          city: !!float 0
+          city_section: !!float 0
+          continent: !!float 0
+          corporate_body: !!float 0
+          country: !!float 0
+          county: !!float 0
+          family: !!float 0
+          genre: !!float 0
+          geo_location: !!float 0
+          language: !!float 0
+          person: !!float 0
+          physical_form: !!float 0
+          province: !!float 0
+          region: !!float 0
+          resource_types: !!float 0
+          rights: !!float 0
+          subject: !!float 0
+          tags: !!float 0
+          temporal_subjects: !!float 0
 tracker_settings:
   default:
     indexing_order: fifo
