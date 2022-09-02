@@ -196,6 +196,11 @@ targetEntityType: node
 bundle: islandora_object
 mode: binary
 content:
+  addtoany:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
   display_media_entity_view_2:
     settings: {  }
     third_party_settings: {  }

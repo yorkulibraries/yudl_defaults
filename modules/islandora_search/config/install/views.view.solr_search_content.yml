@@ -19,7 +19,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Search Content'
+      title: 'Search Results'
       fields:
         search_api_rendered_item:
           id: search_api_rendered_item
@@ -400,6 +400,10 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      cache:
+        type: none
+      defaults:
+        cache: false
       exposed_block: true
       display_extenders:
         matomo:
