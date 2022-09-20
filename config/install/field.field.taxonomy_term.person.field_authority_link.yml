@@ -27,6 +27,7 @@ settings:
     nad: 'NAD / ARK II Name Authority Database'
     nal: 'National Agricultural Library subject headings'
     rvm: 'Répertoire de vedettes-matière'
+    snac: 'Social Networks and Archival Context'
     ulan: 'Union List of Artist Names'
     viaf: 'Virtual International Authority File'
     wiki: 'Wikidata'

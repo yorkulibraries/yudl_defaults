@@ -23,6 +23,7 @@ settings:
     naf: 'NACO Authority File'
     viaf: 'Virtual International Authority File'
     lcnaf: 'LC Name Authority File'
+    snac: 'Social Networks and Archival Context'
     wiki: 'Wikidata'
     other: Other
   title: 1
