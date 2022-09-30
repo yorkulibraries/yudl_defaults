@@ -22,18 +22,19 @@ settings:
     cash: 'Canadian Subject Headings'
     fast: 'FAST (Faceted Application of Subject Terminology)'
     gmgpc: 'TGM II, Genre and physical characteristic terms'
+    lcgft: 'Library of Congress Genre/Form Terms'
     lcsh: 'Library of Congress Subject Headings'
     lcshac: 'Library of Congress Children''s Subject Headings'
     main: 'Manitoba Archival Information Network Database (MAIN Database)'
     mesh: 'Medical Subject Headings'
     nal: 'National Agricultural Library subject headings'
+    other: Other
     rbgenr: 'Genre Terms: A Thesaurus for Use in Rare Book and Special Collections Cataloguing'
     rvm: 'Répertoire de vedettes-matière'
-    tgn: 'Getty Thesaurus of Geographic Names'
     tgm: 'Thesaurus for Graphic Materials'
-    lcgft: 'Library of Congress Genre/Form Terms'
+    tgn: 'Getty Thesaurus of Geographic Names'
+    ulan: 'Union List of Artist Names'
     wiki: 'Wikidata'
-    other: Other
   title: 1
   link_type: 16
 field_type: authority_link
