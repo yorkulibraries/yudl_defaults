@@ -40,3 +40,8 @@ country,United Kingdom,geonames,http://sws.geonames.org/2635167,54.75844,-2.6953
 country,United States,geonames,http://sws.geonames.org/6252001,39.76,-98.5,
 country,Vietnam,geonames,http://sws.geonames.org/1562822,16.16667,107.8333,
 country,Wales,geonames,http://sws.geonames.org/2634895,52.5,-3.5,
+country,Great Britain,geonames,https://www.geonames.org/2648147,54,-2,
+country,India,geonames,https://www.geonames.org/1269750,22,79,
+country,Mexico,geonames,https://www.geonames.org/3996063,23,-102,
+country,Mongolia,geonames,https://www.geonames.org/2029969,46,105,
+country,Turkey,geonames,https://www.geonames.org/298795,39,35,

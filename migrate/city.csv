@@ -497,7 +497,6 @@ city,Strathroy-Caradoc,geonames,http://sws.geonames.org/6158028,42.90009,-81.533
 city,Sturgeon Lake 154,geonames,http://sws.geonames.org/6158598,55.05003,-117.46923,Sturgeon Lake Cree Nation,760
 city,Sturgeon Point,geonames,http://sws.geonames.org/6158606,44.46991,-78.70347,,813
 city,Stuttgart,geonames,http://sws.geonames.org/2825297,48.78232,9.17702,,733
-city,Stuttgart,geonames,http://sws.geonames.org/2825297,48.78232,9.17702,,733
 city,Sudbury,geonames,http://sws.geonames.org/5964700,46.49,-80.99001,,813
 city,Sundridge,geonames,http://sws.geonames.org/6159476,45.7668,-79.39964,,813
 city,Superior,geonames,http://sws.geonames.org/5275191,46.72077,-92.10408,,831
@@ -586,3 +585,19 @@ city,Yellowknife,geonames,http://sws.geonames.org/6185377,62.45411,-114.37248,,8
 city,York,Geonames,http://sws.geonames.org/8449503,43.69642,-79.45055,,813
 city,Zorra,geonames,http://sws.geonames.org/6186174,43.11679,-80.89972,,813
 city,Zurich,geonames,http://sws.geonames.org/2657896,47.36667,8.55,,720
+city,Bayonne,geonames,https://www.geonames.org/3034475,43.49316,-1.473,
+city,Freiberg,geonames,https://www.geonames.org/2925192,50.91089,13.33881,
+city,Grand Pré,geonames,https://www.geonames.org/5964657,45.10015,-64.29875,
+city,Istanbul,geonames,https://www.geonames.org/745044,41.01384,28.94966,
+city,Jerusalem,geonames,https://www.geonames.org/281184,31.76904,35.21633,
+city,Saint Petersburg,geonames,https://www.geonames.org/498817,59.93863,30.31413,Leningrad
+city,Lucca,geonames,https://www.geonames.org/3174530,43.84369,10.50447,
+city,Meissen,geonames,https://www.geonames.org/2872155,51.16158,13.4737,
+city,Moscow,geonames,https://www.geonames.org/524894,55.76167,37.60667,
+city,Munich,geonames,https://www.geonames.org/2867714,48.13743,11.57549,
+city,Niagara Falls,geonames,https://www.geonames.org/5128723,43.0945,-79.05671,
+city,Perugia,geonames,https://www.geonames.org/3171180,43.1122,12.38878,
+city,Pisa,geonames,https://www.geonames.org/3170647,43.70853,10.4036,
+city,Portsmouth,geonames,https://www.geonames.org/5091383,43.07704,-70.75766,
+city,Prague,geonames,https://www.geonames.org/3067696,50.08804,14.42076,
+city,Venice,geonames,https://www.geonames.org/3164603,45.43713,12.33265,
