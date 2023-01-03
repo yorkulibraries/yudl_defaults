@@ -32,6 +32,7 @@ settings:
     ulan: 'Union List of Artist Names'
     viaf: 'Virtual International Authority File'
     wiki: 'Wikidata'
+    worldcat: 'Worldcat Identities'
     other: Other
   title: 1
   link_type: 16

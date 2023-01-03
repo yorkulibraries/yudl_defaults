@@ -26,6 +26,7 @@ settings:
     lcnaf: 'LC Name Authority File'
     snac: 'Social Networks and Archival Context'
     wiki: 'Wikidata'
+    worldcat: 'Worldcat Identities'
     other: Other
   title: 1
   link_type: 16
