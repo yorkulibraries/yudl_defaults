@@ -64,13 +64,12 @@ third_party_settings:
   field_group:
     group_download_options:
       children:
-        - field_member_of
         - links
         - display_media_entity_view_2
       label: 'Download Options'
       parent_name: ''
       region: content
-      weight: 2
+      weight: 3
       format_type: html_element
       format_settings:
         classes: media-download
@@ -92,7 +91,7 @@ third_party_settings:
       label: 'PDFjs object detail'
       parent_name: ''
       region: content
-      weight: 3
+      weight: 4
       format_type: tabs
       format_settings:
         classes: ''
@@ -199,7 +198,7 @@ content:
   addtoany:
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   display_media_entity_view_2:
     settings: {  }
@@ -431,14 +430,6 @@ content:
     third_party_settings: {  }
     weight: 19
     region: content
-  field_member_of:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 5
-    region: content
   field_note:
     type: basic_string
     label: inline
@@ -571,6 +562,11 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
+  media_evas_content_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
   pdfjs_media_evas_entity_view_1:
     settings: {  }
     third_party_settings: {  }
@@ -584,6 +580,7 @@ hidden:
   field_date_modified_: true
   field_display_hints: true
   field_gemini_uri: true
+  field_member_of: true
   field_model: true
   field_weight: true
   islandora_fits_checksum: true

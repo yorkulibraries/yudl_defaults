@@ -64,13 +64,12 @@ third_party_settings:
   field_group:
     group_download_options:
       children:
-        - field_member_of
         - display_media_entity_view_2
         - links
       label: 'Download Options'
       parent_name: ''
       region: content
-      weight: 1
+      weight: 2
       format_type: html_element
       format_settings:
         classes: media-download
@@ -92,7 +91,7 @@ third_party_settings:
       label: 'Binary object detail'
       parent_name: ''
       region: content
-      weight: 2
+      weight: 3
       format_type: tabs
       format_settings:
         classes: ''
@@ -431,14 +430,6 @@ content:
     third_party_settings: {  }
     weight: 18
     region: content
-  field_member_of:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 4
-    region: content
   field_note:
     type: basic_string
     label: inline
@@ -571,10 +562,15 @@ content:
     third_party_settings: {  }
     weight: 6
     region: content
+  media_evas_content_entity_view_1:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
   mirador_evas_entity_view_3:
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
 hidden:
   display_media_entity_view_1: true
@@ -584,6 +580,7 @@ hidden:
   field_date_modified_: true
   field_display_hints: true
   field_gemini_uri: true
+  field_member_of: true
   field_model: true
   field_weight: true
   islandora_fits_checksum: true

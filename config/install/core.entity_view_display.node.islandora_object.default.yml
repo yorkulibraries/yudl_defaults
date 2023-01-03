@@ -63,7 +63,6 @@ third_party_settings:
   field_group:
     group_download_options:
       children:
-        - field_member_of
         - links
       label: 'Download Options'
       parent_name: ''
@@ -189,8 +188,6 @@ third_party_settings:
         id: ''
         formatter: open
         description: ''
-_core:
-  default_config_hash: j1GSpIMCY0-_5yK3UTCoInh6C3sHwI2-I0uuIjafqGE
 id: node.islandora_object.default
 targetEntityType: node
 bundle: islandora_object
@@ -833,7 +830,7 @@ content:
     region: content
   field_description:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 1
@@ -969,14 +966,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 17
-    region: content
-  field_member_of:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 4
     region: content
   field_note:
     type: basic_string
@@ -1117,8 +1106,8 @@ hidden:
   field_access_terms: true
   field_date_modified_: true
   field_display_hints: true
-  field_display_title: true
   field_gemini_uri: true
+  field_member_of: true
   field_model: true
   field_weight: true
   islandora_fits_checksum: true
