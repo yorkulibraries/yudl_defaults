@@ -10,7 +10,6 @@ dependencies:
     - taxonomy.vocabulary.subject
   module:
     - taxonomy
-    - title_field_for_manage_display
     - user
 id: taxonomy_a_z_custom_view
 label: 'Taxonomy - A-Z Custom Term View'
@@ -80,7 +79,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: title_value_field_formatter
+          type: text_default
           settings:
             tag: span
             linked: 1
@@ -392,7 +391,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: title_value_field_formatter
+          type: text_default
           settings:
             tag: span
             linked: 0
@@ -656,7 +655,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: title_value_field_formatter
+          type: text_default
           settings:
             tag: span
             linked: 1
@@ -724,7 +723,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: title_value_field_formatter
+          type: text_default
           settings:
             tag: span
             linked: 1

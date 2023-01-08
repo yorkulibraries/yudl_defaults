@@ -12,7 +12,6 @@ dependencies:
     - views.view.taxonomy_a_z_custom_view
   module:
     - taxonomy
-    - title_field_for_manage_display
     - user
 id: a_z_physical_form
 label: 'A-Z -- Physical form'
@@ -82,7 +81,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: title_value_field_formatter
+          type: text_default
           settings:
             tag: span
             linked: 1
@@ -436,7 +435,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: title_value_field_formatter
+          type: text_default
           settings:
             tag: span
             linked: 0
@@ -700,7 +699,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: title_value_field_formatter
+          type: text_default
           settings:
             tag: span
             linked: 1
@@ -768,7 +767,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: title_value_field_formatter
+          type: text_default
           settings:
             tag: span
             linked: 1
