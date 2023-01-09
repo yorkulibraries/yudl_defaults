@@ -24,6 +24,7 @@ settings:
     gmgpc: 'TGM II, Genre and physical characteristic terms'
     lcgft: 'Library of Congress Genre/Form Terms'
     lcsh: 'Library of Congress Subject Headings'
+    lcnaf: 'LC Name Authority File'
     lcshac: 'Library of Congress Children''s Subject Headings'
     main: 'Manitoba Archival Information Network Database (MAIN Database)'
     mesh: 'Medical Subject Headings'
