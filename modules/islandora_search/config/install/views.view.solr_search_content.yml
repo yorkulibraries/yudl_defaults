@@ -153,7 +153,7 @@ display:
             first: '« First'
             last: 'Last »'
           expose:
-            items_per_page: true
+            items_per_page: false
             items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: true
@@ -191,7 +191,7 @@ display:
           expose:
             label: Relevance
             field_identifier: search_api_relevance
-          exposed: true
+          exposed: false
         field_edtf_date_created:
           id: field_edtf_date_created
           table: search_api_index_default_solr_index
@@ -204,7 +204,7 @@ display:
           expose:
             label: 'Date Created'
             field_identifier: field_edtf_date_created
-          exposed: true
+          exposed: false
         title:
           id: title
           table: search_api_index_default_solr_index
@@ -217,7 +217,7 @@ display:
           expose:
             label: Title
             field_identifier: title
-          exposed: true
+          exposed: false
         author:
           id: author
           table: search_api_index_default_solr_index
@@ -230,7 +230,7 @@ display:
           expose:
             label: 'Author name'
             field_identifier: author
-          exposed: true
+          exposed: false
       arguments: {  }
       filters:
         search_api_fulltext:
@@ -247,7 +247,7 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: 'Fulltext search'
+            label: ''
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
@@ -388,8 +388,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
         - 'user.node_grants:view'
       tags:
         - 'config:search_api.index.default_solr_index'
@@ -437,8 +435,6 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
-        - 'url.query_args:sort_by'
-        - 'url.query_args:sort_order'
         - 'user.node_grants:view'
       tags:
         - 'config:search_api.index.default_solr_index'
