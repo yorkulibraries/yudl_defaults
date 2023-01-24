@@ -22,20 +22,6 @@ conditions:
 reactions:
   blocks:
     blocks:
-      41f1d520-14ae-479e-90d2-34aa6f4a750e:
-        id: 'views_block:members-block_1'
-        label: ''
-        provider: views
-        label_display: visible
-        views_label: ''
-        items_per_page: none
-        region: content_suffix
-        weight: 10
-        context_mapping: {  }
-        theme: bartik
-        css_class: ''
-        unique: 0
-        context_id: collection
       8e05a61a-1273-4a72-b3d5-97b0b38a7e39:
         id: 'views_block:members-block_1'
         label: ''

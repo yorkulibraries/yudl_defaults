@@ -24,36 +24,6 @@ reactions:
     id: blocks
     uuid: 50b9b25e-0836-4531-8a78-9698d71d81de
     blocks:
-      4fe759c9-e1bf-4709-871c-7b8a407c840b:
-        uuid: 4fe759c9-e1bf-4709-871c-7b8a407c840b
-        id: openseadragon_block
-        label: 'Openseadragon block'
-        provider: openseadragon
-        label_display: '0'
-        region: content
-        weight: '-1'
-        theme: bartik
-        css_class: ''
-        unique: 0
-        context_id: openseadragon_block
-        context_mapping: {  }
-        iiif_manifest_url: 'http://localhost:8000/node/[node:nid]/manifest'
-      16401a13-1031-4ffe-96b2-5909df309f6a:
-        uuid: 16401a13-1031-4ffe-96b2-5909df309f6a
-        id: openseadragon_block
-        label: 'Openseadragon block'
-        provider: openseadragon
-        label_display: '0'
-        region: content
-        weight: '0'
-        custom_id: openseadragon_block
-        theme: bartik
-        css_class: ''
-        unique: 0
-        context_id: openseadragon_block
-        context_mapping: {  }
-        iiif_manifest_url: 'https://gamma.library.yorku.ca/node/[node:nid]/book-manifest'
-        third_party_settings: {  }
       41431a23-9293-47e4-8d4b-a1457fea46e3:
         uuid: 41431a23-9293-47e4-8d4b-a1457fea46e3
         id: openseadragon_block
