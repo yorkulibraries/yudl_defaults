@@ -71,25 +71,29 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
+  display_media_service_file:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
   field_description:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_note:
     type: basic_string
     label: inline
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
 hidden:
   addtoany: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
-  display_media_service_file: true
   display_media_thumbnail: true
   field_access_terms: true
   field_alternative_title: true
