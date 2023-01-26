@@ -294,7 +294,7 @@ field_settings:
       module:
         - taxonomy
   field_linked_agent:
-    label: 'Linked Agent'
+    label: 'Creation Information'
     datasource_id: 'entity:node'
     property_path: 'field_linked_agent:entity:name'
     type: string
