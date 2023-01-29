@@ -3,9 +3,10 @@ status: true
 dependencies:
   config:
     - node.type.islandora_object
+    - system.menu.main
     - taxonomy.vocabulary.islandora_models
   content:
-    - 'taxonomy_term:islandora_models:87464c7b-6a31-4023-a4c0-450caa8cd2f2'
+    - 'taxonomy_term:islandora_models:e755497c-396d-48a2-93e9-dd07b1f4f28a'
   module:
     - node
     - taxonomy
@@ -321,6 +322,15 @@ display:
           category_facets: {  }
           category_facets_concat_separator: ', '
       path: explore/collections
+      menu:
+        type: normal
+        title: Collections
+        description: 'Explore collections'
+        weight: 1
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

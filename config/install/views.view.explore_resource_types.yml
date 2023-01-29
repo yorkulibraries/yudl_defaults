@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - system.menu.main
     - taxonomy.vocabulary.resource_types
   module:
     - taxonomy
@@ -261,6 +262,15 @@ display:
           category_facets: {  }
           category_facets_concat_separator: ', '
       path: explore/resource-types
+      menu:
+        type: normal
+        title: Types
+        description: 'Explore resource types'
+        weight: 2
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
