@@ -10,7 +10,7 @@ id: taxonomy_term.county.field_authority_link
 field_name: field_authority_link
 entity_type: taxonomy_term
 bundle: county
-label: 'Authority Link'
+label: 'Authority'
 description: 'A universal resource identifier representing a known place in a geographical database. For example, "http://www.geonames.org/5506956/" for "Las Vegas, Nevada".'
 required: false
 translatable: true
