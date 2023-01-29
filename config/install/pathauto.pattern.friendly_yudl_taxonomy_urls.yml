@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: friendly_yudl_taxonomy_urls
+label: 'Friendly yudl taxonomy urls'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:vocabulary]/[term:name]'
+selection_criteria:
+  e23badcf-b8b8-45c7-8a2a-36c1cee54be9:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: e23badcf-b8b8-45c7-8a2a-36c1cee54be9
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      city: city
+      city_section: city_section
+      continent: continent
+      corporate_body: corporate_body
+      country: country
+      county: county
+      family: family
+      genre: genre
+      geo_location: geo_location
+      language: language
+      person: person
+      physical_form: physical_form
+      province: province
+      region: region
+      resource_types: resource_types
+      rights: rights
+      subject: subject
+      temporal_subjects: temporal_subjects
+  78434041-b8d0-410c-9cdf-2ba867c19ba7:
+    id: language
+    negate: false
+    uuid: 78434041-b8d0-410c-9cdf-2ba867c19ba7
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      en: en
+      fr: fr
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Language
