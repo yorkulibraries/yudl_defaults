@@ -82,10 +82,6 @@ fieldMappings:
   field_note:
     properties:
       - 'skos:note'
-  field_part_of:
-    properties:
-      - 'dcterms:isPartOf'
-    mapping_type: rel
   field_physical_form:
     properties:
       - 'dcterms:format'

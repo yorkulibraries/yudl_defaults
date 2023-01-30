@@ -33,7 +33,6 @@ dependencies:
     - field.field.node.islandora_object.field_model
     - field.field.node.islandora_object.field_note
     - field.field.node.islandora_object.field_oclc
-    - field.field.node.islandora_object.field_part_of
     - field.field.node.islandora_object.field_physical_form
     - field.field.node.islandora_object.field_physical_location
     - field.field.node.islandora_object.field_pid
@@ -209,7 +208,6 @@ third_party_settings:
         - field_physical_form
         - field_physical_location
         - field_relation
-        - field_part_of
       label: 'Technical Metadata'
       region: content
       parent_name: ''
@@ -519,16 +517,6 @@ content:
     weight: 12
     region: content
     settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_part_of:
-    type: entity_reference_autocomplete
-    weight: 13
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }

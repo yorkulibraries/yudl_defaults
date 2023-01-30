@@ -34,7 +34,6 @@ dependencies:
     - field.field.node.islandora_object.field_model
     - field.field.node.islandora_object.field_note
     - field.field.node.islandora_object.field_oclc
-    - field.field.node.islandora_object.field_part_of
     - field.field.node.islandora_object.field_physical_form
     - field.field.node.islandora_object.field_physical_location
     - field.field.node.islandora_object.field_pid
@@ -112,7 +111,6 @@ third_party_settings:
         - field_physical_form
         - field_physical_location
         - field_relation
-        - field_part_of
         - field_language
         - field_pid
         - field_local_identifier
@@ -438,14 +436,6 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 20
-    region: content
-  field_part_of:
-    type: entity_reference_label
-    label: inline
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 16
     region: content
   field_physical_form:
     type: entity_reference_label
