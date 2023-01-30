@@ -10,7 +10,7 @@ id: taxonomy_term.rights.field_authority_link
 field_name: field_authority_link
 entity_type: taxonomy_term
 bundle: rights
-label: 'Authority Sources'
+label: 'Authority'
 description: ''
 required: false
 translatable: true
