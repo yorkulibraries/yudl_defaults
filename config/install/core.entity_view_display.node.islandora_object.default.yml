@@ -51,6 +51,7 @@ dependencies:
     - node.type.islandora_object
   module:
     - controlled_access_terms
+    - ds
     - field_group
     - geolocation
     - text
@@ -261,10 +262,6 @@ content:
             reset_zoom: true
             min_zoom: null
           map_center_id: fit_bounds
-        client_location:
-          enable: false
-          weight: 0
-          map_center_id: client_location
         ipstack:
           enable: false
           weight: 0
@@ -280,12 +277,6 @@ content:
             latitude: null
             longitude: null
           map_center_id: location_plugins
-        freeogeoip:
-          enable: false
-          weight: 0
-          settings:
-            location_option_id: freeogeoip
-          map_center_id: location_plugins
         fixed_boundaries:
           enable: false
           weight: 0
@@ -295,109 +286,84 @@ content:
             north: ''
             east: ''
           map_center_id: fixed_boundaries
+        client_location:
+          enable: false
+          weight: 0
+          map_center_id: client_location
       map_provider_id: leaflet
       map_provider_settings:
         map_features:
+          leaflet_client_location_indicator:
+            weight: 0
+            enabled: false
+          leaflet_disable_user_interaction:
+            weight: 0
+            enabled: false
+          geolocation_shapes:
+            weight: 0
+            settings:
+              remove_markers: false
+              polyline: true
+              polyline_title: ''
+              strokeColor: '#FF0000'
+              strokeOpacity: 0.8
+              strokeWidth: '2'
+              polygon: false
+              polygon_title: ''
+              fillColor: '#FF0000'
+              fillOpacity: 0.35
+            enabled: false
+          leaflet_gesture_handling:
+            weight: 0
+            enabled: false
+          leaflet_rotate:
+            weight: 0
+            settings:
+              display_control: true
+              bearing: !!float 0
+            enabled: false
+          leaflet_control_attribution:
+            weight: 0
+            settings:
+              position: bottomright
+              prefix: Leaflet
+            enabled: true
+          leaflet_control_fullscreen:
+            weight: 0
+            settings:
+              position: topright
+            enabled: false
+          leaflet_control_geocoder:
+            weight: 0
+            settings:
+              position: topright
+              geocoder: photon
+              settings:
+                label: Address
+                description: 'Enter an address to be localized.'
+                autocomplete_min_length: 1
+                location_priority:
+                  lat: null
+                  lng: null
+                remove_duplicates: false
+            enabled: false
+          leaflet_control_locate:
+            weight: 0
+            settings:
+              position: topright
+            enabled: false
           leaflet_control_recenter:
             weight: 0
             settings:
               position: topright
-            enabled: false
-          leaflet_tile_layer:
-            weight: 0
-            settings:
-              tile_layer_provider: 'OpenStreetMap Mapnik'
-              tile_provider_options:
-                Thunderforest:
-                  apikey: ''
-                MapBox:
-                  accessToken: ''
-                HERE:
-                  app_id: ''
-                  app_code: ''
-                GeoportailFrance:
-                  apikey: ''
-            enabled: false
-          leaflet_tile_layer_overlay:
-            weight: 0
-            settings:
-              tile_layer_overlay: OpenInfraMap.Power
-            enabled: false
-          leaflet_custom_tile_layer:
-            weight: 0
-            settings:
-              tile_layer_url: '//{s}.tile.osm.org/{z}/{x}/{y}.png'
-              tile_layer_attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
-              tile_layer_subdomains: abc
-              tile_layer_zoom: 18
-            enabled: false
-          leaflet_max_bounds:
-            weight: 0
-            settings:
-              north: null
-              south: null
-              east: null
-              west: null
-            enabled: false
-          leaflet_marker_zoom_and_animate:
-            weight: 0
-            settings:
-              marker_zoom_anchor_id: ''
-            enabled: false
-          geolocation_marker_scroll_to_id:
-            weight: 0
-            settings:
-              scroll_target_id: ''
-            enabled: false
-          leaflet_marker_popup:
-            weight: 0
-            settings:
-              info_auto_display: false
-              max_width: 300
-              min_width: 50
-              max_height: 0
-              auto_pan: true
-              keep_in_view: false
-              close_button: true
-              auto_close: true
-              close_on_escape_key: true
-              class_name: ''
             enabled: true
-          leaflet_marker_icon:
-            weight: 0
-            settings:
-              marker_shadow_path: ''
-              marker_icon_path: ''
-              icon_size:
-                width: null
-                height: null
-              icon_anchor:
-                x: null
-                'y': null
-              popup_anchor:
-                x: 0
-                'y': 0
-              shadow_size:
-                width: null
-                height: null
-              shadow_anchor:
-                x: null
-                'y': null
-            enabled: false
-          leaflet_marker_clusterer:
-            weight: 0
-            settings:
-              cluster_settings:
-                show_coverage_on_hover: true
-                zoom_to_bounds_on_click: true
-              disable_clustering_at_zoom: 0
-              custom_marker_settings: ''
-            enabled: false
-          leaflet_control_zoom:
+          leaflet_control_scale:
             weight: 0
             settings:
               position: topright
-            enabled: true
+              metric: true
+              imperial: true
+            enabled: false
           leaflet_control_layer:
             weight: 0
             settings:
@@ -695,66 +661,100 @@ content:
                 GeoportailFrance:
                   apikey: ''
             enabled: false
-          leaflet_control_scale:
+          leaflet_control_zoom:
             weight: 0
             settings:
               position: topright
-              metric: true
-              imperial: true
-            enabled: false
-          leaflet_control_locate:
-            weight: 0
-            settings:
-              position: topright
-            enabled: false
-          leaflet_control_geocoder:
-            weight: 0
-            settings:
-              position: topright
-              geocoder: photon
-              settings:
-                label: Address
-                description: 'Enter an address to be localized.'
-            enabled: false
-          leaflet_control_fullscreen:
-            weight: 0
-            settings:
-              position: topright
-            enabled: false
-          leaflet_control_attribution:
-            weight: 0
-            settings:
-              position: bottomright
-              prefix: Leaflet
             enabled: true
-          leaflet_rotate:
+          leaflet_marker_clusterer:
             weight: 0
             settings:
-              display_control: true
-              bearing: !!float 0
+              cluster_settings:
+                show_coverage_on_hover: true
+                zoom_to_bounds_on_click: true
+              disable_clustering_at_zoom: 0
+              custom_marker_settings: ''
             enabled: false
-          leaflet_gesture_handling:
-            weight: 0
-            enabled: false
-          geolocation_shapes:
+          leaflet_marker_icon:
             weight: 0
             settings:
-              remove_markers: false
-              polyline: true
-              polyline_title: ''
-              strokeColor: '#FF0000'
-              strokeOpacity: 0.8
-              strokeWidth: '2'
-              polygon: false
-              polygon_title: ''
-              fillColor: '#FF0000'
-              fillOpacity: 0.35
+              marker_shadow_path: ''
+              marker_icon_path: ''
+              icon_size:
+                width: null
+                height: null
+              icon_anchor:
+                x: null
+                'y': null
+              popup_anchor:
+                x: 0
+                'y': 0
+              shadow_size:
+                width: null
+                height: null
+              shadow_anchor:
+                x: null
+                'y': null
             enabled: false
-          leaflet_disable_user_interaction:
+          leaflet_marker_popup:
             weight: 0
+            settings:
+              info_auto_display: false
+              max_width: 300
+              min_width: 50
+              max_height: 0
+              auto_pan: true
+              keep_in_view: false
+              close_button: true
+              auto_close: true
+              close_on_escape_key: true
+              class_name: ''
+            enabled: true
+          geolocation_marker_scroll_to_id:
+            weight: 0
+            settings:
+              scroll_target_id: ''
             enabled: false
-          leaflet_client_location_indicator:
+          leaflet_marker_zoom_and_animate:
             weight: 0
+            settings:
+              marker_zoom_anchor_id: ''
+            enabled: false
+          leaflet_max_bounds:
+            weight: 0
+            settings:
+              north: null
+              south: null
+              east: null
+              west: null
+            enabled: false
+          leaflet_custom_tile_layer:
+            weight: 0
+            settings:
+              tile_layer_url: '//{s}.tile.osm.org/{z}/{x}/{y}.png'
+              tile_layer_attribution: '&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+              tile_layer_subdomains: abc
+              tile_layer_zoom: 18
+            enabled: false
+          leaflet_tile_layer_overlay:
+            weight: 0
+            settings:
+              tile_layer_overlay: OpenInfraMap.Power
+            enabled: false
+          leaflet_tile_layer:
+            weight: 0
+            settings:
+              tile_layer_provider: 'OpenStreetMap Mapnik'
+              tile_provider_options:
+                Thunderforest:
+                  apikey: ''
+                MapBox:
+                  accessToken: ''
+                HERE:
+                  app_id: ''
+                  app_code: ''
+                GeoportailFrance:
+                  apikey: ''
             enabled: false
           leaflet_wms:
             weight: 0
@@ -768,8 +768,8 @@ content:
               transparent: false
               identify: false
             enabled: false
-        zoom: '10'
-        height: 400px
+        zoom: '16'
+        height: 600px
         width: 100%
         minZoom: '0'
         maxZoom: '0'
@@ -807,7 +807,9 @@ content:
         touchZoom: true
         bounceAtZoomLimits: true
       data_provider_settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
     weight: 34
     region: content
   field_country:
