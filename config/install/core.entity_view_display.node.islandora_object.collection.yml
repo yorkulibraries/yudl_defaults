@@ -25,7 +25,7 @@ dependencies:
     - field.field.node.islandora_object.field_hdl
     - field.field.node.islandora_object.field_isbn
     - field.field.node.islandora_object.field_issn
-    - field.field.node.islandora_object.field_keyword_subject_topic_
+    - field.field.node.islandora_object.field_keyword
     - field.field.node.islandora_object.field_language
     - field.field.node.islandora_object.field_lccn
     - field.field.node.islandora_object.field_linked_agent
@@ -112,7 +112,7 @@ hidden:
   field_hdl: true
   field_isbn: true
   field_issn: true
-  field_keyword_subject_topic_: true
+  field_keyword: true
   field_language: true
   field_lccn: true
   field_linked_agent: true

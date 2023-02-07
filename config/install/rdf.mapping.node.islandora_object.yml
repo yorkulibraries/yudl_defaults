@@ -118,7 +118,7 @@ fieldMappings:
     properties:
       - 'dcterms:subject'
     mapping_type: rel
-  field_keyword_subject_topic_:
+  field_keyword:
     properties:
       - 'dcterms:subject'
     mapping_type: rel

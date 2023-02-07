@@ -25,7 +25,7 @@ dependencies:
     - field.field.node.islandora_object.field_hdl
     - field.field.node.islandora_object.field_isbn
     - field.field.node.islandora_object.field_issn
-    - field.field.node.islandora_object.field_keyword_subject_topic_
+    - field.field.node.islandora_object.field_keyword
     - field.field.node.islandora_object.field_language
     - field.field.node.islandora_object.field_lccn
     - field.field.node.islandora_object.field_linked_agent
@@ -123,7 +123,7 @@ third_party_settings:
         - field_isbn
         - field_hdl
         - field_subject
-        - field_keyword_subject_topic_
+        - field_keyword
         - field_subjects_name
         - field_geographic_subject
         - field_temporal_subject
@@ -923,7 +923,7 @@ content:
     third_party_settings: {  }
     weight: 22
     region: content
-  field_keyword_subject_topic_:
+  field_keyword:
     type: entity_reference_label
     label: above
     settings:

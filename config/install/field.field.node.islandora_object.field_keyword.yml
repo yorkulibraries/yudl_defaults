@@ -2,11 +2,11 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_keyword_subject_topic_
+    - field.storage.node.field_keyword
     - node.type.islandora_object
     - taxonomy.vocabulary.tags
-id: node.islandora_object.field_keyword_subject_topic_
-field_name: field_keyword_subject_topic_
+id: node.islandora_object.field_keyword
+field_name: field_keyword
 entity_type: node
 bundle: islandora_object
 label: Keywords

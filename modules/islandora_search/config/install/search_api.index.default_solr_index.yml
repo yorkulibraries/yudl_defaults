@@ -107,7 +107,7 @@ field_settings:
       type: union
       fields:
         - 'entity:node/field_geographic_subject'
-        - 'entity:node/field_keyword_subject_topic_'
+        - 'entity:node/field_keyword'
         - 'entity:node/field_subject'
         - 'entity:node/field_subjects_name'
         - 'entity:node/field_temporal_subject'
