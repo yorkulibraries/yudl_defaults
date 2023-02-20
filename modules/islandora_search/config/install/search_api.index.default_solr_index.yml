@@ -38,6 +38,7 @@ dependencies:
     - taxonomy
     - search_api
     - controlled_access_terms
+    - yudl_search
     - media
 third_party_settings:
   search_api_solr:
@@ -575,6 +576,7 @@ processor_settings:
       h3: 2
       string: 2
   language_with_fallback: {  }
+  member_of_collection: {  }
   rendered_item:
     weights:
       add_properties: 0
