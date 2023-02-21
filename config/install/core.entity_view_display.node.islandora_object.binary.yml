@@ -843,36 +843,42 @@ content:
     type: edtf_default
     label: inline
     settings:
-      date_separator: dash
-      date_order: big_endian
-      month_format: mm
-      day_format: dd
+      date_separator: space
+      date_order: middle_endian
+      month_format: mmmm
+      day_format: d
       year_format: 'y'
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
     weight: 6
     region: content
   field_edtf_date_created:
     type: edtf_default
     label: inline
     settings:
-      date_separator: dash
-      date_order: big_endian
-      month_format: mm
-      day_format: dd
+      date_separator: space
+      date_order: middle_endian
+      month_format: mmmm
+      day_format: d
       year_format: 'y'
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
     weight: 8
     region: content
   field_edtf_date_issued:
     type: edtf_default
     label: inline
     settings:
-      date_separator: dash
-      date_order: big_endian
-      month_format: mm
-      day_format: dd
+      date_separator: space
+      date_order: middle_endian
+      month_format: mmmm
+      day_format: d
       year_format: 'y'
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ds_limit: ''
     weight: 7
     region: content
   field_extent:
