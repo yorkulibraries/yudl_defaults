@@ -1098,11 +1098,6 @@ content:
     third_party_settings: {  }
     weight: 5
     region: content
-  mirador_evas_entity_view_3:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 4
-    region: content
 hidden:
   display_media_entity_view_1: true
   display_media_entity_view_2: true
@@ -1117,8 +1112,6 @@ hidden:
   field_weight: true
   islandora_fits_checksum: true
   langcode: true
-  mirador_evas_entity_view_1: true
-  mirador_evas_entity_view_2: true
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true

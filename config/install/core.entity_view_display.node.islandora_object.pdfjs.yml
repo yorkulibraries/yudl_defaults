@@ -1117,9 +1117,6 @@ hidden:
   field_weight: true
   islandora_fits_checksum: true
   langcode: true
-  mirador_evas_entity_view_1: true
-  mirador_evas_entity_view_2: true
-  mirador_evas_entity_view_3: true
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
