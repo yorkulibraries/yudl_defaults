@@ -2,23 +2,18 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.taxonomy_term.field_cat_date_begin
-    - field.storage.taxonomy_term.field_cat_date_end
     - field.storage.node.field_city
     - field.storage.node.field_city_section
     - field.storage.node.field_continent
-    - field.storage.taxonomy_term.field_corp_alt_name
     - field.storage.node.field_country
     - field.storage.node.field_county
-    - field.storage.node.field_description
+    - field.storage.node.field_linked_agent
     - field.storage.node.field_edtf_date
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_edtf_date_issued
+    - field.storage.node.field_description
     - field.storage.node.field_genre
-    - field.storage.taxonomy_term.field_geo_alt_name
-    - field.storage.node.field_geographic_subject
     - field.storage.node.field_language
-    - field.storage.node.field_linked_agent
     - field.storage.node.field_member_of
     - field.storage.node.field_note
     - field.storage.node.field_physical_form
@@ -26,9 +21,14 @@ dependencies:
     - field.storage.node.field_region
     - field.storage.node.field_resource_type
     - field.storage.node.field_subject
+    - field.storage.node.field_geographic_subject
     - field.storage.node.field_subjects_name
     - field.storage.node.field_tags
     - field.storage.node.field_temporal_subject
+    - field.storage.taxonomy_term.field_geo_alt_name
+    - field.storage.taxonomy_term.field_corp_alt_name
+    - field.storage.taxonomy_term.field_cat_date_end
+    - field.storage.taxonomy_term.field_cat_date_begin
     - search_api.server.default_solr_server
     - core.entity_view_mode.node.search_index
   module:
@@ -130,6 +130,53 @@ field_settings:
     dependencies:
       module:
         - node
+  collection_search:
+    label: 'Collection search'
+    property_path: aggregated_field
+    type: text
+    configuration:
+      type: concat
+      fields:
+        - 'entity:node/field_alternative_title'
+        - 'entity:node/field_city'
+        - 'entity:node/field_city_section'
+        - 'entity:node/field_continent'
+        - 'entity:node/field_coordinates'
+        - 'entity:node/field_country'
+        - 'entity:node/field_county'
+        - 'entity:node/field_date_modified_'
+        - 'entity:node/field_description'
+        - 'entity:node/field_doi'
+        - 'entity:node/field_edtf_date'
+        - 'entity:node/field_edtf_date_created'
+        - 'entity:node/field_edtf_date_issued'
+        - 'entity:node/field_extent'
+        - 'entity:node/field_genre'
+        - 'entity:node/field_geographic_subject'
+        - 'entity:node/field_hdl'
+        - 'entity:node/field_isbn'
+        - 'entity:node/field_issn'
+        - 'entity:node/field_keyword'
+        - 'entity:node/field_lccn'
+        - 'entity:node/field_local_identifier'
+        - 'entity:node/field_note'
+        - 'entity:node/field_oclc'
+        - 'entity:node/field_physical_form'
+        - 'entity:node/field_physical_location'
+        - 'entity:node/field_pid'
+        - 'entity:node/field_place_published'
+        - 'entity:node/field_province'
+        - 'entity:node/field_region'
+        - 'entity:node/field_relation'
+        - 'entity:node/field_rights'
+        - 'entity:node/field_rights_holder'
+        - 'entity:node/field_subject'
+        - 'entity:node/field_subjects_name'
+        - 'entity:node/field_tags'
+        - 'entity:node/field_temporal_subject'
+        - 'entity:node/promote'
+        - 'entity:node/status'
+        - 'entity:node/title'
   created:
     label: 'Authored on'
     datasource_id: 'entity:node'
