@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Contact categories'
+vid: contact_categories
+description: ''
+weight: 0
