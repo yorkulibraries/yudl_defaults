@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies: {  }
+id: suggest_a_correction
+label: 'Suggest a correction'
+recipients:
+  - ruestn@yorku.ca
+reply: ''
+weight: 0
+message: ''
+redirect: /
