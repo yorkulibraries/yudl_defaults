@@ -3,32 +3,33 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_member_of
-    - field.storage.taxonomy_term.field_cat_date_begin
-    - field.storage.taxonomy_term.field_cat_date_end
     - field.storage.node.field_city
     - field.storage.node.field_city_section
     - field.storage.node.field_continent
-    - field.storage.taxonomy_term.field_corp_alt_name
     - field.storage.node.field_country
     - field.storage.node.field_county
-    - field.storage.node.field_description
+    - field.storage.node.field_linked_agent
     - field.storage.node.field_edtf_date
     - field.storage.node.field_edtf_date_created
     - field.storage.node.field_edtf_date_issued
+    - field.storage.node.field_description
     - field.storage.node.field_genre
-    - field.storage.taxonomy_term.field_geo_alt_name
-    - field.storage.node.field_geographic_subject
     - field.storage.node.field_language
-    - field.storage.node.field_linked_agent
+    - field.storage.node.field_model
     - field.storage.node.field_note
     - field.storage.node.field_physical_form
     - field.storage.node.field_province
     - field.storage.node.field_region
     - field.storage.node.field_resource_type
     - field.storage.node.field_subject
+    - field.storage.node.field_geographic_subject
     - field.storage.node.field_subjects_name
     - field.storage.node.field_tags
     - field.storage.node.field_temporal_subject
+    - field.storage.taxonomy_term.field_geo_alt_name
+    - field.storage.taxonomy_term.field_corp_alt_name
+    - field.storage.taxonomy_term.field_cat_date_end
+    - field.storage.taxonomy_term.field_cat_date_begin
     - search_api.server.default_solr_server
     - core.entity_view_mode.node.search_index
   module:
@@ -373,6 +374,14 @@ field_settings:
     dependencies:
       config:
         - field.storage.node.field_member_of
+  field_model:
+    label: Model
+    datasource_id: 'entity:node'
+    property_path: field_model
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_model
   field_note:
     label: Note
     datasource_id: 'entity:node'
