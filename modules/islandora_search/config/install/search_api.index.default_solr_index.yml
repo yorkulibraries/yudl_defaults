@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_access_terms
     - field.storage.node.field_member_of
     - field.storage.node.field_city
     - field.storage.node.field_city_section
@@ -199,6 +200,14 @@ field_settings:
     label: Year
     property_path: edtf_year
     type: integer
+  field_access_terms:
+    label: 'Access Control'
+    datasource_id: 'entity:node'
+    property_path: field_access_terms
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_access_terms
   field_ancestors:
     label: Ancestors
     datasource_id: 'entity:node'
