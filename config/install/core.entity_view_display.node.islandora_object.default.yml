@@ -1111,6 +1111,9 @@ hidden:
   islandora_fits_checksum: true
   langcode: true
   media_evas_content_entity_view_1: true
+  mirador_evas_entity_view_1: true
+  mirador_evas_entity_view_2: true
+  mirador_evas_entity_view_3: true
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true

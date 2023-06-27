@@ -5,6 +5,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
+    - field.field.node.islandora_object.field_call_number
     - field.field.node.islandora_object.field_city
     - field.field.node.islandora_object.field_city_section
     - field.field.node.islandora_object.field_continent
@@ -29,7 +30,6 @@ dependencies:
     - field.field.node.islandora_object.field_lccn
     - field.field.node.islandora_object.field_linked_agent
     - field.field.node.islandora_object.field_local_identifier
-    - field.field.node.islandora_object.field_call_number
     - field.field.node.islandora_object.field_member_of
     - field.field.node.islandora_object.field_model
     - field.field.node.islandora_object.field_note
@@ -92,11 +92,13 @@ content:
     weight: 0
     region: content
 hidden:
+  addtoany: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
   display_media_service_file: true
   field_access_terms: true
   field_alternative_title: true
+  field_call_number: true
   field_city: true
   field_city_section: true
   field_continent: true
@@ -122,7 +124,6 @@ hidden:
   field_lccn: true
   field_linked_agent: true
   field_local_identifier: true
-  field_call_number: true
   field_member_of: true
   field_model: true
   field_note: true
@@ -144,7 +145,11 @@ hidden:
   islandora_fits_checksum: true
   langcode: true
   links: true
+  media_evas_content_entity_view_1: true
   members_eva_entity_view_1: true
+  mirador_evas_entity_view_1: true
+  mirador_evas_entity_view_2: true
+  mirador_evas_entity_view_3: true
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
