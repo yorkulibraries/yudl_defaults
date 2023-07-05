@@ -8,8 +8,6 @@ dependencies:
     - groupmedia
     - media
 id: group_content_type_2ea286c61dac2
-label: 'York University: Group media (Document)'
-description: 'Adds <em class="placeholder">Document</em> content to groups both publicly and privately.'
 group_type: york_university
 content_plugin: 'group_media:document'
 plugin_config:

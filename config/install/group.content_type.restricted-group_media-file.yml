@@ -8,8 +8,6 @@ dependencies:
     - groupmedia
     - media
 id: restricted-group_media-file
-label: 'Restricted: Group media (File)'
-description: 'Adds <em class="placeholder">File</em> content to groups both publicly and privately.'
 group_type: restricted
 content_plugin: 'group_media:file'
 plugin_config:

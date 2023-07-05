@@ -8,8 +8,6 @@ dependencies:
     - groupmedia
     - media
 id: group_content_type_0250eaf005893
-label: 'Restricted: Group media (Remote video)'
-description: 'Adds <em class="placeholder">Remote video</em> content to groups both publicly and privately.'
 group_type: restricted
 content_plugin: 'group_media:remote_video'
 plugin_config:

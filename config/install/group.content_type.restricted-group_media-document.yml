@@ -8,8 +8,6 @@ dependencies:
     - groupmedia
     - media
 id: restricted-group_media-document
-label: 'Restricted: Group media (Document)'
-description: 'Adds <em class="placeholder">Document</em> content to groups both publicly and privately.'
 group_type: restricted
 content_plugin: 'group_media:document'
 plugin_config:

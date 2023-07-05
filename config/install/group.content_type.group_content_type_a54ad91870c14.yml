@@ -8,8 +8,6 @@ dependencies:
     - groupmedia
     - media
 id: group_content_type_a54ad91870c14
-label: 'Restricted: Group media (FITS Technical metadata)'
-description: 'Adds <em class="placeholder">FITS Technical metadata</em> content to groups both publicly and privately.'
 group_type: restricted
 content_plugin: 'group_media:fits_technical_metadata'
 plugin_config:

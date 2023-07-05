@@ -6,10 +6,7 @@ dependencies:
 id: restricted-member
 label: Member
 weight: -100
-internal: true
-audience: member
 group_type: restricted
-permissions_ui: true
 permissions:
   - 'view group_media:audio content'
   - 'view group_media:audio entity'
@@ -33,3 +30,6 @@ permissions:
   - 'view group_node:islandora_object entity'
   - 'view group_node:page content'
   - 'view group_node:page entity'
+admin: false
+scope: insider
+global_role: authenticated

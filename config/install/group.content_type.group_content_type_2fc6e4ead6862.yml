@@ -8,8 +8,6 @@ dependencies:
     - groupmedia
     - media
 id: group_content_type_2fc6e4ead6862
-label: 'York University: Group media (Audio)'
-description: 'Adds <em class="placeholder">Audio</em> content to groups both publicly and privately.'
 group_type: york_university
 content_plugin: 'group_media:audio'
 plugin_config:

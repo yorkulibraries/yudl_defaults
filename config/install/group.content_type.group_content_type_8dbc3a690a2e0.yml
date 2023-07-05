@@ -8,8 +8,6 @@ dependencies:
     - groupmedia
     - media
 id: group_content_type_8dbc3a690a2e0
-label: 'York University: Group media (Video)'
-description: 'Adds <em class="placeholder">Video</em> content to groups both publicly and privately.'
 group_type: york_university
 content_plugin: 'group_media:video'
 plugin_config:

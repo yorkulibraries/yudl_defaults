@@ -8,8 +8,6 @@ dependencies:
     - gnode
     - node
 id: group_content_type_988a2e9c30903
-label: 'York University: Group node (Repository Item)'
-description: 'Adds <em class="placeholder">Repository Item</em> content to groups both publicly and privately.'
 group_type: york_university
 content_plugin: 'group_node:islandora_object'
 plugin_config:

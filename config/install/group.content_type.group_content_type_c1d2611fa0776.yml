@@ -8,8 +8,6 @@ dependencies:
     - groupmedia
     - media
 id: group_content_type_c1d2611fa0776
-label: 'York University: Group media (Remote video)'
-description: 'Adds <em class="placeholder">Remote video</em> content to groups both publicly and privately.'
 group_type: york_university
 content_plugin: 'group_media:remote_video'
 plugin_config:

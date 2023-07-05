@@ -8,8 +8,6 @@ dependencies:
     - gnode
     - node
 id: group_content_type_d9b2f929a6a94
-label: 'Restricted: Group node (Repository Item)'
-description: 'Adds <em class="placeholder">Repository Item</em> content to groups both publicly and privately.'
 group_type: restricted
 content_plugin: 'group_node:islandora_object'
 plugin_config:

@@ -8,8 +8,6 @@ dependencies:
     - gnode
     - node
 id: group_content_type_3f16af5b65370
-label: 'York University: Group node (Article)'
-description: 'Adds <em class="placeholder">Article</em> content to groups both publicly and privately.'
 group_type: york_university
 content_plugin: 'group_node:article'
 plugin_config:

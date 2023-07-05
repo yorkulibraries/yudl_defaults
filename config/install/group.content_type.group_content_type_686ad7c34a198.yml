@@ -8,8 +8,6 @@ dependencies:
     - groupmedia
     - media
 id: group_content_type_686ad7c34a198
-label: 'York University: Group media (FITS Technical metadata)'
-description: 'Adds <em class="placeholder">FITS Technical metadata</em> content to groups both publicly and privately.'
 group_type: york_university
 content_plugin: 'group_media:fits_technical_metadata'
 plugin_config:

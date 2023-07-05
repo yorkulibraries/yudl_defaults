@@ -6,8 +6,8 @@ dependencies:
 id: restricted-anonymous
 label: Anonymous
 weight: -102
-internal: true
-audience: anonymous
 group_type: restricted
-permissions_ui: true
 permissions: {  }
+admin: false
+scope: outsider
+global_role: anonymous

@@ -6,8 +6,8 @@ dependencies:
 id: york_university-anonymous
 label: Anonymous
 weight: -102
-internal: true
-audience: anonymous
 group_type: york_university
-permissions_ui: true
 permissions: {  }
+admin: false
+scope: outsider
+global_role: anonymous
