@@ -50,7 +50,9 @@ dependencies:
     - field.field.node.islandora_object.field_weight
     - node.type.islandora_object
   module:
+    - controlled_access_terms
     - field_group
+    - text
     - user
   enforced:
     module:
@@ -84,7 +86,58 @@ content:
   display_media_thumbnail:
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_edtf_date:
+    type: edtf_default
+    label: above
+    settings:
+      date_separator: dash
+      date_order: big_endian
+      month_format: mm
+      day_format: dd
+      year_format: 'y'
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_genre:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_linked_agent:
+    type: typed_relation_default
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
     weight: 1
+    region: content
+  field_local_identifier:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_resource_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
     region: content
   search_api_excerpt:
     settings: {  }
@@ -106,15 +159,12 @@ hidden:
   field_country: true
   field_county: true
   field_date_modified_: true
-  field_description: true
   field_display_hints: true
   field_doi: true
-  field_edtf_date: true
   field_edtf_date_created: true
   field_edtf_date_issued: true
   field_extent: true
   field_gemini_uri: true
-  field_genre: true
   field_geographic_subject: true
   field_hdl: true
   field_isbn: true
@@ -122,8 +172,6 @@ hidden:
   field_keyword: true
   field_language: true
   field_lccn: true
-  field_linked_agent: true
-  field_local_identifier: true
   field_member_of: true
   field_model: true
   field_note: true
@@ -135,7 +183,6 @@ hidden:
   field_province: true
   field_region: true
   field_relation: true
-  field_resource_type: true
   field_rights: true
   field_rights_holder: true
   field_subject: true
