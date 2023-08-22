@@ -330,6 +330,10 @@ display:
           1: AND
       style:
         type: default
+        options:
+          grouping: {  }
+          row_class: search-aligned
+          default_row_class: true
       row:
         type: search_api
         options:
