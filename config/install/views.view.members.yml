@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.collection_search
   module:
     - node
     - user
@@ -76,7 +76,7 @@ display:
         type: full
         options:
           offset: 0
-          items_per_page: 12
+          items_per_page: 48
           total_pages: null
           id: 0
           tags:
@@ -87,7 +87,7 @@ display:
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options: '12, 24, 48, 96'
             items_per_page_options_all: false
             items_per_page_options_all_label: '- All -'
             offset: false
@@ -221,7 +221,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: collection_search
       query:
         type: views_query
         options:
