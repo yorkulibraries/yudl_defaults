@@ -6,8 +6,8 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.islandora_models
   content:
-    - 'taxonomy_term:islandora_models:abbf11ff-272b-4f2d-bf44-4fbaa40ff41c'
-    - 'taxonomy_term:islandora_models:be5e6e31-cf54-4f07-80d7-0a4bbec22a1d'
+    - 'taxonomy_term:islandora_models:1f7e5037-7ec3-414b-b962-c90b76defcdb'
+    - 'taxonomy_term:islandora_models:6f66e99e-91d9-4555-bf1b-93093e270ca2'
   module:
     - node
     - taxonomy
