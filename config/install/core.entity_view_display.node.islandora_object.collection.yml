@@ -89,6 +89,14 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_relation:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
 hidden:
   addtoany: true
   display_media_entity_view_1: true
@@ -130,7 +138,6 @@ hidden:
   field_place_published: true
   field_province: true
   field_region: true
-  field_relation: true
   field_resource_type: true
   field_rights: true
   field_rights_holder: true
