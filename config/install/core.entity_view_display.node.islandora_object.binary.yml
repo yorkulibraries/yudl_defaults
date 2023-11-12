@@ -52,7 +52,6 @@ dependencies:
     - node.type.islandora_object
   module:
     - controlled_access_terms
-    - ds
     - field_group
     - geolocation
     - text
@@ -803,9 +802,7 @@ content:
         touchZoom: true
         bounceAtZoomLimits: true
       data_provider_settings: {  }
-    third_party_settings:
-      ds:
-        ds_limit: ''
+    third_party_settings: {  }
     weight: 34
     region: content
   field_country:
@@ -848,9 +845,7 @@ content:
       month_format: mmmm
       day_format: d
       year_format: 'y'
-    third_party_settings:
-      ds:
-        ds_limit: ''
+    third_party_settings: {  }
     weight: 6
     region: content
   field_edtf_date_created:
@@ -862,9 +857,7 @@ content:
       month_format: mmmm
       day_format: d
       year_format: 'y'
-    third_party_settings:
-      ds:
-        ds_limit: ''
+    third_party_settings: {  }
     weight: 8
     region: content
   field_edtf_date_issued:
@@ -876,9 +869,7 @@ content:
       month_format: mmmm
       day_format: d
       year_format: 'y'
-    third_party_settings:
-      ds:
-        ds_limit: ''
+    third_party_settings: {  }
     weight: 7
     region: content
   field_extent:
