@@ -13,29 +13,29 @@ description: 'Display for Toronto Telegram photograph assignments.'
 requireAllConditions: true
 disabled: false
 conditions:
-  node_has_term:
-    id: node_has_term
-    negate: false
-    uuid: f5689755-57d0-469b-b198-51ef3b5da800
-    context_mapping:
-      node: '@node.node_route_context:node'
-    uri: 'https://schema.org/DigitalDocument'
-    logic: and
   node_has_parent:
     id: node_has_parent
     negate: false
-    uuid: bc6e7e25-e015-4f74-a04a-1ff42b98a01e
+    uuid: 5367385c-30d4-4ca8-80c5-2511517df981
     context_mapping:
       node: '@node.node_route_context:node'
     parent_nid: 46
     parent_reference_field: field_member_of
+  node_has_term:
+    id: node_has_term
+    negate: false
+    uuid: 60a31d44-56cd-428c-89ec-07730c1fccd3
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uri: 'https://schema.org/DigitalDocument'
+    logic: and
 reactions:
   blocks:
     id: blocks
-    uuid: 510e1fbb-c08e-4d02-b6d2-b1d5556488d8
+    uuid: 5bb2736d-a503-4cc1-a787-b8762b81f8ea
     blocks:
-      9efbebc9-d6f4-4a73-9197-29c6e8b714b8:
-        uuid: 9efbebc9-d6f4-4a73-9197-29c6e8b714b8
+      d6169c4c-f1f7-493b-9414-df961e16ee17:
+        uuid: d6169c4c-f1f7-493b-9414-df961e16ee17
         id: 'views_block:members-block_1'
         label: 'Assignment negatives'
         provider: views
@@ -49,8 +49,8 @@ reactions:
         context_id: toronto_telegram_negatives
         context_mapping: {  }
         views_label: 'Assignment negatives'
-        items_per_page: '24'
+        items_per_page: none
         third_party_settings: {  }
-    include_default_blocks: 0
+    include_default_blocks: 1
     saved: false
 weight: 0
