@@ -8,5 +8,4 @@ is_admin: false
 permissions:
   - 'access content'
   - 'opt-in or out of matomo tracking'
-  - 'search content'
   - 'view media'
