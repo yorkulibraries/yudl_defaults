@@ -1,0 +1,14 @@
+islandora_group: null
+restricted: islandora_access
+york_university: islandora_access
+media-type-access-fields:
+  audio: field_access_terms
+  document: field_access_terms
+  extracted_text: field_access_terms
+  file: field_access_terms
+  image: field_access_terms
+  remote_video: field_access_terms
+  video: field_access_terms
+node-type-access-fields:
+  islandora_object: field_access_terms
+access_control: islandora_access

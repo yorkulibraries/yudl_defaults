@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.access_control
+id: access_control-admin
+label: Admin
+weight: 100
+admin: true
+scope: individual
+global_role: null
+group_type: access_control
+permissions: {  }

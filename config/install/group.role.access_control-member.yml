@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.access_control
+    - user.role.authenticated
+id: access_control-member
+label: Member
+weight: -100
+admin: false
+scope: insider
+global_role: authenticated
+group_type: access_control
+permissions: {  }
