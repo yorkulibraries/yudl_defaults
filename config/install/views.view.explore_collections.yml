@@ -6,8 +6,8 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.islandora_models
   content:
-    - 'taxonomy_term:islandora_models:1f7e5037-7ec3-414b-b962-c90b76defcdb'
-    - 'taxonomy_term:islandora_models:6f66e99e-91d9-4555-bf1b-93093e270ca2'
+    - 'taxonomy_term:islandora_models:7e0c4719-8467-469b-be1d-a3e12d43ce97'
+    - 'taxonomy_term:islandora_models:bf752bb5-1dcc-4dce-a82c-8c2902b1c703'
   module:
     - node
     - taxonomy
@@ -303,8 +303,8 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            - 11
-            - 19
+            - 10
+            - 18
           group: 1
           exposed: false
           expose:
