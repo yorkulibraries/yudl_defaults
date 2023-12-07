@@ -5,9 +5,10 @@ domain_mode: 0
 visibility:
   request_path_mode: 0
   request_path_pages: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*/*"
-  user_role_mode: 0
-  user_role_roles: {  }
-  user_account_mode: 1
+  user_role_mode: 1
+  user_role_roles:
+    administrator: administrator
+  user_account_mode: 2
 track:
   mailto: true
   files: true
@@ -22,34 +23,36 @@ privacy:
 custom:
   variable:
     1:
-      name: ''
-      value: ''
-      scope: visit
       slot: 1
+      name: ''
+      value: ''
+      scope: visit
     2:
-      name: ''
-      value: ''
-      scope: visit
       slot: 2
+      name: ''
+      value: ''
+      scope: visit
     3:
-      name: ''
-      value: ''
-      scope: visit
       slot: 3
+      name: ''
+      value: ''
+      scope: visit
     4:
-      name: ''
-      value: ''
-      scope: visit
       slot: 4
-    5:
       name: ''
       value: ''
       scope: visit
+    5:
       slot: 5
+      name: ''
+      value: ''
+      scope: visit
 codesnippet:
-  before: ''
+  before: "// require user tracking consent before processing data\r\n_paq.push(['requireConsent']);\r\n\r\n// OR require user cookie consent before storing and using any cookies\r\n_paq.push(['requireCookieConsent']);\r\n\r\n_paq.push(['trackPageView']);"
   after: ''
 translation_set: false
+disable_tracking: false
 cache: true
-page_title_hierarchy: false
+page_title_hierarchy: true
 page_title_hierarchy_exclude_home: true
+status_codes_disabled: {  }
