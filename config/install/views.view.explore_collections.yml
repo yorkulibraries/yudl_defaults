@@ -6,8 +6,8 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.islandora_models
   content:
-    - 'taxonomy_term:islandora_models:7e0c4719-8467-469b-be1d-a3e12d43ce97'
-    - 'taxonomy_term:islandora_models:bf752bb5-1dcc-4dce-a82c-8c2902b1c703'
+    - 'taxonomy_term:islandora_models:1f7e5037-7ec3-414b-b962-c90b76defcdb'
+    - 'taxonomy_term:islandora_models:6f66e99e-91d9-4555-bf1b-93093e270ca2'
   module:
     - node
     - taxonomy
@@ -247,8 +247,12 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
-        options: {  }
+        type: time
+        options:
+          results_lifespan: 0
+          results_lifespan_custom: 2630000
+          output_lifespan: 0
+          output_lifespan_custom: 2630000
       empty: {  }
       sorts:
         title:
@@ -303,8 +307,8 @@ display:
           plugin_id: taxonomy_index_tid
           operator: or
           value:
-            - 10
-            - 18
+            - 11
+            - 19
           group: 1
           exposed: false
           expose:
@@ -340,6 +344,48 @@ display:
           hierarchy: false
           limit: true
           error_message: true
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: html_list
         options:
@@ -367,7 +413,7 @@ display:
         options:
           query_comment: ''
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_tags: {  }
       relationships:
