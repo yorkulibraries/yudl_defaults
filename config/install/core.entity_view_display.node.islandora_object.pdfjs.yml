@@ -64,10 +64,12 @@ third_party_settings:
     group_download_options:
       children:
         - links
-      label: 'Download Options'
+        - display_media_entity_view_3
+        - display_media_entity_view_2
+      label: Download
       parent_name: ''
       region: content
-      weight: 3
+      weight: 4
       format_type: html_element
       format_settings:
         classes: media-download
@@ -89,7 +91,7 @@ third_party_settings:
       label: 'PDFjs object detail'
       parent_name: ''
       region: content
-      weight: 4
+      weight: 3
       format_type: tabs
       format_settings:
         classes: ''
@@ -197,10 +199,15 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  display_media_entity_view_2:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
   display_media_entity_view_3:
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 7
     region: content
   field_alternative_title:
     type: basic_string
@@ -320,7 +327,7 @@ content:
             weight: 0
             settings:
               display_control: true
-              bearing: !!float 0
+              bearing: 0.0
             enabled: false
           leaflet_control_attribution:
             weight: 0
@@ -791,7 +798,7 @@ content:
         inertiaDeceleration: 3000
         easeLinearity: 0.2
         worldCopyJump: false
-        maxBoundsViscosity: !!float 0
+        maxBoundsViscosity: 0.0
         keyboard: true
         keyboardPanDelta: 80
         scrollWheelZoom: true
@@ -1091,7 +1098,6 @@ content:
     region: content
 hidden:
   display_media_entity_view_1: true
-  display_media_entity_view_2: true
   display_media_service_file: true
   display_media_thumbnail: true
   field_access_terms: true

@@ -63,10 +63,11 @@ third_party_settings:
     group_download_options:
       children:
         - links
-      label: 'Download Options'
+        - display_media_entity_view_3
+      label: Download
       parent_name: ''
       region: content
-      weight: 3
+      weight: 4
       format_type: html_element
       format_settings:
         classes: media-download
@@ -88,7 +89,7 @@ third_party_settings:
       label: 'Default object detail'
       parent_name: ''
       region: content
-      weight: 4
+      weight: 3
       format_type: tabs
       format_settings:
         classes: ''
@@ -195,6 +196,11 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 2
+    region: content
+  display_media_entity_view_3:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
     region: content
   display_media_service_file:
     settings: {  }
@@ -319,7 +325,7 @@ content:
             weight: 0
             settings:
               display_control: true
-              bearing: !!float 0
+              bearing: 0.0
             enabled: false
           leaflet_control_attribution:
             weight: 0
@@ -795,7 +801,7 @@ content:
         inertiaDeceleration: 3000
         easeLinearity: 0.2
         worldCopyJump: false
-        maxBoundsViscosity: !!float 0
+        maxBoundsViscosity: 0.0
         keyboard: true
         keyboardPanDelta: 80
         scrollWheelZoom: true
