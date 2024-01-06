@@ -60,16 +60,11 @@ dependencies:
 third_party_settings:
   field_group:
     group_search_teas:
-      children:
-        - search_api_excerpt
-        - field_edtf_date
-        - field_genre
-        - field_local_identifier
-        - field_resource_type
+      children: {  }
       label: 'Search teaser details'
       parent_name: ''
-      region: content
-      weight: 3
+      region: hidden
+      weight: 67
       format_type: html_element
       format_settings:
         classes: node__details
@@ -109,7 +104,7 @@ content:
       day_format: dd
       year_format: 'y'
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
   field_genre:
     type: entity_reference_label
@@ -117,7 +112,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 4
     region: content
   field_linked_agent:
     type: typed_relation_default
@@ -133,7 +128,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 3
+    weight: 5
     region: content
   field_resource_type:
     type: entity_reference_label
@@ -141,18 +136,14 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 4
-    region: content
-  search_api_excerpt:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
+    weight: 6
     region: content
 hidden:
   addtoany: true
   display_media_entity_view_1: true
   display_media_entity_view_2: true
   display_media_entity_view_3: true
+  display_media_entity_view_4: true
   display_media_service_file: true
   field_access_terms: true
   field_alternative_title: true
@@ -208,3 +199,4 @@ hidden:
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
+  search_api_excerpt: true

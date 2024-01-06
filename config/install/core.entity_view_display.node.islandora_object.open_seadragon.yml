@@ -63,8 +63,8 @@ third_party_settings:
   field_group:
     group_down:
       children:
-        - links
         - display_media_entity_view_3
+        - display_media_entity_view_4
       label: Download
       parent_name: ''
       region: content
@@ -73,17 +73,8 @@ third_party_settings:
       format_settings:
         classes: media-download
         show_empty_fields: false
-        id: ''
+        id: download
         description: ''
-        required_fields: false
-        open: false
-        element: div
-        show_label: '0'
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
     group_openseadragon_object_d:
       children:
         - group_item
@@ -133,7 +124,7 @@ third_party_settings:
       label: 'Item Description'
       parent_name: group_openseadragon_object_d
       region: content
-      weight: 20
+      weight: 4
       format_type: tab
       format_settings:
         classes: ''
@@ -148,7 +139,7 @@ third_party_settings:
       label: Rights
       parent_name: group_openseadragon_object_d
       region: content
-      weight: 23
+      weight: 7
       format_type: tab
       format_settings:
         classes: ''
@@ -162,7 +153,7 @@ third_party_settings:
       label: Notes
       parent_name: group_openseadragon_object_d
       region: content
-      weight: 22
+      weight: 6
       format_type: tab
       format_settings:
         classes: ''
@@ -183,7 +174,7 @@ third_party_settings:
       label: Geographic
       parent_name: group_openseadragon_object_d
       region: content
-      weight: 21
+      weight: 5
       format_type: tab
       format_settings:
         classes: ''
@@ -206,6 +197,11 @@ content:
     third_party_settings: {  }
     weight: 7
     region: content
+  display_media_entity_view_4:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
   field_alternative_title:
     type: basic_string
     label: inline
@@ -219,7 +215,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 22
+    weight: 21
     region: content
   field_city:
     type: entity_reference_label
@@ -838,7 +834,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 24
+    weight: 23
     region: content
   field_edtf_date:
     type: edtf_default
@@ -898,7 +894,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 30
+    weight: 29
     region: content
   field_hdl:
     type: string
@@ -906,7 +902,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 26
+    weight: 25
     region: content
   field_isbn:
     type: string
@@ -914,7 +910,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 25
+    weight: 24
     region: content
   field_issn:
     type: string
@@ -922,7 +918,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 23
+    weight: 22
     region: content
   field_keyword:
     type: entity_reference_label
@@ -930,7 +926,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 27
+    weight: 26
     region: content
   field_language:
     type: entity_reference_label
@@ -938,7 +934,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 17
+    weight: 16
     region: content
   field_lccn:
     type: string
@@ -946,7 +942,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 21
+    weight: 20
     region: content
   field_linked_agent:
     type: typed_relation_default
@@ -962,7 +958,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 19
+    weight: 18
     region: content
   field_note:
     type: basic_string
@@ -977,7 +973,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 20
+    weight: 19
     region: content
   field_physical_form:
     type: entity_reference_label
@@ -1001,7 +997,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 18
+    weight: 17
     region: content
   field_place_published:
     type: string
@@ -1065,7 +1061,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 28
+    weight: 27
     region: content
   field_subjects_name:
     type: entity_reference_label
@@ -1073,7 +1069,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 29
+    weight: 28
     region: content
   field_temporal_subject:
     type: entity_reference_label
@@ -1081,22 +1077,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 31
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 6
-    region: content
-  mirador_evas_entity_view_2:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 6
-    region: content
-  mirador_evas_entity_view_3:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 5
+    weight: 30
     region: content
   openseadragon_media_evas_entity_view_1:
     settings: {  }
@@ -1117,8 +1098,11 @@ hidden:
   field_weight: true
   islandora_fits_checksum: true
   langcode: true
+  links: true
   media_evas_content_entity_view_1: true
   mirador_evas_entity_view_1: true
+  mirador_evas_entity_view_2: true
+  mirador_evas_entity_view_3: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_service_file: true
   pdfjs_media_evas_entity_view_1: true
