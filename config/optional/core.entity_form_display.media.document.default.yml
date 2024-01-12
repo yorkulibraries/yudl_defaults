@@ -2,21 +2,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.media.audio.field_file_size
-    - field.field.media.audio.field_media_audio_file
-    - field.field.media.audio.field_media_of
-    - field.field.media.audio.field_media_use
-    - field.field.media.audio.field_mime_type
-    - field.field.media.audio.field_original_name
-    - field.field.media.audio.field_track
-    - media.type.audio
+    - field.field.media.document.field_access_terms
+    - field.field.media.document.field_file_size
+    - field.field.media.document.field_media_document
+    - field.field.media.document.field_media_of
+    - field.field.media.document.field_media_use
+    - field.field.media.document.field_mime_type
+    - field.field.media.document.field_original_name
+    - media.type.document
   module:
     - file
-    - islandora
     - path
-id: media.audio.default
+id: media.document.default
 targetEntityType: media
-bundle: audio
+bundle: document
 mode: default
 content:
   created:
@@ -25,12 +24,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_media_audio_file:
-    weight: 1
+  field_media_document:
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    weight: 1
     region: content
   field_media_of:
     type: entity_reference_autocomplete
@@ -54,13 +53,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textarea
-    region: content
-  field_track:
-    weight: 27
-    settings:
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: media_track
     region: content
   name:
     type: string_textfield
@@ -98,6 +90,7 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
+  field_access_terms: true
   field_file_size: true
   field_mime_type: true
   langcode: true

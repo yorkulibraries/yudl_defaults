@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.media.image.field_access_terms
     - field.field.media.image.field_file_size
     - field.field.media.image.field_height
     - field.field.media.image.field_media_image
@@ -93,6 +94,7 @@ content:
     region: content
     third_party_settings: {  }
 hidden:
+  field_access_terms: true
   field_file_size: true
   field_height: true
   field_mime_type: true

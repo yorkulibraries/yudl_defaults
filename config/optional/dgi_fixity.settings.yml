@@ -4,8 +4,8 @@ sources:
   'fixity_check_source_islandora:original_files_file': 'fixity_check_source_islandora:original_files_file'
   'fixity_check_source_islandora:original_files_image': 'fixity_check_source_islandora:original_files_image'
   'fixity_check_source_islandora:original_files_video': 'fixity_check_source_islandora:original_files_video'
-threshold: '-3 months'
-batch_size: 1000
+threshold: '-6 months'
+batch_size: 500
 notify_status: 2
 notify_user: 2
 notify_user_threshold: '-3 days'
