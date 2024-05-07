@@ -122,7 +122,6 @@ display:
           title: ''
           default_argument_type: node
           default_argument_options: {  }
-          default_argument_skip_url: false
           summary_options:
             base_path: ''
             count: true
@@ -377,7 +376,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<p>File: <a href=\"https://digital.library.yorku.ca/{{ field_media_audio_file }}\" download=\"{{ arguments.field_media_of_target_id }}-Service-File\">{{ arguments.field_media_of_target_id }}-Service-File.mp3</a></p>\r\n<p>If a high resolution copy of the file is needed, please <a href=\"https://digital.library.yorku.ca/contact\" target=\"_blank\">contact us</a>, and select \"High Resolution Copy\" as the category.</p>"
+            text: '<p>File: <a href="https://digital.library.yorku.ca/{{ field_media_audio_file }}" download="{{ arguments.field_media_of_target_id }}-Service-File">{{ arguments.field_media_of_target_id }}-Service-File.mp3</a></p>'
             make_link: false
             path: ''
             absolute: false
@@ -564,7 +563,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<p>File: <a href=\"https://digital.library.yorku.ca/{{ field_media_video_file }}\" download=\"{{ arguments.field_media_of_target_id }}-Service-File\">{{ arguments.field_media_of_target_id }}-Service-File.mp4</a></p>\r\n<p>If a high resolution copy of the file is needed, please <a href=\"https://digital.library.yorku.ca/contact\" target=\"_blank\">contact us</a>, and select \"High Resolution Copy\" as the category.</p>"
+            text: '<p>File: <a href="https://digital.library.yorku.ca/{{ field_media_video_file }}" download="{{ arguments.field_media_of_target_id }}-Service-File">{{ arguments.field_media_of_target_id }}-Service-File.mp4</a></p>'
             make_link: false
             path: ''
             absolute: false
