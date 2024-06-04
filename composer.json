@@ -11,7 +11,7 @@
     "issues": "https://github.com/yorkulibraries/yudl_defaults/issues"
   },
   "require": {
-    "islandora/islandora": "^2.9",
+    "drupal/islandora": "^2.9",
     "drupal/field_group" : "^3.4",
     "drupal/field_permissions" : "^1.02"
   }
