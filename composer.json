@@ -1,6 +1,6 @@
 {
   "name": "yorkulibraries/yudl_defaults",
-  "description": "Islandora Defaults",
+  "description": "YUDL Defaults",
   "type": "drupal-module",
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -11,8 +11,11 @@
     "issues": "https://github.com/yorkulibraries/yudl_defaults/issues"
   },
   "require": {
-    "islandora/islandora": "^2.9",
+    "drupal/islandora": "^2",
+    "drupal/openseadragon": "^2",
+    "drupal/controlled_access_terms": "^2",
     "drupal/field_group" : "^3.4",
-    "drupal/field_permissions" : "^1.02"
+    "drupal/field_permissions" : "^1.02",
+    "drupal/pdf": "^1.1"
   }
 }
