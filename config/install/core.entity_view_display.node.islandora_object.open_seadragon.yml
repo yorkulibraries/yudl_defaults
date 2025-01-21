@@ -68,7 +68,7 @@ third_party_settings:
       label: Download
       parent_name: ''
       region: content
-      weight: 4
+      weight: 5
       format_type: fieldset
       format_settings:
         classes: media-download
@@ -84,7 +84,7 @@ third_party_settings:
       label: 'Openseadragon object detail'
       parent_name: ''
       region: content
-      weight: 3
+      weight: 4
       format_type: tabs
       format_settings:
         classes: ''
@@ -115,7 +115,6 @@ third_party_settings:
         - field_issn
         - field_doi
         - field_isbn
-        - field_hdl
         - field_keyword
         - field_subject
         - field_subjects_name
@@ -124,7 +123,7 @@ third_party_settings:
       label: 'Item Description'
       parent_name: group_openseadragon_object_d
       region: content
-      weight: 4
+      weight: 12
       format_type: tab
       format_settings:
         classes: ''
@@ -139,7 +138,7 @@ third_party_settings:
       label: Rights
       parent_name: group_openseadragon_object_d
       region: content
-      weight: 7
+      weight: 15
       format_type: tab
       format_settings:
         classes: ''
@@ -153,7 +152,7 @@ third_party_settings:
       label: Notes
       parent_name: group_openseadragon_object_d
       region: content
-      weight: 6
+      weight: 14
       format_type: tab
       format_settings:
         classes: ''
@@ -174,7 +173,7 @@ third_party_settings:
       label: Geographic
       parent_name: group_openseadragon_object_d
       region: content
-      weight: 5
+      weight: 13
       format_type: tab
       format_settings:
         classes: ''
@@ -190,7 +189,7 @@ content:
   addtoany:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   display_media_entity_view_3:
     settings: {  }
@@ -215,7 +214,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 21
+    weight: 22
     region: content
   field_city:
     type: entity_reference_label
@@ -826,7 +825,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_doi:
     type: string
@@ -834,7 +833,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 23
+    weight: 24
     region: content
   field_edtf_date:
     type: edtf_default
@@ -878,7 +877,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 12
+    weight: 13
     region: content
   field_genre:
     type: entity_reference_label
@@ -902,7 +901,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 25
+    weight: 1
     region: content
   field_isbn:
     type: string
@@ -910,7 +909,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 24
+    weight: 25
     region: content
   field_issn:
     type: string
@@ -918,7 +917,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 22
+    weight: 23
     region: content
   field_keyword:
     type: entity_reference_label
@@ -934,7 +933,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 16
+    weight: 17
     region: content
   field_lccn:
     type: string
@@ -942,7 +941,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 20
+    weight: 21
     region: content
   field_linked_agent:
     type: typed_relation_default
@@ -958,7 +957,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 18
+    weight: 19
     region: content
   field_note:
     type: basic_string
@@ -973,7 +972,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 19
+    weight: 20
     region: content
   field_physical_form:
     type: entity_reference_label
@@ -981,7 +980,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 13
+    weight: 14
     region: content
   field_physical_location:
     type: string
@@ -989,7 +988,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 14
+    weight: 15
     region: content
   field_pid:
     type: string
@@ -997,7 +996,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 17
+    weight: 18
     region: content
   field_place_published:
     type: string
@@ -1029,7 +1028,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 15
+    weight: 16
     region: content
   field_resource_type:
     type: entity_reference_label
@@ -1037,7 +1036,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 11
+    weight: 12
     region: content
   field_rights:
     type: entity_reference_label

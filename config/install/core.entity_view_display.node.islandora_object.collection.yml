@@ -77,6 +77,14 @@ content:
     third_party_settings: {  }
     weight: 1
     region: content
+  field_hdl:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
   field_note:
     type: basic_string
     label: inline
@@ -118,7 +126,6 @@ hidden:
   field_gemini_uri: true
   field_genre: true
   field_geographic_subject: true
-  field_hdl: true
   field_isbn: true
   field_issn: true
   field_keyword: true

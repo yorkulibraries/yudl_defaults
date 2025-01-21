@@ -8,10 +8,10 @@ id: node.islandora_object.field_hdl
 field_name: field_hdl
 entity_type: node
 bundle: islandora_object
-label: hdl
-description: ''
+label: Permalink
+description: 'Generated Handle from YUDL Handle Server or provided Handle from YorkSpace Handle Server via migration.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

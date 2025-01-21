@@ -67,7 +67,7 @@ third_party_settings:
       label: Download
       parent_name: ''
       region: content
-      weight: 4
+      weight: 5
       format_type: fieldset
       format_settings:
         classes: media-download
@@ -83,7 +83,7 @@ third_party_settings:
       label: 'PDFjs object detail'
       parent_name: ''
       region: content
-      weight: 3
+      weight: 4
       format_type: tabs
       format_settings:
         classes: ''
@@ -114,7 +114,6 @@ third_party_settings:
         - field_issn
         - field_doi
         - field_isbn
-        - field_hdl
         - field_keyword
         - field_subject
         - field_subjects_name
@@ -189,7 +188,7 @@ content:
   addtoany:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   display_media_entity_view_2:
     settings: {  }
@@ -820,7 +819,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_doi:
     type: string
@@ -852,7 +851,7 @@ content:
       day_format: d
       year_format: 'y'
     third_party_settings: {  }
-    weight: 9
+    weight: 10
     region: content
   field_edtf_date_issued:
     type: edtf_default
@@ -872,7 +871,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 12
+    weight: 13
     region: content
   field_genre:
     type: entity_reference_label
@@ -880,7 +879,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 10
+    weight: 11
     region: content
   field_geographic_subject:
     type: entity_reference_label
@@ -888,7 +887,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 30
+    weight: 29
     region: content
   field_hdl:
     type: string
@@ -896,7 +895,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 26
+    weight: 1
     region: content
   field_isbn:
     type: string
@@ -920,7 +919,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 27
+    weight: 26
     region: content
   field_language:
     type: entity_reference_label
@@ -975,7 +974,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 13
+    weight: 14
     region: content
   field_physical_location:
     type: string
@@ -983,7 +982,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 14
+    weight: 15
     region: content
   field_pid:
     type: string
@@ -1023,7 +1022,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 15
+    weight: 16
     region: content
   field_resource_type:
     type: entity_reference_label
@@ -1031,7 +1030,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 11
+    weight: 12
     region: content
   field_rights:
     type: entity_reference_label
@@ -1055,7 +1054,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 28
+    weight: 27
     region: content
   field_subjects_name:
     type: entity_reference_label
@@ -1063,7 +1062,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 29
+    weight: 28
     region: content
   field_temporal_subject:
     type: entity_reference_label
@@ -1071,7 +1070,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 31
+    weight: 30
     region: content
   pdfjs_media_evas_entity_view_1:
     settings: {  }
