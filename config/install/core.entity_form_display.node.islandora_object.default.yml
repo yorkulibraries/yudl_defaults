@@ -1,3 +1,4 @@
+uuid: 94cb4ef9-4c40-4338-a546-0b320a39442b
 langcode: en
 status: true
 dependencies:
@@ -64,7 +65,6 @@ third_party_settings:
         - field_member_of
         - field_model
         - field_display_hints
-        - field_access_terms
         - langcode
         - field_weight
       label: System
@@ -369,7 +369,7 @@ content:
     settings:
       strict_dates: false
       intervals: true
-      sets: false
+      sets: true
     third_party_settings: {  }
   field_edtf_date_created:
     type: edtf_default
