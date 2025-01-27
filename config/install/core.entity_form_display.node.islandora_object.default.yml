@@ -4,6 +4,7 @@ dependencies:
   config:
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
+    - field.field.node.islandora_object.field_call_number
     - field.field.node.islandora_object.field_city
     - field.field.node.islandora_object.field_city_section
     - field.field.node.islandora_object.field_continent
@@ -28,7 +29,6 @@ dependencies:
     - field.field.node.islandora_object.field_lccn
     - field.field.node.islandora_object.field_linked_agent
     - field.field.node.islandora_object.field_local_identifier
-    - field.field.node.islandora_object.field_call_number
     - field.field.node.islandora_object.field_member_of
     - field.field.node.islandora_object.field_model
     - field.field.node.islandora_object.field_note
@@ -230,7 +230,6 @@ third_party_settings:
         - field_lccn
         - field_issn
         - field_isbn
-        - field_typed_identifier
       label: Identifiers
       region: content
       parent_name: ''
@@ -268,13 +267,21 @@ content:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+  field_call_number:
+    type: string_textfield
+    weight: 9
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_city:
     type: entity_reference_autocomplete
     weight: 14
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      match_limit: 0
       size: 60
       placeholder: ''
     third_party_settings: {  }
@@ -360,27 +367,27 @@ content:
     weight: 9
     region: content
     settings:
-      strict_dates: '1'
-      intervals: '1'
-      sets: 0
+      strict_dates: false
+      intervals: true
+      sets: false
     third_party_settings: {  }
   field_edtf_date_created:
     type: edtf_default
     weight: 10
     region: content
     settings:
-      strict_dates: '1'
-      intervals: '1'
-      sets: 0
+      strict_dates: false
+      intervals: true
+      sets: false
     third_party_settings: {  }
   field_edtf_date_issued:
     type: edtf_default
     weight: 11
     region: content
     settings:
-      strict_dates: '1'
-      intervals: '1'
-      sets: 0
+      strict_dates: false
+      intervals: true
+      sets: false
     third_party_settings: {  }
   field_extent:
     type: string_textfield
@@ -415,7 +422,7 @@ content:
     weight: 11
     region: content
     settings:
-      size: 60
+      size: 255
       placeholder: ''
     third_party_settings: {  }
   field_isbn:
@@ -440,7 +447,7 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      match_limit: 0
       size: 60
       placeholder: ''
     third_party_settings: {  }
@@ -468,7 +475,7 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
-      size: '60'
+      size: 60
       placeholder: ''
       match_limit: 10
     third_party_settings: {  }
@@ -480,14 +487,6 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_call_number:
-    type: string_textfield
-    weight: 9
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: { }
   field_member_of:
     type: entity_reference_autocomplete
     weight: 14
@@ -614,7 +613,7 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      match_limit: 0
       size: 60
       placeholder: ''
     third_party_settings: {  }
@@ -624,7 +623,7 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      match_limit: 0
       size: 60
       placeholder: ''
     third_party_settings: {  }
@@ -634,7 +633,7 @@ content:
     region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
+      match_limit: 0
       size: 60
       placeholder: ''
     third_party_settings: {  }
@@ -664,6 +663,11 @@ content:
     region: content
     settings:
       display_label: true
+    third_party_settings: {  }
+  simple_sitemap:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
