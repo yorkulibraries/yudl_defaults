@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.oembed
     - field.field.node.islandora_object.field_access_terms
     - field.field.node.islandora_object.field_alternative_title
     - field.field.node.islandora_object.field_call_number
@@ -50,92 +50,32 @@ dependencies:
     - field.field.node.islandora_object.field_weight
     - node.type.islandora_object
   module:
-    - controlled_access_terms
-    - field_group
     - text
     - user
-  enforced:
-    module: {  }
-third_party_settings:
-  field_group:
-    group_search_teas:
-      children: {  }
-      label: 'Search teaser details'
-      parent_name: ''
-      region: hidden
-      weight: 67
-      format_type: html_element
-      format_settings:
-        classes: node__details
-        show_empty_fields: false
-        id: ''
-        element: div
-        show_label: false
-        label_element: h3
-        label_element_classes: ''
-        attributes: ''
-        effect: none
-        speed: fast
-id: node.islandora_object.teaser
+id: node.islandora_object.oembed
 targetEntityType: node
 bundle: islandora_object
-mode: teaser
+mode: oembed
 content:
-  display_media_thumbnail:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
   field_description:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_edtf_date:
-    type: edtf_default
-    label: above
-    settings:
-      date_separator: dash
-      date_order: big_endian
-      month_format: mm
-      day_format: dd
-      year_format: 'y'
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_genre:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  field_linked_agent:
-    type: typed_relation_default
-    label: above
-    settings:
-      link: true
     third_party_settings: {  }
     weight: 1
     region: content
-  field_local_identifier:
+  field_hdl:
     type: string
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 5
+    weight: 2
     region: content
-  field_resource_type:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
+  openseadragon_media_evas_service_file:
+    settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 0
     region: content
 hidden:
   addtoany: true
@@ -144,6 +84,7 @@ hidden:
   display_media_entity_view_3: true
   display_media_entity_view_4: true
   display_media_service_file: true
+  display_media_thumbnail: true
   field_access_terms: true
   field_alternative_title: true
   field_call_number: true
@@ -156,17 +97,20 @@ hidden:
   field_date_modified_: true
   field_display_hints: true
   field_doi: true
+  field_edtf_date: true
   field_edtf_date_created: true
   field_edtf_date_issued: true
   field_extent: true
   field_gemini_uri: true
+  field_genre: true
   field_geographic_subject: true
-  field_hdl: true
   field_isbn: true
   field_issn: true
   field_keyword: true
   field_language: true
   field_lccn: true
+  field_linked_agent: true
+  field_local_identifier: true
   field_member_of: true
   field_model: true
   field_note: true
@@ -178,6 +122,7 @@ hidden:
   field_province: true
   field_region: true
   field_relation: true
+  field_resource_type: true
   field_rights: true
   field_rights_holder: true
   field_subject: true
@@ -188,14 +133,12 @@ hidden:
   langcode: true
   links: true
   media_evas_content_entity_view_1: true
-  members_eva_entity_view_1: true
   mirador_evas_entity_view_1: true
   mirador_evas_entity_view_2: true
   mirador_evas_entity_view_3: true
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
   openseadragon_media_evas_entity_view_3: true
-  openseadragon_media_evas_service_file: true
   pdfjs_media_evas_entity_view_1: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true

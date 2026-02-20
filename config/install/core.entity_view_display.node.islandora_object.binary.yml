@@ -57,8 +57,7 @@ dependencies:
     - text
     - user
   enforced:
-    module:
-      - islandora_defaults
+    module: {  }
 third_party_settings:
   field_group:
     group_download_options:

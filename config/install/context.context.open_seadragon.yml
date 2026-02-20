@@ -3,25 +3,31 @@ status: true
 dependencies:
   module:
     - islandora
-name: open_seadragon
 label: 'Open Seadragon'
+name: open_seadragon
 group: Display
 description: 'Open Seadragon viewer for Images'
-requireAllConditions: false
+requireAllConditions: true
 disabled: false
 conditions:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: true
+    uuid: 3181209c-ad2f-4cb1-8d60-fa1c8cbe49aa
+    context_mapping: {  }
+    pages: '/embed/*'
   node_has_term:
     id: node_has_term
-    negate: 0
-    tids:
-      -
-        target_id: '35'
+    negate: false
+    uuid: 73663045-b36b-4b25-954d-33c4a7034dcb
     context_mapping:
       node: '@node.node_route_context:node'
     uri: 'http://openseadragon.github.io'
+    logic: and
+    naive_references: 0
 reactions:
   view_mode_alter:
     id: view_mode_alter
-    mode: node.open_seadragon
     saved: false
+    mode: node.open_seadragon
 weight: -2

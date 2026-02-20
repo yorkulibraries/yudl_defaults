@@ -57,8 +57,7 @@ dependencies:
     - text
     - user
   enforced:
-    module:
-      - islandora_defaults
+    module: {  }
 third_party_settings:
   field_group:
     group_download_options:
@@ -1099,6 +1098,7 @@ hidden:
   mirador_evas_entity_view_3: true
   openseadragon_media_evas_entity_view_1: true
   openseadragon_media_evas_entity_view_2: true
+  openseadragon_media_evas_entity_view_3: true
   openseadragon_media_evas_service_file: true
   pdfjs_media_evas_entity_view_2: true
   pdfjs_media_evas_service_file: true
