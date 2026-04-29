@@ -14,7 +14,7 @@
     "drupal/islandora": "^2",
     "drupal/openseadragon": "^2",
     "drupal/controlled_access_terms": "^2",
-    "drupal/field_group" : "^3.4",
+    "drupal/field_group" : "^4.0",
     "drupal/field_permissions" : "^1.02",
     "drupal/pdf": "^1.1"
   }
