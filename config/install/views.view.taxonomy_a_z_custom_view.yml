@@ -10,6 +10,7 @@ dependencies:
     - taxonomy.vocabulary.subject
   module:
     - taxonomy
+    - text
     - user
 id: taxonomy_a_z_custom_view
 label: 'Taxonomy - A-Z Custom Term View'

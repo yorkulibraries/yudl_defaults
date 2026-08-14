@@ -10,7 +10,7 @@ id: taxonomy_term.corporate_body.field_authority_link
 field_name: field_authority_link
 entity_type: taxonomy_term
 bundle: corporate_body
-label: 'Authority'
+label: Authority
 description: ''
 required: false
 translatable: true
@@ -19,11 +19,11 @@ default_value_callback: ''
 settings:
   authority_sources:
     archeion: 'Archives Association of Ontario'
-    asc: 'York University Libraries'' Clara Thomas Archives & Special Collections'
+    asc: "York University Libraries' Clara Thomas Archives & Special Collections"
     cash: 'Canadian Subject Headings'
     dahr: 'Discography of American Historical Recordings'
-    discogs: 'Discogs'
-    lcshac: 'Library of Congress Children''s Subject Headings'
+    discogs: Discogs
+    lcshac: "Library of Congress Children's Subject Headings"
     lcnaf: 'LC Name Authority File'
     naf: 'NACO Authority File'
     nad: 'NAD / ARK II Name Authority Database'
@@ -32,7 +32,7 @@ settings:
     snac: 'Social Networks and Archival Context'
     ulan: 'Union List of Artist Names'
     viaf: 'Virtual International Authority File'
-    wiki: 'Wikidata'
+    wiki: Wikidata
     worldcat: 'Worldcat Identities'
     other: Other
   title: 1

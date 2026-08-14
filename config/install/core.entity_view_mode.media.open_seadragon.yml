@@ -1,12 +1,13 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - media
   enforced:
     module:
       - islandora_defaults
-  module:
-    - media
 id: media.open_seadragon
 label: 'Open Seadragon'
+description: ''
 targetEntityType: media
 cache: true

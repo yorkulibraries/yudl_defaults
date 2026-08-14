@@ -1,11 +1,11 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - islandora
   enforced:
     module:
       - islandora_defaults
-  module:
-    - islandora
 name: binary
 label: Binary
 group: Display
@@ -22,6 +22,8 @@ conditions:
     context_mapping:
       node: '@node.node_route_context:node'
     uri: 'http://purl.org/coar/resource_type/c_1843'
+    logic: and
+    naive_references: false
 reactions:
   view_mode_alter:
     id: view_mode_alter

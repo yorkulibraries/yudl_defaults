@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - media.type.extracted_text
+  module:
+    - media
   enforced:
     module:
       - islandora_text_extraction_defaults
-  module:
-    - media
 id: media.extracted_text
 targetEntityType: media
 bundle: extracted_text

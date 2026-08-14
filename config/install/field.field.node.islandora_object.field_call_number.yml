@@ -8,7 +8,7 @@ id: node.islandora_object.field_call_number
 field_name: field_call_number
 entity_type: node
 bundle: islandora_object
-label: Call Number
+label: 'Call Number'
 description: ''
 required: false
 translatable: false

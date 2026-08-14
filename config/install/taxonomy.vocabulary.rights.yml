@@ -5,3 +5,4 @@ name: Rights
 vid: rights
 description: 'Rights prescribed to an cultural heritage object.'
 weight: 0
+new_revision: false

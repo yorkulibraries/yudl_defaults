@@ -3,22 +3,21 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.media.pdfjs
-  enforced:
-    module:
-      - islandora_defaults
   module:
     - eva
     - media
     - taxonomy
     - user
+  enforced:
+    module:
+      - islandora_defaults
 id: pdfjs_media_evas
 label: 'PDFjs Media EVAs'
 module: views
-description: 'Displays media for content as EVA''s per model.'
+description: "Displays media for content as EVA's per model."
 tag: ''
 base_table: media_field_data
 base_field: mid
-core: 8.x
 display:
   default:
     display_plugin: default

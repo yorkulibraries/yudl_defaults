@@ -6,11 +6,12 @@ dependencies:
       - islandora_defaults
 id: islandora_defaults_11_city
 class: null
+idMap: {  }
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags: islandora_defaults_11_city
 migration_group: york
-label: 'City'
+label: City
 source:
   plugin: csv
   path: modules/contrib/yudl_defaults/migrate/city.csv

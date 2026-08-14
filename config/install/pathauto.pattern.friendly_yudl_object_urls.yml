@@ -1,13 +1,15 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.islandora_object
   module:
     - language
     - node
 id: friendly_yudl_object_urls
 label: 'Friendly yudl object urls'
 type: 'canonical_entities:node'
-pattern: '[node:field_member_of]/[node:title]'
+pattern: '/[node:field_member_of]/[node:title]'
 selection_criteria:
   36744a1b-e12d-4891-b63d-e0ccf71216d7:
     id: 'entity_bundle:node'

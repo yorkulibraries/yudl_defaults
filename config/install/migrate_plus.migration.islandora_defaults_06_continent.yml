@@ -6,11 +6,12 @@ dependencies:
       - islandora_defaults
 id: islandora_defaults_06_continent
 class: null
+idMap: {  }
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags: islandora_defaults_06_continent
 migration_group: york
-label: 'Continent'
+label: Continent
 source:
   plugin: csv
   path: modules/contrib/yudl_defaults/migrate/continent.csv

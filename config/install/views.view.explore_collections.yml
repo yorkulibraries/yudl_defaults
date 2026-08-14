@@ -6,8 +6,8 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.islandora_models
   content:
-    - 'taxonomy_term:islandora_models:1f7e5037-7ec3-414b-b962-c90b76defcdb'
-    - 'taxonomy_term:islandora_models:6f66e99e-91d9-4555-bf1b-93093e270ca2'
+    - 'taxonomy_term:islandora_media_use:787b147d-73be-4de9-896d-613a93fcc56c'
+    - 'taxonomy_term:islandora_models:cd7132ab-d960-4ca6-8f1c-d5e5711fc610'
   module:
     - node
     - taxonomy
@@ -223,7 +223,7 @@ display:
           set_precision: false
           precision: 0
           decimal: .
-          format_plural: 0
+          format_plural: false
           format_plural_string: !!binary MQNAY291bnQ=
           prefix: ' ('
           suffix: )
@@ -436,7 +436,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -473,7 +472,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - user
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

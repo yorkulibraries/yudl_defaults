@@ -6,8 +6,8 @@ dependencies:
   enforced:
     module:
       - islandora_defaults
-label: 'Collection metadata'
 name: collection_metadata
+label: 'Collection metadata'
 group: Display
 description: 'Collection metadata display'
 requireAllConditions: false
@@ -18,11 +18,12 @@ conditions:
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
-    uri: 'http://purl.org/dc/dcmitype/Collection'
+    uri: 'https://id.loc.gov/vocabulary/resourceTypes/col.html'
     logic: and
     tids:
       -
         target_id: 5
+    naive_references: false
 reactions:
   view_mode_alter:
     id: view_mode_alter

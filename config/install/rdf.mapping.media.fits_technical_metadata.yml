@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - media.type.fits_technical_metadata
+  module:
+    - media
   enforced:
     module:
       - islandora_fits
-  module:
-    - media
 id: media.fits_technical_metadata
 targetEntityType: media
 bundle: fits_technical_metadata

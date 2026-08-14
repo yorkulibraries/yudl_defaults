@@ -1,12 +1,13 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - node
   enforced:
     module:
       - islandora_defaults
-  module:
-    - node
 id: node.collection
-label: 'Collection'
+label: Collection
+description: ''
 targetEntityType: node
 cache: true

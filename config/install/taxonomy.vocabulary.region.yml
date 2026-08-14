@@ -1,8 +1,8 @@
 langcode: en
 status: true
 dependencies: {  }
-name: 'Region'
+name: Region
 vid: region
 description: 'Region(s) to which the records pertain.'
-hierarchy: 0
 weight: 0
+new_revision: false

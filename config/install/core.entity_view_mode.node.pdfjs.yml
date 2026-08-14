@@ -5,5 +5,6 @@ dependencies:
     - node
 id: node.pdfjs
 label: PDFjs
+description: ''
 targetEntityType: node
 cache: true

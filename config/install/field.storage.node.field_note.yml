@@ -1,11 +1,11 @@
 langcode: en
 status: true
 dependencies:
+  module:
+    - node
   enforced:
     module:
       - islandora
-  module:
-    - node
 id: node.field_note
 field_name: field_note
 entity_type: node

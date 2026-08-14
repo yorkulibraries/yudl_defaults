@@ -6,6 +6,7 @@ dependencies:
       - islandora_defaults
 id: islandora_defaults_00_tags
 class: null
+idMap: {  }
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags: islandora_defaults_00_tags

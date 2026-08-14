@@ -6,11 +6,12 @@ dependencies:
       - islandora_defaults
 id: islandora_defaults_10_county
 class: null
+idMap: {  }
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags: islandora_defaults_10_county
 migration_group: york
-label: 'County'
+label: County
 source:
   plugin: csv
   path: modules/contrib/yudl_defaults/migrate/county.csv

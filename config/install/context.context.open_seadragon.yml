@@ -3,8 +3,8 @@ status: true
 dependencies:
   module:
     - islandora
-label: 'Open Seadragon'
 name: open_seadragon
+label: 'Open Seadragon'
 group: Display
 description: 'Open Seadragon viewer for Images'
 requireAllConditions: true

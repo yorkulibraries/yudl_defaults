@@ -4,20 +4,19 @@ dependencies:
   config:
     - taxonomy.vocabulary.islandora_access
   module:
-    - link
     - text
-id: taxonomy_term.islandora_display.default
+id: taxonomy_term.islandora_access.default
 targetEntityType: taxonomy_term
 bundle: islandora_access
 mode: default
 content:
   description:
-    label: hidden
     type: text_default
-    weight: 0
-    region: content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   langcode: true
   search_api_excerpt: true

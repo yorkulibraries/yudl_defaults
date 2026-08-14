@@ -1,13 +1,24 @@
 langcode: en
 status: true
 dependencies:
+  config:
+    - taxonomy.vocabulary.corporate_body
+    - taxonomy.vocabulary.family
+    - taxonomy.vocabulary.genre
+    - taxonomy.vocabulary.geo_location
+    - taxonomy.vocabulary.language
+    - taxonomy.vocabulary.person
+    - taxonomy.vocabulary.physical_form
+    - taxonomy.vocabulary.resource_types
+    - taxonomy.vocabulary.subject
+    - taxonomy.vocabulary.temporal_subjects
   module:
     - language
     - taxonomy
 id: friendly_yudl_taxonomy_urls
 label: 'Friendly yudl taxonomy urls'
 type: 'canonical_entities:taxonomy_term'
-pattern: '[term:vocabulary]/[term:name]'
+pattern: '/[term:vocabulary]/[term:name]'
 selection_criteria:
   e23badcf-b8b8-45c7-8a2a-36c1cee54be9:
     id: 'entity_bundle:taxonomy_term'

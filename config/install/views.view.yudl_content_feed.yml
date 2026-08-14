@@ -6,9 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - node.type.islandora_object
     - taxonomy.vocabulary.islandora_models
-  content:
-    - 'taxonomy_term:islandora_models:14b03d67-e3c2-488b-8710-d1f4c6e47eb1'
-    - 'taxonomy_term:islandora_models:4ba72b54-2117-4173-8d13-b3ff3c9a2145'
   module:
     - node
     - taxonomy
@@ -50,6 +47,7 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:

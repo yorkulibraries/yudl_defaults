@@ -6,11 +6,12 @@ dependencies:
       - islandora_defaults
 id: islandora_defaults_08_province
 class: null
+idMap: {  }
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags: islandora_defaults_08_province
 migration_group: york
-label: 'Country'
+label: Country
 source:
   plugin: csv
   path: modules/contrib/yudl_defaults/migrate/province.csv

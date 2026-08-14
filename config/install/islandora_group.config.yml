@@ -11,4 +11,3 @@ media-type-access-fields:
   video: field_access_terms
 node-type-access-fields:
   islandora_object: field_access_terms
-access_control: islandora_access
